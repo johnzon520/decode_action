@@ -1,2989 +1,1622 @@
-//Tue Aug 26 2025 05:55:32 GMT+0000 (Coordinated Universal Time)
+//Tue Aug 26 2025 05:57:23 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-luckdraw-circle~pages-luckdraw-circle-awsc~pages-luckdraw-coupon"], {
-  "004a": function (t, e, n) {
-    var r = n("f816");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("1ef8659c", r, true, {
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-luckdraw-circle-awsc"], {
+  "0602": function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("5eb6"),
+      n = i.n(a);
+    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return a[t];
+      });
+    }(o);
+    e["default"] = n.a;
+  },
+  2180: function (t, e, i) {
+    var a = i("dd85");
+    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
+    var n = i("4f06").default;
+    n("1acae6fe", a, true, {
       sourceMap: false,
       shadowMode: false
     });
   },
-  "0085": function (t, e, n) {
+  "30a9": function (t, e, i) {
     "use strict";
 
-    var r = n("c126"),
-      i = n.n(r);
-    i.a;
-  },
-  "014c": function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-74f4a138], uni-scroll-view[data-v-74f4a138], uni-swiper-item[data-v-74f4a138]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-notice[data-v-74f4a138]{display:flex;flex-direction:row;align-items:center;justify-content:space-between}.u-notice__left-icon[data-v-74f4a138]{align-items:center;margin-right:5px}.u-notice__right-icon[data-v-74f4a138]{margin-left:5px;align-items:center}.u-notice__content[data-v-74f4a138]{text-align:right;flex:1;display:flex;flex-direction:row;flex-wrap:nowrap;overflow:hidden}.u-notice__content__text[data-v-74f4a138]{font-size:14px;color:#f9ae3d;padding-left:100%;word-break:keep-all;white-space:nowrap;-webkit-animation:u-loop-animation-data-v-74f4a138 10s linear infinite both;animation:u-loop-animation-data-v-74f4a138 10s linear infinite both}@-webkit-keyframes u-loop-animation-data-v-74f4a138{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes u-loop-animation-data-v-74f4a138{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}100%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}', ""]), t.exports = e;
-  },
-  "02a6": function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("762a")),
-      a = {
-        name: "u-loadmore",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {
-            dotText: "鈼�"
-          };
-        },
-        computed: {
-          loadTextStyle: function () {
-            return {
-              color: this.color,
-              fontSize: uni.$u.addUnit(this.fontSize),
-              lineHeight: uni.$u.addUnit(this.fontSize),
-              backgroundColor: this.bgColor
-            };
-          },
-          showText: function () {
-            var t = "";
-            return t = "loadmore" == this.status ? this.loadmoreText : "loading" == this.status ? this.loadingText : "nomore" == this.status && this.isDot ? this.dotText : this.nomoreText, t;
-          }
-        },
-        methods: {
-          loadMore: function () {
-            "loadmore" == this.status && this.$emit("loadmore");
-          }
-        }
+    (function (t) {
+      i("7a82");
+      var a = i("4ea4").default;
+      Object.defineProperty(e, "__esModule", {
+        value: true
+      }), e.setStore = e.pathToBase64 = e.getStore = e.downloadFile = e.clearStore = e.clearCacheFile = e.clacTextLen = e.circleImg = e.base64ToPath = undefined;
+      var n = a(i("53ca"));
+      i("e9c4"), i("cb29"), i("d3b7"), i("c975"), i("d9e2"), i("d401"), i("ac1f"), i("466d"), i("81b2"), i("0eb6"), i("b7ef"), i("8bd4"), i("ace4"), i("5cc6"), i("907a"), i("9a8c"), i("a975"), i("735e"), i("c1ac"), i("d139"), i("3a7b"), i("986a"), i("1d02"), i("d5d6"), i("82f8"), i("e91f"), i("60bd"), i("5f96"), i("3280"), i("3fcc"), i("ca91"), i("25a1"), i("cd26"), i("3c5d"), i("2954"), i("649e"), i("219c"), i("b39a"), i("72f7"), i("3ca3"), i("ddb0"), i("2b3d"), i("9861"), i("5319");
+      e.setStore = function (t, e) {
+        t && ("string" !== typeof e && (e = JSON.stringify(e)), uni.setStorageSync(t, e));
       };
-    e.default = a;
-  },
-  "0515": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("da9d"),
-      i = n("b384");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("0af3");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "6acab223", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  "0624": function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("c2bc")),
-      a = {
-        name: "u-popup",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {};
-        },
-        watch: {
-          show: function (t, e) {}
-        },
-        computed: {
-          transitionStyle: function () {
-            var t = {
-              zIndex: this.zIndex,
-              position: "fixed",
-              display: "flex"
-            };
-            return t[this.mode] = 0, "left" === this.mode || "right" === this.mode ? uni.$u.deepMerge(t, {
-              bottom: 0,
-              top: 0
-            }) : "top" === this.mode || "bottom" === this.mode ? uni.$u.deepMerge(t, {
-              left: 0,
-              right: 0
-            }) : "center" === this.mode ? uni.$u.deepMerge(t, {
-              alignItems: "center",
-              "justify-content": "center",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0
-            }) : undefined;
-          },
-          contentStyle: function () {
-            var t = {},
-              e = uni.$u.sys();
-            e.safeAreaInsets;
-            if ("center" !== this.mode && (t.flex = 1), this.bgColor && (t.backgroundColor = this.bgColor), this.round) {
-              var n = uni.$u.addUnit(this.round);
-              "top" === this.mode ? (t.borderBottomLeftRadius = n, t.borderBottomRightRadius = n) : "bottom" === this.mode ? (t.borderTopLeftRadius = n, t.borderTopRightRadius = n) : "center" === this.mode && (t.borderRadius = n);
-            }
-            return uni.$u.deepMerge(t, uni.$u.addStyle(this.customStyle));
-          },
-          position: function () {
-            return "center" === this.mode ? this.zoom ? "fade-zoom" : "fade" : "left" === this.mode ? "slide-left" : "right" === this.mode ? "slide-right" : "bottom" === this.mode ? "slide-up" : "top" === this.mode ? "slide-down" : undefined;
-          }
-        },
-        methods: {
-          overlayClick: function () {
-            this.closeOnClickOverlay && this.$emit("close");
-          },
-          close: function (t) {
-            this.$emit("close");
-          },
-          afterEnter: function () {
-            this.$emit("open");
-          },
-          clickHandler: function () {
-            "center" === this.mode && this.overlayClick(), this.$emit("click");
-          }
-        }
+      e.getStore = function (t) {
+        if (t) return uni.getStorageSync(t);
       };
-    e.default = a;
-  },
-  "0750": function (t, e, n) {
-    var r = n("d189");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("1f9a41c8", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "078e": function (t, e, n) {
-    "use strict";
-
-    var r = n("817a"),
-      i = n.n(r);
-    i.a;
-  },
-  "0af3": function (t, e, n) {
-    "use strict";
-
-    var r = n("77c1"),
-      i = n.n(r);
-    i.a;
-  },
-  "0c1a": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("887e"),
-      i = n("4d9b");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("7582");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "1496e4f8", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  1116: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        labelBg: {
-          type: String,
-          default: "#879cad"
-        },
-        text: {
-          type: [Array, String],
-          default: uni.$u.props.noticeBar.text
-        },
-        direction: {
-          type: String,
-          default: uni.$u.props.noticeBar.direction
-        },
-        step: {
-          type: Boolean,
-          default: uni.$u.props.noticeBar.step
-        },
-        icon: {
-          type: String,
-          default: uni.$u.props.noticeBar.icon
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.noticeBar.mode
-        },
-        color: {
-          type: String,
-          default: uni.$u.props.noticeBar.color
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.noticeBar.bgColor
-        },
-        speed: {
-          type: [String, Number],
-          default: uni.$u.props.noticeBar.speed
-        },
-        fontSize: {
-          type: [String, Number],
-          default: uni.$u.props.noticeBar.fontSize
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.noticeBar.duration
-        },
-        disableTouch: {
-          type: Boolean,
-          default: uni.$u.props.noticeBar.disableTouch
-        },
-        url: {
-          type: String,
-          default: uni.$u.props.noticeBar.url
-        },
-        linkType: {
-          type: String,
-          default: uni.$u.props.noticeBar.linkType
-        }
-      }
-    };
-    e.default = r;
-  },
-  1221: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("42b2"),
-      i = n("2b9f");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("92a7");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "ed62b646", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  1524: function (t, e, n) {
-    var r = n("2838");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("65cc16a1", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "154b": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("6d91"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "15d5": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
-    });
-    var r = {
-        uOverlay: n("1221").default,
-        uTransition: n("572a").default,
-        uStatusBar: n("e3b4").default,
-        uIcon: n("b969").default,
-        uSafeBottom: n("4eee").default
-      },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-popup"
-        }, [t.overlay ? n("u-overlay", {
-          attrs: {
-            show: t.show,
-            duration: t.duration,
-            customStyle: t.overlayStyle,
-            opacity: t.overlayOpacity
-          },
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.overlayClick.apply(undefined, arguments);
-            }
-          }
-        }) : t._e(), n("u-transition", {
-          staticStyle: {
-            height: "100%"
-          },
-          attrs: {
-            show: t.show,
-            customStyle: t.transitionStyle,
-            mode: t.position,
-            duration: t.duration
-          },
-          on: {
-            "after-enter": function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.afterEnter.apply(undefined, arguments);
-            },
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.clickHandler.apply(undefined, arguments);
-            }
-          }
-        }, [n("v-uni-view", {
-          staticClass: "u-popup__content",
-          style: [t.contentStyle],
-          on: {
-            click: function (e) {
-              e.stopPropagation(), arguments[0] = e = t.$handleEvent(e), t.noop.apply(undefined, arguments);
-            }
-          }
-        }, [t.safeAreaInsetTop ? n("u-status-bar") : t._e(), t._t("default"), t.closeable ? n("v-uni-view", {
-          staticClass: "u-popup__content__close",
-          class: ["u-popup__content__close--" + t.closeIconPos],
-          attrs: {
-            "hover-class": "u-popup__content__close--hover",
-            "hover-stay-time": "150"
-          },
-          on: {
-            click: function (e) {
-              e.stopPropagation(), arguments[0] = e = t.$handleEvent(e), t.close.apply(undefined, arguments);
-            }
-          }
-        }, [n("u-icon", {
-          attrs: {
-            name: "close",
-            color: "#909399",
-            size: "18",
-            bold: true
-          }
-        })], 1) : t._e(), t.safeAreaInsetBottom ? n("u-safe-bottom") : t._e()], 2)], 1)], 1);
-      },
-      a = [];
-  },
-  1637: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("83fa")),
-      a = {
-        name: "u-swiper-indicator",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {
-            lineWidth: 22
-          };
-        },
-        computed: {
-          lineStyle: function () {
-            var t = {};
-            return t.width = uni.$u.addUnit(this.lineWidth), t.transform = "translateX(".concat(this.current * this.lineWidth, "px)"), t.backgroundColor = this.indicatorActiveColor, t;
-          },
-          dotStyle: function () {
-            var t = this;
-            return function (e) {
-              var n = {};
-              return n.backgroundColor = e === t.current ? t.indicatorActiveColor : t.indicatorInactiveColor, n;
-            };
-          }
-        }
+      e.clearStore = function (e) {
+        e ? uni.removeStorageSync(e) : (t("log", "娓呯悊鏈湴鍏ㄩ儴缂撳瓨", " at uni_modules/almost-lottery/utils/almost-utils.js:31"), uni.clearStorageSync());
       };
-    e.default = a;
-  },
-  "16a3": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("ae34"),
-      i = n("90a4");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("c070");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "09e9487a", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  1827: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-456472ce], uni-scroll-view[data-v-456472ce], uni-swiper-item[data-v-456472ce]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-code-input[data-v-456472ce]{display:flex;flex-direction:row;position:relative;overflow:hidden}.u-code-input__item[data-v-456472ce]{display:flex;flex-direction:row;justify-content:center;align-items:center}.u-code-input__item__text[data-v-456472ce]{font-size:15px;color:#606266}.u-code-input__item__dot[data-v-456472ce]{width:7px;height:7px;border-radius:100px;background-color:#606266}.u-code-input__item__line[data-v-456472ce]{position:absolute;bottom:0;height:4px;border-radius:100px;width:40px;background-color:#606266}.u-code-input__input[data-v-456472ce]{position:absolute;left:%?-150?%;width:%?1500?%;top:0;background-color:initial;text-align:left}', ""]), t.exports = e;
-  },
-  "1dda": function (t, e, n) {
-    "use strict";
-
-    var r = n("1524"),
-      i = n.n(r);
-    i.a;
-  },
-  "21b3": function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("e7fd")),
-      a = {
-        name: "u-safe-bottom",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {
-            safeAreaBottomHeight: 0,
-            isNvue: false
-          };
-        },
-        computed: {
-          style: function () {
-            return uni.$u.deepMerge({}, uni.$u.addStyle(this.customStyle));
-          }
-        },
-        mounted: function () {}
+      e.circleImg = function (t, e, i, a, n, o) {
+        var r = Math.floor(n / 2),
+          s = i + r,
+          l = a + r;
+        t.save(), t.beginPath(), t.arc(s, l, r, 0, 2 * Math.PI), t.fill(), t.clip(), t.drawImage(e, i, a, n, o), t.restore();
       };
-    e.default = a;
-  },
-  2644: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
-    });
-    var r = {
-        uLine: n("16a3").default,
-        uLoadingIcon: n("8f0c").default
-      },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-loadmore",
-          style: [t.$u.addStyle(t.customStyle), {
-            backgroundColor: t.bgColor,
-            marginBottom: t.$u.addUnit(t.marginBottom),
-            marginTop: t.$u.addUnit(t.marginTop),
-            height: t.$u.addUnit(t.height)
-          }]
-        }, [t.line ? n("u-line", {
-          attrs: {
-            length: "140rpx",
-            color: "#E6E8EB",
-            hairline: false
-          }
-        }) : t._e(), n("v-uni-view", {
-          staticClass: "u-loadmore__content",
-          class: "loadmore" == t.status || "nomore" == t.status ? "u-more" : ""
-        }, ["loading" === t.status && t.icon ? n("v-uni-view", {
-          staticClass: "u-loadmore__content__icon-wrap"
-        }, [n("u-loading-icon", {
-          attrs: {
-            color: t.iconColor,
-            size: "17",
-            mode: t.loadingIcon
-          }
-        })], 1) : t._e(), n("v-uni-text", {
-          staticClass: "u-line-1",
-          class: ["nomore" == t.status && 1 == t.isDot ? "u-loadmore__content__dot-text" : "u-loadmore__content__text"],
-          style: [t.loadTextStyle],
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.loadMore.apply(undefined, arguments);
-            }
-          }
-        }, [t._v(t._s(t.showText))])], 1), t.line ? n("u-line", {
-          attrs: {
-            length: "140rpx",
-            color: "#E6E8EB",
-            hairline: false
-          }
-        }) : t._e()], 1);
-      },
-      a = [];
-  },
-  2838: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-17ee0c9a], uni-scroll-view[data-v-17ee0c9a], uni-swiper-item[data-v-17ee0c9a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-loadmore[data-v-17ee0c9a]{display:flex;flex-direction:row;align-items:center;justify-content:center;flex:1}.u-loadmore__content[data-v-17ee0c9a]{margin:0 15px;display:flex;flex-direction:row;align-items:center;justify-content:center}.u-loadmore__content__icon-wrap[data-v-17ee0c9a]{margin-right:8px}.u-loadmore__content__text[data-v-17ee0c9a]{font-size:14px;color:#606266}.u-loadmore__content__dot-text[data-v-17ee0c9a]{font-size:15px;color:#909193}', ""]), t.exports = e;
-  },
-  2909: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = function (t) {
-      return (0, r.default)(t) || (0, i.default)(t) || (0, a.default)(t) || (0, o.default)();
-    };
-    var r = u(n("6005")),
-      i = u(n("db90")),
-      a = u(n("06c5")),
-      o = u(n("3427"));
-    function u(t) {
-      return t && t.__esModule ? t : {
-        default: t
-      };
-    }
-  },
-  "2b9f": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("a2e4"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "2ba46": function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        labelBg: {
-          type: String,
-          default: "#879cad"
-        },
-        text: {
-          type: [Array],
-          default: uni.$u.props.columnNotice.text
-        },
-        icon: {
-          type: String,
-          default: uni.$u.props.columnNotice.icon
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.columnNotice.mode
-        },
-        color: {
-          type: String,
-          default: uni.$u.props.columnNotice.color
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.columnNotice.bgColor
-        },
-        fontSize: {
-          type: [String, Number],
-          default: uni.$u.props.columnNotice.fontSize
-        },
-        speed: {
-          type: [String, Number],
-          default: uni.$u.props.columnNotice.speed
-        },
-        step: {
-          type: Boolean,
-          default: uni.$u.props.columnNotice.step
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.columnNotice.duration
-        },
-        disableTouch: {
-          type: Boolean,
-          default: uni.$u.props.columnNotice.disableTouch
-        }
-      }
-    };
-    e.default = r;
-  },
-  "304c": function (t, e, n) {
-    var r = n("30d1");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("56559c04", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "30d1": function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-2855c428], uni-scroll-view[data-v-2855c428], uni-swiper-item[data-v-2855c428]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-swiper-indicator__wrapper[data-v-2855c428]{display:flex;flex-direction:row}.u-swiper-indicator__wrapper--line[data-v-2855c428]{border-radius:100px;height:4px}.u-swiper-indicator__wrapper--line__bar[data-v-2855c428]{width:22px;height:4px;border-radius:100px;background-color:#fff;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s}.u-swiper-indicator__wrapper__dot[data-v-2855c428]{width:5px;height:5px;border-radius:100px;margin:0 4px}.u-swiper-indicator__wrapper__dot--active[data-v-2855c428]{width:12px}', ""]), t.exports = e;
-  },
-  3238: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("15d5"),
-      i = n("b4cc");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("078e");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "789e1311", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  3427: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = function () {
-      throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-    }, n("d9e2"), n("d401");
-  },
-  "39c9": function (t, e, n) {
-    "use strict";
-
-    var r = n("fa7a"),
-      i = n.n(r);
-    i.a;
-  },
-  "42b2": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
-    });
-    var r = {
-        uTransition: n("572a").default
-      },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("u-transition", {
-          attrs: {
-            show: t.show,
-            "custom-class": "u-overlay",
-            duration: t.duration,
-            "custom-style": t.overlayStyle
-          },
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.clickHandler.apply(undefined, arguments);
-            }
-          }
-        }, [t._t("default")], 2);
-      },
-      a = [];
-  },
-  "49f5": function (t, e, n) {
-    var r = n("1827");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("2692c62d", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "4c10": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("eb68"),
-      i = n("810d");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("68d0");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "7b218239", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  "4d9b": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("aed2"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "4ecb": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("f63b"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "4eee": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("d42a"),
-      i = n("9bbd");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("b556");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "b1c30928", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  5044: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("ac1f"), n("00b4");
-    var i = r(n("53ca")),
-      a = r(n("e5dd")),
-      o = {
-        name: "u-swiper",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, a.default],
-        data: function () {
-          return {
-            currentIndex: 0
-          };
-        },
-        computed: {
-          itemStyle: function () {
-            var t = this;
-            return function (e) {
-              var n = {};
-              return t.nextMargin && t.previousMargin && (n.borderRadius = uni.$u.addUnit(t.radius), e !== t.currentIndex && (n.transform = "scale(0.92)")), n;
-            };
-          }
-        },
-        methods: {
-          getSource: function (t) {
-            return "string" === typeof t ? t : "object" === (0, i.default)(t) && this.keyName ? t[this.keyName] : (uni.$u.error("璇锋寜鏍煎紡浼犻€掑垪琛ㄥ弬鏁�"), "");
-          },
-          change: function (t) {
-            var e = t.detail.current;
-            this.pauseVideo(this.currentIndex), this.currentIndex = e, this.$emit("change", t.detail);
-          },
-          pauseVideo: function (t) {
-            var e = this.getSource(this.list[t]);
-            if (uni.$u.test.video(e)) {
-              var n = uni.createVideoContext("video-".concat(t), this);
-              n.pause();
-            }
-          },
-          getPoster: function (t) {
-            return "object" === (0, i.default)(t) && t.poster ? t.poster : "";
-          },
-          clickHandler: function (t) {
-            this.$emit("click", t);
-          }
-        }
-      };
-    e.default = o;
-  },
-  5241: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        show: {
-          type: Boolean,
-          default: uni.$u.props.transition.show
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.transition.mode
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.transition.duration
-        },
-        timingFunction: {
-          type: String,
-          default: uni.$u.props.transition.timingFunction
-        }
-      }
-    };
-    e.default = r;
-  },
-  "546d": function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    e.default = {
-      fade: {
-        enter: {
-          opacity: 0
-        },
-        "enter-to": {
-          opacity: 1
-        },
-        leave: {
-          opacity: 1
-        },
-        "leave-to": {
-          opacity: 0
-        }
-      },
-      "fade-up": {
-        enter: {
-          opacity: 0,
-          transform: "translateY(100%)"
-        },
-        "enter-to": {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        leave: {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          opacity: 0,
-          transform: "translateY(100%)"
-        }
-      },
-      "fade-down": {
-        enter: {
-          opacity: 0,
-          transform: "translateY(-100%)"
-        },
-        "enter-to": {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        leave: {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          opacity: 0,
-          transform: "translateY(-100%)"
-        }
-      },
-      "fade-left": {
-        enter: {
-          opacity: 0,
-          transform: "translateX(-100%)"
-        },
-        "enter-to": {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        leave: {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          opacity: 0,
-          transform: "translateX(-100%)"
-        }
-      },
-      "fade-right": {
-        enter: {
-          opacity: 0,
-          transform: "translateX(100%)"
-        },
-        "enter-to": {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        leave: {
-          opacity: 1,
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          opacity: 0,
-          transform: "translateX(100%)"
-        }
-      },
-      "slide-up": {
-        enter: {
-          transform: "translateY(100%)"
-        },
-        "enter-to": {
-          transform: "translateY(0)"
-        },
-        leave: {
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          transform: "translateY(100%)"
-        }
-      },
-      "slide-down": {
-        enter: {
-          transform: "translateY(-100%)"
-        },
-        "enter-to": {
-          transform: "translateY(0)"
-        },
-        leave: {
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          transform: "translateY(-100%)"
-        }
-      },
-      "slide-left": {
-        enter: {
-          transform: "translateX(-100%)"
-        },
-        "enter-to": {
-          transform: "translateY(0)"
-        },
-        leave: {
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          transform: "translateX(-100%)"
-        }
-      },
-      "slide-right": {
-        enter: {
-          transform: "translateX(100%)"
-        },
-        "enter-to": {
-          transform: "translateY(0)"
-        },
-        leave: {
-          transform: "translateY(0)"
-        },
-        "leave-to": {
-          transform: "translateX(100%)"
-        }
-      },
-      zoom: {
-        enter: {
-          transform: "scale(0.95)"
-        },
-        "enter-to": {
-          transform: "scale(1)"
-        },
-        leave: {
-          transform: "scale(1)"
-        },
-        "leave-to": {
-          transform: "scale(0.95)"
-        }
-      },
-      "fade-zoom": {
-        enter: {
-          opacity: 0,
-          transform: "scale(0.95)"
-        },
-        "enter-to": {
-          opacity: 1,
-          transform: "scale(1)"
-        },
-        leave: {
-          opacity: 1,
-          transform: "scale(1)"
-        },
-        "leave-to": {
-          opacity: 0,
-          transform: "scale(0.95)"
-        }
-      }
-    };
-  },
-  "572a": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("835c"),
-      i = n("154b");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("39c9");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "4c9df1fe", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  5956: function (t, e, n) {
-    "use strict";
-
-    var r = n("304c"),
-      i = n.n(r);
-    i.a;
-  },
-  5999: function (t, e, n) {
-    var r = n("ccf2");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("3f2385f1", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "59a4": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("2644"),
-      i = n("824c");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("1dda");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "17ee0c9a", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  "5aeb": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this.$createElement,
-          e = this._self._c || t;
-        return e("v-uni-view", {
-          staticClass: "u-status-bar",
-          style: [this.style]
-        }, [this._t("default")], 2);
-      },
-      i = [];
-  },
-  "5bb5": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("80d0"),
-      i = n("8d37");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("5956");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "2855c428", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  "5db6": function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-789e1311], uni-scroll-view[data-v-789e1311], uni-swiper-item[data-v-789e1311]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-popup[data-v-789e1311]{flex:1}.u-popup__content[data-v-789e1311]{background-color:#fff;position:relative}.u-popup__content--round-top[data-v-789e1311]{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:10px;border-bottom-right-radius:10px}.u-popup__content--round-left[data-v-789e1311]{border-top-left-radius:0;border-top-right-radius:10px;border-bottom-left-radius:0;border-bottom-right-radius:10px}.u-popup__content--round-right[data-v-789e1311]{border-top-left-radius:10px;border-top-right-radius:0;border-bottom-left-radius:10px;border-bottom-right-radius:0}.u-popup__content--round-bottom[data-v-789e1311]{border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:0;border-bottom-right-radius:0}.u-popup__content--round-center[data-v-789e1311]{border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px}.u-popup__content__close[data-v-789e1311]{position:absolute}.u-popup__content__close--hover[data-v-789e1311]{opacity:.4}.u-popup__content__close--top-left[data-v-789e1311]{top:15px;left:15px}.u-popup__content__close--top-right[data-v-789e1311]{top:15px;right:15px}.u-popup__content__close--bottom-left[data-v-789e1311]{bottom:15px;left:15px}.u-popup__content__close--bottom-right[data-v-789e1311]{right:15px;bottom:15px}', ""]), t.exports = e;
-  },
-  6005: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = function (t) {
-      if (Array.isArray(t)) return (0, r.default)(t);
-    };
-    var r = function (t) {
-      return t && t.__esModule ? t : {
-        default: t
-      };
-    }(n("6b75"));
-  },
-  6565: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("9cf8"),
-      i = n("7fd5");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("0085");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "74f4a138", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  "662a": function (t, e, n) {
-    "use strict";
-
-    var r = n("9450"),
-      i = n.n(r);
-    i.a;
-  },
-  6776: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("c7eb")),
-      a = r(n("1da1"));
-    n("d3b7"), n("99af");
-    r(n("546d"));
-    var o = function (t) {
-        return {
-          enter: "u-".concat(t, "-enter u-").concat(t, "-enter-active"),
-          "enter-to": "u-".concat(t, "-enter-to u-").concat(t, "-enter-active"),
-          leave: "u-".concat(t, "-leave u-").concat(t, "-leave-active"),
-          "leave-to": "u-".concat(t, "-leave-to u-").concat(t, "-leave-active")
+      e.clacTextLen = function (t) {
+        if (!t) return {
+          byteLen: 0,
+          realLen: 0
         };
-      },
-      u = {
-        methods: {
-          clickHandler: function () {
-            this.$emit("click");
-          },
-          vueEnter: function () {
-            var t = this,
-              e = o(this.mode);
-            this.status = "enter", this.$emit("beforeEnter"), this.inited = true, this.display = true, this.classes = e.enter, this.$nextTick((0, a.default)((0, i.default)().mark(function n() {
-              return (0, i.default)().wrap(function (n) {
-                while (1) switch (n.prev = n.next) {
-                  case 0:
-                    return n.next = 2, uni.$u.sleep(20);
-                  case 2:
-                    t.$emit("afterEnter"), t.transitionEnded = false, t.classes = e["enter-to"];
-                  case 5:
-                  case "end":
-                    return n.stop();
+        t += "";
+        for (var e = 0, i = 0; i < "".length; i++) "".charCodeAt(i) < 0 || "".charCodeAt(i) > 255 ? e += 2 : e += 1;
+        return {
+          byteLen: e,
+          realLen: e / 2
+        };
+      };
+      e.downloadFile = function (t) {
+        return new Promise(function (e) {
+          uni.downloadFile({
+            url: t,
+            success: function (t) {
+              e({
+                ok: true,
+                data: t.errMsg,
+                tempFilePath: t.tempFilePath
+              });
+            },
+            fail: function (t) {
+              e({
+                ok: false,
+                data: t.errMsg,
+                msg: "鍥剧墖涓嬭浇澶辫触"
+              });
+            }
+          });
+        });
+      };
+      e.clearCacheFile = function () {};
+      e.pathToBase64 = function (e) {
+        return new Promise(function (i, a) {
+          if ("object" === ("undefined" === typeof window ? "undefined" : (0, n.default)(window)) && "document" in window) {
+            if ("function" === typeof FileReader) {
+              var o = new XMLHttpRequest();
+              return o.open("GET", e, true), o.responseType = "blob", o.onload = function () {
+                if (200 === this.status) {
+                  var t = new FileReader();
+                  t.onload = function (t) {
+                    i(t.target.result);
+                  }, t.onerror = a, t.readAsDataURL(this.response);
                 }
-              }, n);
+              }, o.onerror = a, void o.send();
+            }
+            var r = document.createElement("canvas"),
+              s = r.getContext("2d"),
+              l = new Image();
+            return l.onload = function () {
+              r.width = l.width, r.height = l.height, s.drawImage(l, 0, 0), i(r.toDataURL()), r.height = r.width = 0;
+            }, l.onerror = a, void (l.src = e);
+          }
+          if ("object" !== ("undefined" === typeof plus ? "undefined" : (0, n.default)(plus))) "object" === ("undefined" === typeof wx ? "undefined" : (0, n.default)(wx)) && wx.canIUse("getFileSystemManager") ? wx.getFileSystemManager().readFile({
+            filePath: e,
+            encoding: "base64",
+            success: function (t) {
+              i("data:image/png;base64," + t.data);
+            },
+            fail: function (t) {
+              a(t);
+            }
+          }) : a(new Error("not support"));else {
+            var c = function (t) {
+              if (0 === t.indexOf("_www") || 0 === t.indexOf("_doc") || 0 === t.indexOf("_documents") || 0 === t.indexOf("_downloads")) return t;
+              if (0 === t.indexOf("/storage/emulated/0/")) return t;
+              if (0 === t.indexOf("/storage/sdcard0/")) return t;
+              if (0 === t.indexOf("/var/mobile/")) return t;
+              if (0 === t.indexOf("file://")) return t;
+              if (0 === t.indexOf("/")) {
+                var e = "iOS" === plus.os.name ? t : plus.io.convertLocalFileSystemURL(t);
+                if (e !== t) return e;
+                t = t.substring(1);
+              }
+              return "_www/" + t;
+            }(e);
+            plus.io.resolveLocalFileSystemURL(c, function (e) {
+              e.file(function (e) {
+                var n = new plus.io.FileReader();
+                n.onload = function (t) {
+                  i(t.target.result);
+                }, n.onerror = function (e) {
+                  t("log", e, " at uni_modules/almost-lottery/utils/almost-utils.js:212"), a(e);
+                }, n.readAsDataURL(e);
+              }, function (t) {
+                a(t);
+              });
+            }, function (t) {
+              a(t);
+            });
+          }
+        });
+      };
+      e.base64ToPath = function (t) {
+        return new Promise(function (e, i) {
+          if ("object" === ("undefined" === typeof window ? "undefined" : (0, n.default)(window)) && "document" in window) {
+            t = t.split(",");
+            var a = t[0].match(/:(.*?);/)[1],
+              o = atob(t[1]),
+              r = o.length,
+              s = new Uint8Array(r);
+            while (r--) s[r] = o.charCodeAt(r);
+            return e((window.URL || window.webkitURL).createObjectURL(new Blob([s], {
+              type: a
             })));
+          }
+          var l = t.match(/data\:\S+\/(\S+);/);
+          l ? l = l[1] : i(new Error("base64 error"));
+          var c = Date.now() + "." + l;
+          if ("object" !== ("undefined" === typeof plus ? "undefined" : (0, n.default)(plus))) {
+            if ("object" === ("undefined" === typeof wx ? "undefined" : (0, n.default)(wx)) && wx.canIUse("getFileSystemManager")) {
+              var u = wx.env.USER_DATA_PATH + "/" + c;
+              wx.getFileSystemManager().writeFile({
+                filePath: u,
+                data: t.replace(/^data:\S+\/\S+;base64,/, ""),
+                encoding: "base64",
+                success: function () {
+                  e(u);
+                },
+                fail: function (t) {
+                  i(t);
+                }
+              });
+            } else i(new Error("not support"));
+          } else {
+            var d = new plus.nativeObj.Bitmap("bitmap" + Date.now());
+            d.loadBase64Data(t, function () {
+              var t = "_doc/uniapp_temp/" + c;
+              d.save(t, {}, function () {
+                d.clear(), e(t);
+              }, function (t) {
+                d.clear(), i(t);
+              });
+            }, function (t) {
+              d.clear(), i(t);
+            });
+          }
+        });
+      };
+    }).call(this, i("0de9")["log"]);
+  },
+  "376b": function (t, e, i) {
+    t.exports = i.p + "static/img/1.e5701211.png";
+  },
+  "3b65": function (t, e, i) {
+    "use strict";
+
+    var a = i("2180"),
+      n = i.n(a);
+    n.a;
+  },
+  "3d72": function (t, e, i) {
+    var a = i("f7fc");
+    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
+    var n = i("4f06").default;
+    n("4dbf7d73", a, true, {
+      sourceMap: false,
+      shadowMode: false
+    });
+  },
+  "3efb": function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("fbe3"),
+      n = i("a995");
+    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return n[t];
+      });
+    }(o);
+    i("7791");
+    var r = i("f0c5"),
+      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "bc8e5092", null, false, a["a"], undefined);
+    e["default"] = s.exports;
+  },
+  "5eb6": function (t, e, i) {
+    "use strict";
+
+    (function (t) {
+      i("7a82");
+      var a = i("4ea4").default;
+      Object.defineProperty(e, "__esModule", {
+        value: true
+      }), e.default = undefined;
+      var n = a(i("2909")),
+        o = a(i("c7eb")),
+        r = a(i("1da1"));
+      i("99af"), i("d3b7"), i("159b"), i("d81d");
+      var s = a(i("ac3d")),
+        l = a(i("3efb")),
+        c = i("30a9"),
+        u = {
+          components: {
+            Awsc: s.default,
+            AlmostLottery2: l.default
           },
-          vueLeave: function () {
-            var t = this;
-            if (this.display) {
-              var e = o(this.mode);
-              this.status = "leave", this.$emit("beforeLeave"), this.classes = e.leave, this.$nextTick(function () {
-                t.transitionEnded = false, setTimeout(t.onTransitionEnd, t.duration), t.classes = e["leave-to"];
+          data: function () {
+            return {
+              showAwsc: true,
+              awscData: {},
+              swiperCurrent_img: 0,
+              info: {},
+              noticeList: [],
+              videoUrl: "",
+              isDev: true,
+              canvasConfig: {
+                canvasId: "almostLotteryCanvas"
+              },
+              prizeList: [],
+              onStock: true,
+              prizeIndex: -1,
+              prizeing: false,
+              onFrontend: false,
+              weightTotal: 0,
+              weightArr: [],
+              freeNum: 0,
+              freeNumDay: 3,
+              showPop: false,
+              popAward: {},
+              awards: [],
+              size: 10,
+              current: 1,
+              total: 0,
+              pages: 1,
+              status: "loadmore",
+              loadText: {
+                loadmore: "鐐瑰嚮鎴栦笂鎷夊姞杞芥洿澶�",
+                loading: "鍔姏鍔犺浇涓�",
+                nomore: "娌℃湁鏇村"
+              },
+              isInit: true,
+              phone: "",
+              activityId: this.$store.state.config.activityId || 29,
+              msg: ""
+            };
+          },
+          computed: {
+            isApple: function () {
+              return "ios" === uni.getSystemInfoSync().platform;
+            },
+            isInApp: function () {
+              return window.$isInWC;
+            }
+          },
+          methods: {
+            gotoForm: function () {
+              location.href = "https://srvdt-app.taizhou.com.cn/questionnaire/#/?activityId=" + this.$store.state.config.formId + "&withUserAgent=true&back=" + encodeURIComponent(location.href);
+            },
+            gotoApp: function () {
+              var e = this;
+              uni.showModal({
+                content: "璇疯繘鍏ユ湜娼瓵PP鍙備笌鎶藉浜掑姩",
+                showCancel: false,
+                success: function () {
+                  var i = document.createElement("a"),
+                    a = "wangchao://".concat(location.host + location.pathname + location.hash);
+                  t("log", "uni.getSystemInfoSync().platform==", uni.getSystemInfoSync().platform, " at pages/luckdraw/circle-awsc.vue:188"), "android" == uni.getSystemInfoSync().platform ? (i.href = "https://a.app.qq.com/o/simple.jsp?pkgname=com.shangc.tiennews.taizhou&" + uni.getSystemInfoSync().platform + "_schema=" + (e.$store.state.config.newsId ? "wangchao://vapp.taizhou.com.cn/webDetails/news?id=" + e.$store.state.config.newsId + "&tenantId=64" : encodeURIComponent(a)), setTimeout(function () {
+                    window.location.href = i.href;
+                  }, 3e3)) : (i.href = "https://vapp.taizhou.com.cn/com.huidu.taizhounews/?url=https%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.shangc.tiennews.taizhou%26" + uni.getSystemInfoSync().platform + "_scheme%3Dwangchao%3A%2F%2Fvapp.taizhou.com.cn%2FwebDetails%2Fnews%3Fid%3D" + e.$store.state.config.newsId + "%26tenantId%3D64", e.$store.state.config.newsId || (i.href = "https://vapp.taizhou.com.cn/com.huidu.taizhounews/?url=https%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.shangc.tiennews.taizhou%26" + uni.getSystemInfoSync().platform + "_scheme%3D" + encodeURIComponent(a))), t("log", "a.href", i.href, " at pages/luckdraw/circle-awsc.vue:211"), i.click();
+                }
+              });
+            },
+            finish: function (t) {
+              var e = this.popAward,
+                i = this;
+              uni.request({
+                url: i.$baseUrl + "/tzrb/userAwardRecordUpgrade/writeOffByCode",
+                method: "POST",
+                data: {
+                  id: e.id,
+                  writeOffCode: t
+                },
+                header: {
+                  "Content-type": "application/x-www-form-urlencoded"
+                },
+                success: function (t) {
+                  200 == t.data.code ? (uni.showToast({
+                    title: t.data.message,
+                    duration: 3e3,
+                    mask: true
+                  }), i.size = 10, i.current = 1, i.pages = 1, i.getAward(false)) : uni.showToast({
+                    title: t.data.message,
+                    duration: 3e3,
+                    mask: true,
+                    icon: "none"
+                  });
+                }
+              }), this.showPop = false;
+            },
+            useAward: function (t) {
+              this.showPop = true, this.popAward = t;
+            },
+            getAward: function (t) {
+              var e = this;
+              uni.request({
+                url: e.$baseUrl + "/tzrb/userAwardRecordUpgrade/pageList",
+                data: {
+                  pageSize: e.size,
+                  pageNum: e.current,
+                  activityId: this.activityId
+                },
+                success: function (i) {
+                  if (200 == i.data.code) {
+                    var a = i.data.data.records;
+                    e.awards = t ? e.awards.concat(a) : a, e.pages = i.data.data.pages, e.total = i.data.data.total, e.status = 0 == e.total ? "nomore" : "loadmore";
+                  } else if (-1 == i.data.code) {
+                    if (!e.isInApp) return void e.gotoApp();
+                  } else uni.showModal({
+                    content: i.data.message,
+                    showCancel: false
+                  });
+                }
+              });
+            },
+            handleInitCanvas: function () {
+              (0, c.clearCacheFile)(), this.prizeList = [], this.getPrizeList();
+            },
+            getPrizeList: function () {
+              var e = this;
+              return (0, r.default)((0, o.default)().mark(function i() {
+                var a, n;
+                return (0, o.default)().wrap(function (i) {
+                  while (1) switch (i.prev = i.next) {
+                    case 0:
+                      return i.next = 2, e.requestApiGetPrizeList();
+                    case 2:
+                      a = i.sent, a.ok ? (n = a.data, n.length && (e.prizeList = n, t("log", "宸茶幏鍙栧埌濂栧搧鍒楄〃鏁版嵁锛屽紑濮嬬粯鍒舵娊濂栬浆鐩�", " at pages/luckdraw/circle-awsc.vue:333"), e.onFrontend && (e.weightTotal = 0, e.prizeList.forEach(function (t) {
+                        return e.weightTotal += t.weight;
+                      }), e.weightArr = e.prizeList.map(function (t) {
+                        return t.weight;
+                      })))) : uni.showToast({
+                        title: "鑾峰彇濂栧搧澶辫触",
+                        icon: "none"
+                      });
+                    case 4:
+                    case "end":
+                      return i.stop();
+                  }
+                }, i);
+              }))();
+            },
+            requestApiGetPrizeList: function () {
+              var t = this;
+              return new Promise(function (e, i) {
+                uni.request({
+                  url: t.$baseUrl + "/tzrb/awardUpgrade/list?activityId=" + t.activityId,
+                  success: function (i) {
+                    if (200 == i.data.code) {
+                      t.videoUrl = i.data.info.videoUrl, t.phone = i.data.info.phone ? i.data.info.phone : t.phone, t.freeNum = i.data.info.remainCount;
+                      i.data.data.map(function (e) {
+                        e.prizeName = e.title, e.prizeId = e.id, e.prizeImage = t.$baseUrl + e.imgUrl;
+                      });
+                      e({
+                        ok: true,
+                        data: i.data.data
+                      });
+                    } else e({
+                      ok: false
+                    });
+                  }
+                });
+              });
+            },
+            handleDrawStart: function () {
+              var e = this;
+              if (uni.showLoading({
+                title: "鎶藉涓�..."
+              }), t("log", "瑙﹀彂鎶藉鎸夐挳", " at pages/luckdraw/circle-awsc.vue:396"), !this.prizeing) {
+                this.prizeing = true;
+                var i = this.awscData,
+                  a = i.sessionId,
+                  o = i.sig,
+                  r = i.token;
+                uni.request({
+                  url: this.$baseUrl + "/tzrb/userAwardRecordUpgrade/saveUpdate",
+                  method: "POST",
+                  header: {
+                    "Content-type": "application/x-www-form-urlencoded"
+                  },
+                  data: {
+                    activityId: this.activityId,
+                    sessionId: a,
+                    sig: o,
+                    token: r
+                  },
+                  success: function (t) {
+                    if (200 == t.data.code) {
+                      var i = (0, n.default)(e.prizeList),
+                        a = t.data.data;
+                      e.msg = t.data.msg;
+                      for (var o = 0; o < i.length; o++) {
+                        var r = i[o];
+                        if (r.prizeId === a) {
+                          e.prizeIndex = o;
+                          break;
+                        }
+                      }
+                    } else if (-1 == t.data.code) {
+                      if (e.prizeing = false, uni.hideLoading(), !e.isInApp) return void e.gotoApp();
+                    } else e.prizeing = false, uni.hideLoading(), uni.showModal({
+                      content: t.data.message,
+                      showCancel: false
+                    });
+                  }
+                });
+              }
+            },
+            handleDrawEnd: function () {
+              t("log", "鏃嬭浆缁撴潫锛屾墽琛屾嬁鍒扮粨鏋滃悗鍒伴€昏緫", " at pages/luckdraw/circle-awsc.vue:454"), this.prizeing = false, uni.hideLoading(), this.getNoticeList(), uni.showModal({
+                content: this.msg ? this.msg : this.prizeList[this.prizeIndex].prizeName,
+                showCancel: false
+              }), this.size = 10, this.current = 1, this.pages = 1, this.getAward(false);
+            },
+            handleDrawFinish: function (t) {},
+            loadmore: function () {
+              this.status = "loading", this.current = ++this.current, this.current > this.pages ? this.status = "nomore" : (this.status = "loading", this.getAward(true));
+            },
+            getInfo: function () {
+              var t = this;
+              uni.request({
+                url: this.$baseUrl + "/tzrb/activity/findById",
+                method: "GET",
+                data: {
+                  id: this.activityId
+                },
+                success: function (e) {
+                  200 == e.data.code ? (t.info = e.data.data, t.info.activityExplain = t.info.activityExplain.split("<br/>")) : uni.showToast({
+                    title: e.data.message,
+                    duration: 3e3,
+                    mask: true,
+                    icon: "none"
+                  });
+                }
+              });
+            },
+            getNoticeList: function () {
+              var t = this;
+              uni.request({
+                url: this.$baseUrl + "/tzrb/systemNotice/list?activityId=" + this.activityId,
+                method: "GET",
+                success: function (e) {
+                  200 == e.data.code ? t.noticeList = e.data.data : uni.showModal({
+                    content: e.data.message,
+                    showCancel: false
+                  });
+                }
+              });
+            },
+            noticeEnd: function () {
+              this.getNoticeList();
+            },
+            call: function (e) {
+              uni.makePhoneCall({
+                phoneNumber: "ios" == uni.getSystemInfoSync().platform ? "" + e : "//" + e,
+                success: function (e) {
+                  t("log", "璋冪敤鎴愬姛!", " at pages/luckdraw/circle-awsc.vue:539");
+                },
+                fail: function (e) {
+                  t("log", "璋冪敤澶辫触!", " at pages/luckdraw/circle-awsc.vue:542"), uni.showToast({
+                    icon: "none",
+                    title: "鎷ㄦ墦澶辫触"
+                  });
+                }
+              });
+            },
+            back: function () {
+              uni.navigateBack({
+                delta: 1
+              });
+            },
+            getUserInfo: function () {
+              var e = this;
+              uni.showLoading({
+                title: "鐧诲綍涓�..."
+              }), uni.request({
+                url: this.$baseUrl + "/tzrb/user/loginWC",
+                method: "GET",
+                data: {
+                  accountId: window.$accountId,
+                  sessionId: window.$sessionId
+                },
+                success: function (i) {
+                  uni.hideLoading(), 200 == i.data.code ? (t("log", i.data, " at pages/luckdraw/circle-awsc.vue:570"), e.getAward()) : uni.showToast({
+                    title: i.data.message,
+                    duration: 3e3,
+                    mask: true,
+                    icon: "none"
+                  });
+                }
               });
             }
           },
-          onTransitionEnd: function () {
-            this.transitionEnded || (this.transitionEnded = true, this.$emit("leave" === this.status ? "afterLeave" : "afterEnter"), !this.show && this.display && (this.display = false, this.inited = false));
+          onShow: function () {
+            window.$isInWC && (t("log", "store==", this.$store.state, " at pages/luckdraw/circle-awsc.vue:593"), uni.setNavigationBarTitle({
+              title: this.info.activityName || this.$store.state.config.title
+            }), this.handleInitCanvas(), this.getNoticeList(), this.getInfo(), this.isInApp && this.getUserInfo());
+          },
+          onUnload: function () {
+            uni.hideLoading();
+          },
+          onReachBottom: function () {
+            this.loadmore();
           }
-        }
-      };
-    e.default = u;
+        };
+      e.default = u;
+    }).call(this, i("0de9")["log"]);
   },
-  "68d0": function (t, e, n) {
+  "650c": function (t, e, i) {
     "use strict";
 
-    var r = n("9d98"),
-      i = n.n(r);
-    i.a;
-  },
-  "6d91": function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("5530")),
-      a = r(n("5241")),
-      o = r(n("6776")),
-      u = {
-        name: "u-transition",
+    (function (t) {
+      i("7a82"), Object.defineProperty(e, "__esModule", {
+        value: true
+      }), e.default = undefined;
+      var a = {
+        name: "Awsc",
+        props: {
+          showAwsc: {
+            type: Boolean,
+            default: true
+          }
+        },
         data: function () {
-          return {
-            inited: false,
-            viewStyle: {},
-            status: "",
-            transitionEnded: false,
-            display: false,
-            classes: ""
-          };
+          return {};
         },
         computed: {
-          mergeStyle: function () {
-            var t = this.viewStyle,
-              e = this.customStyle;
-            return (0, i.default)((0, i.default)({
-              transitionDuration: "".concat(this.duration, "ms"),
-              transitionTimingFunction: this.timingFunction
-            }, uni.$u.addStyle(e)), t);
+          isInApp: function () {
+            return window.$isInWC;
           }
         },
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, o.default, a.default],
-        watch: {
-          show: {
-            handler: function (t) {
-              t ? this.vueEnter() : this.vueLeave();
-            },
-            immediate: true
-          }
-        }
-      };
-    e.default = u;
-  },
-  "6f28": function (e, n, r) {
-    "use strict";
-
-    r("7a82");
-    var i = r("4ea4").default;
-    Object.defineProperty(n, "__esModule", {
-      value: true
-    }), n.default = undefined;
-    var a = i(r("c7eb")),
-      o = i(r("1da1"));
-    r("ac1f"), r("00b4");
-    var u = i(r("dd4d")),
-      s = {
-        name: "u-row-notice",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, u.default],
-        data: function () {
-          return {
-            animationDuration: "0",
-            animationPlayState: "paused",
-            nvueInit: true,
-            show: true
-          };
-        },
-        watch: {
-          text: {
-            immediate: true,
-            handler: function (t, e) {
-              this.vue(), uni.$u.test.string(t) || uni.$u.error("noticebar缁勪欢direction涓簉ow鏃讹紝瑕佹眰text鍙傛暟涓哄瓧绗︿覆褰㈠紡");
-            }
-          },
-          fontSize: function () {
-            t, this.vue();
-          },
-          speed: function () {
-            this.vue();
-          }
-        },
-        computed: {
-          textStyle: function () {
-            var t = {};
-            return t.color = this.color, t.animationDuration = this.animationDuration, t.animationPlayState = this.animationPlayState, t.fontSize = uni.$u.addUnit(this.fontSize), t;
-          }
-        },
-        mounted: function () {
+        created: function () {
           this.init();
         },
         methods: {
           init: function () {
-            this.vue(), uni.$u.test.string(this.text) || uni.$u.error("noticebar缁勪欢direction涓簉ow鏃讹紝瑕佹眰text鍙傛暟涓哄瓧绗︿覆褰㈠紡");
-          },
-          vue: function () {
-            var t = this;
-            return (0, o.default)((0, a.default)().mark(function e() {
-              var n;
-              return (0, a.default)().wrap(function (e) {
-                while (1) switch (e.prev = e.next) {
-                  case 0:
-                    return 0, n = 0, e.next = 3, uni.$u.sleep();
-                  case 3:
-                    return e.next = 5, t.$uGetRect(".u-notice__content__text");
-                  case 5:
-                    return n = e.sent.width, e.next = 8, t.$uGetRect(".u-notice__content");
-                  case 8:
-                    e.sent.width, t.animationDuration = "".concat(n / uni.$u.getPx(t.speed), "s"), t.animationPlayState = "paused", setTimeout(function () {
-                      t.animationPlayState = "running";
-                    }, 10);
-                  case 12:
-                  case "end":
-                    return e.stop();
+            var e = this;
+            AWSC.use("nc", function (i, a) {
+              window.nc = a.init({
+                appkey: "FFFF0N0000000000B5B0",
+                scene: "nc_activity_h5",
+                renderTo: "nc",
+                success: function (t) {
+                  e.$emit("submit", t);
+                },
+                fail: function (e) {
+                  t("log", e, " at components/awsc.vue:58");
+                },
+                error: function (e) {
+                  t("log", e, " at components/awsc.vue:62");
                 }
-              }, e);
-            }))();
-          },
-          nvue: function () {
-            return (0, o.default)((0, a.default)().mark(function t() {
-              return (0, a.default)().wrap(function (t) {
-                while (1) switch (t.prev = t.next) {
-                  case 0:
-                  case "end":
-                    return t.stop();
-                }
-              }, t);
-            }))();
-          },
-          loopAnimation: function (t, e) {},
-          getNvueRect: function (t) {},
-          clickHandler: function (t) {
-            this.$emit("click");
-          },
-          close: function () {
-            this.$emit("close");
+              });
+            });
           }
         }
       };
-    n.default = s;
+      e.default = a;
+    }).call(this, i("0de9")["log"]);
   },
-  "754f": function (t, e, n) {
+  "6a07": function (t, e, i) {
     "use strict";
 
-    n.r(e);
-    var r = n("883b"),
-      i = n("f848");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("662a");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "ca19a5c6", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  7582: function (t, e, n) {
-    "use strict";
-
-    var r = n("f592"),
-      i = n.n(r);
-    i.a;
-  },
-  "762a": function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        status: {
-          type: String,
-          default: uni.$u.props.loadmore.status
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.loadmore.bgColor
-        },
-        icon: {
-          type: Boolean,
-          default: uni.$u.props.loadmore.icon
-        },
-        fontSize: {
-          type: [String, Number],
-          default: uni.$u.props.loadmore.fontSize
-        },
-        color: {
-          type: String,
-          default: uni.$u.props.loadmore.color
-        },
-        loadingIcon: {
-          type: String,
-          default: uni.$u.props.loadmore.loadingIcon
-        },
-        loadmoreText: {
-          type: String,
-          default: uni.$u.props.loadmore.loadmoreText
-        },
-        loadingText: {
-          type: String,
-          default: uni.$u.props.loadmore.loadingText
-        },
-        nomoreText: {
-          type: String,
-          default: uni.$u.props.loadmore.nomoreText
-        },
-        isDot: {
-          type: Boolean,
-          default: uni.$u.props.loadmore.isDot
-        },
-        iconColor: {
-          type: String,
-          default: uni.$u.props.loadmore.iconColor
-        },
-        marginTop: {
-          type: [String, Number],
-          default: uni.$u.props.loadmore.marginTop
-        },
-        marginBottom: {
-          type: [String, Number],
-          default: uni.$u.props.loadmore.marginBottom
-        },
-        height: {
-          type: [String, Number],
-          default: uni.$u.props.loadmore.height
-        },
-        line: {
-          type: Boolean,
-          default: uni.$u.props.loadmore.line
-        }
-      }
-    };
-    e.default = r;
-  },
-  "77c1": function (t, e, n) {
-    var r = n("b62b");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("479744fd", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "7c95": function (t, e, n) {
-    var r = n("f283");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("319cf178", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "7fd5": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("6f28"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "80d0": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-swiper-indicator"
-        }, ["line" === t.indicatorMode ? n("v-uni-view", {
-          staticClass: "u-swiper-indicator__wrapper",
-          class: ["u-swiper-indicator__wrapper--" + t.indicatorMode],
-          style: {
-            width: t.$u.addUnit(t.lineWidth * t.length),
-            backgroundColor: t.indicatorInactiveColor
-          }
-        }, [n("v-uni-view", {
-          staticClass: "u-swiper-indicator__wrapper--line__bar",
-          style: [t.lineStyle]
-        })], 1) : t._e(), "dot" === t.indicatorMode ? n("v-uni-view", {
-          staticClass: "u-swiper-indicator__wrapper"
-        }, t._l(t.length, function (e, r) {
-          return n("v-uni-view", {
-            key: r,
-            staticClass: "u-swiper-indicator__wrapper__dot",
-            class: [r === t.current && "u-swiper-indicator__wrapper__dot--active"],
-            style: [t.dotStyle(r)]
-          });
-        }), 1) : t._e()], 1);
-      },
-      i = [];
-  },
-  "810d": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("fc68"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "817a": function (t, e, n) {
-    var r = n("5db6");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("2f0625c4", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "824c": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("02a6"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "835c": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return t.inited ? n("v-uni-view", {
-          ref: "u-transition",
-          staticClass: "u-transition",
-          class: t.classes,
-          style: [t.mergeStyle],
-          on: {
-            touchmove: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.noop.apply(undefined, arguments);
+    (function (t) {
+      i("7a82");
+      var a = i("4ea4").default;
+      Object.defineProperty(e, "__esModule", {
+        value: true
+      }), e.default = undefined;
+      var n = a(i("c7eb")),
+        o = a(i("1da1"));
+      i("a9e3"), i("cb29"), i("14d9"), i("ac1f"), i("00b4"), i("c975"), i("d3b7"), i("fb6a"), i("e9c4");
+      var r = i("30a9"),
+        s = {
+          name: "AlmostLottery2",
+          props: {
+            pixelRatio: {
+              type: Number,
+              default: 2
             },
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.clickHandler.apply(undefined, arguments);
+            canvasId: {
+              type: String,
+              default: "almostLottery"
+            },
+            lotterySize: {
+              type: Number,
+              default: 600
+            },
+            actionSize: {
+              type: Number,
+              default: 200
+            },
+            canvasMarginOutside: {
+              type: Number,
+              default: 90
+            },
+            prizeList: {
+              type: Array,
+              required: true,
+              validator: function (t) {
+                return t.length > 1;
+              }
+            },
+            prizeIndex: {
+              type: Number,
+              required: true
+            },
+            colors: {
+              type: Array,
+              default: function () {
+                return ["#FFFFFF", "#FFBF05"];
+              }
+            },
+            lotteryBg: {
+              type: String,
+              default: "/uni_modules/almost-lottery/static/almost-lottery/almost-lottery__bg2x.png"
+            },
+            actionBg: {
+              type: String,
+              default: "/uni_modules/almost-lottery/static/almost-lottery/almost-lottery__action2x.png"
+            },
+            prizeNameDrawed: {
+              type: Boolean,
+              default: false
+            },
+            stroked: {
+              type: Boolean,
+              default: false
+            },
+            strokeColor: {
+              type: String,
+              default: "#FFBF05"
+            },
+            rotateType: {
+              type: String,
+              default: "roulette"
+            },
+            duration: {
+              type: Number,
+              default: 8
+            },
+            ringCount: {
+              type: Number,
+              default: 8
+            },
+            pointerPosition: {
+              type: String,
+              default: "edge",
+              validator: function (t) {
+                return "edge" === t || "middle" === t;
+              }
+            },
+            strDirection: {
+              type: String,
+              default: "horizontal",
+              validator: function (t) {
+                return "horizontal" === t || "vertical" === t;
+              }
+            },
+            strFontColors: {
+              type: Array,
+              default: function () {
+                return ["#666", "#666"];
+              }
+            },
+            strFontSize: {
+              type: Number,
+              default: 24
+            },
+            strMarginOutside: {
+              type: Number,
+              default: 0
+            },
+            imgMarginStr: {
+              type: Number,
+              default: 60
+            },
+            strLineHeight: {
+              type: Number,
+              default: 1.2
+            },
+            strMaxLen: {
+              type: Number,
+              default: 12
+            },
+            strLineLen: {
+              type: Number,
+              default: 6
+            },
+            imgWidth: {
+              type: Number,
+              default: 50
+            },
+            imgHeight: {
+              type: Number,
+              default: 50
+            },
+            imgDrawed: {
+              type: Boolean,
+              default: true
+            },
+            imgCircled: {
+              type: Boolean,
+              default: false
+            },
+            successMsg: {
+              type: String,
+              default: "濂栧搧鍑嗗灏辩华锛屽揩鏉ュ弬涓庢娊濂栧惂"
+            },
+            failMsg: {
+              type: String,
+              default: "濂栧搧浠嶅湪鍑嗗涓紝璇风◢鍚庡啀鏉�..."
+            },
+            canvasCached: {
+              type: Boolean,
+              default: false
             }
-          }
-        }, [t._t("default")], 2) : t._e();
-      },
-      i = [];
-  },
-  "83fa": function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        length: {
-          type: [String, Number],
-          default: uni.$u.props.swiperIndicator.length
-        },
-        current: {
-          type: [String, Number],
-          default: uni.$u.props.swiperIndicator.current
-        },
-        indicatorActiveColor: {
-          type: String,
-          default: uni.$u.props.swiperIndicator.indicatorActiveColor
-        },
-        indicatorInactiveColor: {
-          type: String,
-          default: uni.$u.props.swiperIndicator.indicatorInactiveColor
-        },
-        indicatorMode: {
-          type: String,
-          default: uni.$u.props.swiperIndicator.indicatorMode
-        }
-      }
-    };
-    e.default = r;
-  },
-  "84bd": function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-4c9df1fe], uni-scroll-view[data-v-4c9df1fe], uni-swiper-item[data-v-4c9df1fe]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}\r\n/**\r\n * vue鐗堟湰鍔ㄧ敾鍐呯疆鐨勫姩鐢绘ā寮忔湁濡備笅锛歕r\n * fade锛氭贰鍏r\n * zoom锛氱缉鏀綷r\n * fade-zoom锛氱缉鏀炬贰鍏r\n * fade-up锛氫笂婊戞贰鍏r\n * fade-down锛氫笅婊戞贰鍏r\n * fade-left锛氬乏婊戞贰鍏r\n * fade-right锛氬彸婊戞贰鍏r\n * slide-up锛氫笂婊戣繘鍏r\n * slide-down锛氫笅婊戣繘鍏r\n * slide-left锛氬乏婊戣繘鍏r\n * slide-right锛氬彸婊戣繘鍏r\n */.u-fade-enter-active[data-v-4c9df1fe],\r\n.u-fade-leave-active[data-v-4c9df1fe]{transition-property:opacity}.u-fade-enter[data-v-4c9df1fe],\r\n.u-fade-leave-to[data-v-4c9df1fe]{opacity:0}.u-fade-zoom-enter[data-v-4c9df1fe],\r\n.u-fade-zoom-leave-to[data-v-4c9df1fe]{-webkit-transform:scale(.95);transform:scale(.95);opacity:0}.u-fade-zoom-enter-active[data-v-4c9df1fe],\r\n.u-fade-zoom-leave-active[data-v-4c9df1fe]{transition-property:opacity,-webkit-transform;transition-property:transform,opacity;transition-property:transform,opacity,-webkit-transform}.u-fade-down-enter-active[data-v-4c9df1fe],\r\n.u-fade-down-leave-active[data-v-4c9df1fe],\r\n.u-fade-left-enter-active[data-v-4c9df1fe],\r\n.u-fade-left-leave-active[data-v-4c9df1fe],\r\n.u-fade-right-enter-active[data-v-4c9df1fe],\r\n.u-fade-right-leave-active[data-v-4c9df1fe],\r\n.u-fade-up-enter-active[data-v-4c9df1fe],\r\n.u-fade-up-leave-active[data-v-4c9df1fe]{transition-property:opacity,-webkit-transform;transition-property:opacity,transform;transition-property:opacity,transform,-webkit-transform}.u-fade-up-enter[data-v-4c9df1fe],\r\n.u-fade-up-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);opacity:0}.u-fade-down-enter[data-v-4c9df1fe],\r\n.u-fade-down-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);opacity:0}.u-fade-left-enter[data-v-4c9df1fe],\r\n.u-fade-left-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);opacity:0}.u-fade-right-enter[data-v-4c9df1fe],\r\n.u-fade-right-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);opacity:0}.u-slide-down-enter-active[data-v-4c9df1fe],\r\n.u-slide-down-leave-active[data-v-4c9df1fe],\r\n.u-slide-left-enter-active[data-v-4c9df1fe],\r\n.u-slide-left-leave-active[data-v-4c9df1fe],\r\n.u-slide-right-enter-active[data-v-4c9df1fe],\r\n.u-slide-right-leave-active[data-v-4c9df1fe],\r\n.u-slide-up-enter-active[data-v-4c9df1fe],\r\n.u-slide-up-leave-active[data-v-4c9df1fe]{transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform}.u-slide-up-enter[data-v-4c9df1fe],\r\n.u-slide-up-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}.u-slide-down-enter[data-v-4c9df1fe],\r\n.u-slide-down-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}.u-slide-left-enter[data-v-4c9df1fe],\r\n.u-slide-left-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}.u-slide-right-enter[data-v-4c9df1fe],\r\n.u-slide-right-leave-to[data-v-4c9df1fe]{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}.u-zoom-enter-active[data-v-4c9df1fe],\r\n.u-zoom-leave-active[data-v-4c9df1fe]{transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform}.u-zoom-enter[data-v-4c9df1fe],\r\n.u-zoom-leave-to[data-v-4c9df1fe]{-webkit-transform:scale(.95);transform:scale(.95)}', ""]), t.exports = e;
-  },
-  8701: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-code-input"
-        }, [t._l(t.codeLength, function (e, r) {
-          return n("v-uni-view", {
-            key: r,
-            staticClass: "u-code-input__item",
-            style: [t.itemStyle(r)]
-          }, [t.dot && t.codeArray.length > r ? n("v-uni-view", {
-            staticClass: "u-code-input__item__dot"
-          }) : n("v-uni-text", {
-            style: {
-              fontSize: t.$u.addUnit(t.fontSize),
-              fontWeight: t.bold ? "bold" : "normal",
-              color: t.color
-            }
-          }, [t._v(t._s(t.codeArray[r]))]), "line" === t.mode ? n("v-uni-view", {
-            staticClass: "u-code-input__item__line",
-            style: [t.lineStyle]
-          }) : t._e()], 1);
-        }), n("v-uni-input", {
-          staticClass: "u-code-input__input",
-          style: {
-            height: t.$u.addUnit(t.size)
           },
-          attrs: {
-            disabled: t.disabledKeyboard,
-            type: "number",
-            focus: t.focus,
-            value: t.inputValue,
-            maxlength: t.maxlength
+          data: function () {
+            return {
+              className: "almost-lottery__canvas",
+              systemPixelRatio: 2,
+              lotteryPxSize: 0,
+              canvasImgPxSize: 0,
+              actionPxSize: 0,
+              strMarginPxOutside: 0,
+              imgMarginPxStr: 0,
+              imgPxWidth: 0,
+              imgPxHeight: 0,
+              lotteryImg: "@/static/images/1.png",
+              targetAngle: 0,
+              targetActionAngle: 0,
+              transitionDuration: 0,
+              isRotate: false,
+              stayIndex: 0,
+              targetIndex: 0,
+              isCacheImg: false,
+              oldLotteryImg: "",
+              measureText: ""
+            };
           },
-          on: {
-            input: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.inputHandler.apply(undefined, arguments);
+          computed: {
+            higtCanvasSize: function () {
+              return this.canvasImgPxSize * this.systemPixelRatio;
+            },
+            higtFontSize: function () {
+              return Math.round(this.strFontSize / this.pixelRatio) * this.systemPixelRatio;
+            },
+            higtHeightMultiple: function () {
+              return Math.round(this.strFontSize / this.pixelRatio) * this.strLineHeight * this.systemPixelRatio;
+            },
+            canvasImgToLeftPx: function () {
+              return (this.lotteryPxSize - this.canvasImgPxSize) / 2;
+            },
+            actionBgToLeftPx: function () {
+              return (this.lotteryPxSize - this.actionPxSize) / 2;
+            },
+            canvasAngle: function () {
+              var t = 0,
+                e = this.prizeList.length,
+                i = 360 / e,
+                a = 90 / i;
+              return t = "edge" === this.pointerPosition || "pointer" === this.rotateType ? -i * a : -(i * a + i / 2), t;
+            },
+            actionAngle: function () {
+              return 0;
+            },
+            outsideRadius: function () {
+              return this.higtCanvasSize / 2;
+            },
+            insideRadius: function () {
+              return 20 * this.systemPixelRatio;
+            },
+            textRadius: function () {
+              return this.strMarginPxOutside * this.systemPixelRatio || this.higtFontSize / 2;
+            },
+            textDistance: function () {
+              var t = Math.round(this.outsideRadius - this.insideRadius / 2);
+              return t - this.textRadius;
             }
+          },
+          watch: {
+            prizeIndex: function (e, i) {
+              e > -1 ? (this.targetIndex = e, this.onRotateStart()) : t("info", "鏃嬭浆缁撴潫锛宲rizeIndex 宸查噸缃�", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:343");
+            }
+          },
+          methods: {
+            onRotateStart: function () {
+              var e = this;
+              if (!this.isRotate) {
+                this.isRotate = true;
+                var i = this.prizeList.length,
+                  a = 360 / i,
+                  n = 0;
+                "pointer" === this.rotateType ? (n = 0 === this.targetActionAngle ? (this.targetIndex - this.stayIndex) * a + a / 2 - this.actionAngle : (this.targetIndex - this.stayIndex) * a, this.stayIndex = this.targetIndex, this.targetActionAngle += n + 360 * this.ringCount, t("log", "targetActionAngle", this.targetActionAngle, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:371")) : (n = 0 === this.targetAngle ? 270 - (this.targetIndex - this.stayIndex) * a - a / 2 - this.canvasAngle : -(this.targetIndex - this.stayIndex) * a, this.stayIndex = this.targetIndex, this.targetAngle += n + 360 * this.ringCount);
+                var o = 1e3 * this.transitionDuration + 100,
+                  r = setTimeout(function () {
+                    clearTimeout(r), r = null, e.isRotate = false, e.$emit("draw-end");
+                  }, o),
+                  s = setTimeout(function () {
+                    clearTimeout(s), s = null, e.$emit("reset-index");
+                  }, o + 50);
+              }
+            },
+            handleActionStart: function () {
+              this.lotteryImg && (this.isRotate || this.$emit("draw-start"));
+            },
+            onCreateCanvas: function () {
+              var e = this;
+              return (0, o.default)((0, n.default)().mark(function i() {
+                var a, o, s, l, c, u, d, f, h, m, g, p, v, y, w, x, b, _, I, z, S, C, P, k, L, F, T, A, M, R, U, $, D, N, O, B, j, E, q, H;
+                return (0, n.default)().wrap(function (i) {
+                  while (1) switch (i.prev = i.next) {
+                    case 0:
+                      a = e.canvasId, o = uni.createCanvasContext(a, e), s = e.higtCanvasSize, l = e.higtCanvasSize, c = e.prizeList.length, u = 2 * Math.PI / c, o.setFontSize(e.higtFontSize), d = 0;
+                    case 8:
+                      if (!(d < c)) {
+                        i.next = 125;
+                        break;
+                      }
+                      if (f = e.prizeList[d], h = d * u, o.save(), o.beginPath(), o.arc(.5 * s, .5 * l, e.outsideRadius, h, h + u, false), o.arc(.5 * s, .5 * l, e.insideRadius, h + u, h, true), 2 === e.colors.length ? o.setFillStyle(e.colors[d % 2]) : o.setFillStyle(e.colors[d]), o.fill(), e.stroked && (o.setStrokeStyle("".concat(e.strokeColor)), o.stroke()), m = .5 * s + Math.cos(h + u / 2) * e.textDistance, g = .5 * l + Math.sin(h + u / 2) * e.textDistance, o.translate(m, g), p = e.strLimit(f.prizeName), 1 === e.strFontColors.length ? o.setFillStyle(e.strFontColors[0]) : 2 === e.strFontColors.length ? o.setFillStyle(e.strFontColors[d % 2]) : o.setFillStyle(e.strFontColors[d]), o.rotate(h + u / 2 + Math.PI / 2), "horizontal" !== e.strDirection) {
+                        i.next = 70;
+                        break;
+                      }
+                      if (!p || !e.prizeNameDrawed) {
+                        i.next = 68;
+                        break;
+                      }
+                      if (v = (0, r.clacTextLen)(p).realLen, y = v > e.strLineLen, !y) {
+                        i.next = 54;
+                        break;
+                      }
+                      for (w = 0, x = "", b = [], _ = 0; _ < p.length; _++) w += (0, r.clacTextLen)(p[_]).byteLen, x += p[_], (w === 2 * e.strLineLen || p.length - 1 === _) && (b.push(x), w = 0, x = "");
+                      I = 0;
+                    case 34:
+                      if (!(I < b.length)) {
+                        i.next = 52;
+                        break;
+                      }
+                      if (!(o.measureText && o.measureText(b[I]).width > 0)) {
+                        i.next = 41;
+                        break;
+                      }
+                      z = o.measureText(b[I]), S = -(z.width / 2).toFixed(2), o.fillText(b[I], S, I * e.higtHeightMultiple), i.next = 49;
+                      break;
+                    case 41:
+                      return e.measureText = b[I], i.next = 44, e.$nextTick();
+                    case 44:
+                      return i.next = 46, e.getTextWidth();
+                    case 46:
+                      C = i.sent, P = -(C / 2).toFixed(2), o.fillText(b[I], P, I * e.higtHeightMultiple);
+                    case 49:
+                      I++, i.next = 34;
+                      break;
+                    case 52:
+                      i.next = 68;
+                      break;
+                    case 54:
+                      if (!(o.measureText && o.measureText(p).width > 0)) {
+                        i.next = 60;
+                        break;
+                      }
+                      k = o.measureText(p), L = -(k.width / 2).toFixed(2), o.fillText(p, L, 0), i.next = 68;
+                      break;
+                    case 60:
+                      return e.measureText = p, i.next = 63, e.$nextTick();
+                    case 63:
+                      return i.next = 65, e.getTextWidth();
+                    case 65:
+                      F = i.sent, T = -(F / 2).toFixed(2), o.fillText(p, T, 0);
+                    case 68:
+                      i.next = 90;
+                      break;
+                    case 70:
+                      A = p.split(""), M = 0;
+                    case 72:
+                      if (!(M < A.length)) {
+                        i.next = 90;
+                        break;
+                      }
+                      if (!(o.measureText && o.measureText(A[M]).width > 0)) {
+                        i.next = 79;
+                        break;
+                      }
+                      R = o.measureText(A[M]), U = -(R.width / 2).toFixed(2), o.fillText(A[M], U, M * e.higtHeightMultiple), i.next = 87;
+                      break;
+                    case 79:
+                      return e.measureText = A[M], i.next = 82, e.$nextTick();
+                    case 82:
+                      return i.next = 84, e.getTextWidth();
+                    case 84:
+                      $ = i.sent, D = -($ / 2).toFixed(2), o.fillText(A[M], D, M * e.higtHeightMultiple);
+                    case 87:
+                      M++, i.next = 72;
+                      break;
+                    case 90:
+                      if (!e.imgDrawed || !f.prizeImage || "vertical" === e.strDirection) {
+                        i.next = 121;
+                        break;
+                      }
+                      if (N = /^(https|http)/g, !N.test(f.prizeImage)) {
+                        i.next = 110;
+                        break;
+                      }
+                      return "", "闇€瑕佸鐞嗗ソ璺ㄥ煙闂锛�", t("warn", "###褰撳墠鏁版嵁鍒楄〃涓殑濂栧搧鍥剧墖涓虹綉缁滃浘鐗囷紝".concat("闇€瑕佸鐞嗗ソ璺ㄥ煙闂锛�", "寮€濮嬪皾璇曚笅杞藉浘鐗�...###"), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:597"), i.next = 98, (0, r.downloadFile)(f.prizeImage);
+                    case 98:
+                      if (O = i.sent, t("log", "澶勭悊杩滅▼鍥剧墖", O, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:599"), !O.ok) {
+                        i.next = 107;
+                        break;
+                      }
+                      return B = O.tempFilePath, i.next = 104, (0, r.pathToBase64)(B);
+                    case 104:
+                      f.prizeImage = i.sent, i.next = 108;
+                      break;
+                    case 107:
+                      e.handlePrizeImgSuc({
+                        ok: false,
+                        data: O.data,
+                        msg: O.msg
+                      });
+                    case 108:
+                      i.next = 116;
+                      break;
+                    case 110:
+                      if (-1 !== f.prizeImage.indexOf(";base64,")) {
+                        i.next = 116;
+                        break;
+                      }
+                      return t("log", "寮€濮嬪鐞嗘湰鍦板浘鐗�", f.prizeImage, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:619"), i.next = 114, (0, r.pathToBase64)(f.prizeImage);
+                    case 114:
+                      f.prizeImage = i.sent, t("log", "澶勭悊鏈湴鍥剧墖缁撴潫", f.prizeImage, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:621");
+                    case 116:
+                      j = -e.imgPxWidth * e.systemPixelRatio / 2, E = e.imgMarginPxStr * e.systemPixelRatio, q = e.imgPxWidth * e.systemPixelRatio, H = e.imgPxHeight * e.systemPixelRatio, e.imgCircled ? (2 === e.colors.length ? o.setFillStyle(e.colors[d % 2]) : o.setFillStyle(e.colors[d]), (0, r.circleImg)(o, f.prizeImage, j, E, q, H)) : o.drawImage(f.prizeImage, j, E, q, H);
+                    case 121:
+                      o.restore();
+                    case 122:
+                      d++, i.next = 8;
+                      break;
+                    case 125:
+                      o.draw(true, function () {
+                        var t = setTimeout(function () {
+                          clearTimeout(t), t = null, uni.canvasToTempFilePath({
+                            canvasId: e.canvasId,
+                            destWidth: e.higtCanvasSize,
+                            destHeight: e.higtCanvasSize,
+                            success: function (t) {
+                              e.handlePrizeImg({
+                                ok: true,
+                                data: t.tempFilePath,
+                                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖鎴愬姛"
+                              });
+                            },
+                            fail: function (t) {
+                              e.handlePrizeImg({
+                                ok: false,
+                                data: t,
+                                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖澶辫触"
+                              });
+                            }
+                          }, e);
+                        }, 500);
+                      });
+                    case 126:
+                    case "end":
+                      return i.stop();
+                  }
+                }, i);
+              }))();
+            },
+            handlePrizeImg: function (e) {
+              if (e.ok) {
+                var i = e.data;
+                if (!this.canvasCached) return this.lotteryImg = i, void this.handlePrizeImgSuc(e);
+                (0, r.setStore)("".concat(this.canvasId, "LotteryImg"), i), this.lotteryImg = i, this.handlePrizeImgSuc(e);
+                var a = this.isCacheImg ? "缂撳瓨" : "瀵煎嚭";
+                t("info", "褰撳墠涓� H5 绔紝浣跨敤".concat(a, "涓殑 base64 鍥�"), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:783");
+              } else t("error", e.msg, e, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:786"), t("error", "###褰撳墠涓� H5 绔紝涓嬭浇缃戠粶鍥剧墖闇€瑕佸悗绔厤缃厑璁歌法鍩�###", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:788");
+            },
+            handlePrizeImgSuc: function (t) {
+              this.$emit("finish", {
+                ok: t.ok,
+                data: t.data,
+                msg: t.ok ? this.successMsg : this.failMsg
+              });
+            },
+            getTextWidth: function () {
+              t("warn", "姝ｅ湪閲囩敤鍏煎鏂瑰紡鑾峰彇鏂囨湰鐨� size 淇℃伅", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:807");
+              var e = uni.createSelectorQuery().in(this),
+                i = e.select(".almost-lottery__measureText");
+              return new Promise(function (t, e) {
+                i.fields({
+                  size: true
+                }, function (e) {
+                  t(e.width);
+                }).exec();
+              });
+            },
+            strLimit: function (t) {
+              var e = this.strMaxLen;
+              return t && e && (0, r.clacTextLen)(t).realLen > e ? t.slice(0, e - 1) + ".." : t;
+            },
+            checkCacheImg: function () {
+              t("log", "妫€鏌ユ湰鍦扮紦瀛樹腑鏄惁瀛樺湪杞洏鍥�", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:826"), this.oldLotteryImg = (0, r.getStore)("".concat(this.canvasId, "LotteryImg"));
+              var e = (0, r.getStore)("".concat(this.canvasId, "PrizeList")),
+                i = JSON.stringify(this.prizeList);
+              if (this.oldLotteryImg && e === i) return t("log", "缁忔煡锛屾湰鍦扮紦瀛樹腑瀛樺湪杞洏鍥� => ".concat(this.oldLotteryImg), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:834"), this.isCacheImg = true, t("log", "闇€瑕佺户缁垽鏂繖寮犵紦瀛樺浘鏄惁鍙敤", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:837"), void this.handlePrizeImg({
+                ok: true,
+                data: this.oldLotteryImg,
+                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖鎴愬姛"
+              });
+              t("log", "缁忔煡锛屾湰鍦扮紦瀛樹腑涓嶅瓨鍦ㄨ浆鐩樺浘", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:847"), this.initCanvasDraw();
+            },
+            initCanvasDraw: function () {
+              t("log", "寮€濮嬪垵濮嬪寲杞洏缁樺埗", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:852"), this.isCacheImg = false, this.lotteryImg = "", (0, r.clearStore)("".concat(this.canvasId, "LotteryImg")), (0, r.setStore)("".concat(this.canvasId, "PrizeList"), this.prizeList), this.onCreateCanvas();
+            },
+            beforeInit: function () {
+              var t = this;
+              return (0, o.default)((0, n.default)().mark(function e() {
+                var i, a, o, r, s, l, c;
+                return (0, n.default)().wrap(function (e) {
+                  while (1) switch (e.prev = e.next) {
+                    case 0:
+                      return i = uni.createSelectorQuery().in(t), e.next = 3, new Promise(function (t) {
+                        i.select(".almost-lottery__wrap").boundingClientRect(function (e) {
+                          t(e);
+                        }).exec();
+                      });
+                    case 3:
+                      return a = e.sent, e.next = 6, new Promise(function (t) {
+                        i.select(".lottery-action").boundingClientRect(function (e) {
+                          t(e);
+                        }).exec();
+                      });
+                    case 6:
+                      return o = e.sent, e.next = 9, new Promise(function (t) {
+                        i.select(".str-margin-outside").boundingClientRect(function (e) {
+                          t(e);
+                        }).exec();
+                      });
+                    case 9:
+                      return r = e.sent, e.next = 12, new Promise(function (t) {
+                        i.select(".img-margin-str").boundingClientRect(function (e) {
+                          t(e);
+                        }).exec();
+                      });
+                    case 12:
+                      return s = e.sent, e.next = 15, new Promise(function (t) {
+                        i.select(".img-size").boundingClientRect(function (e) {
+                          t(e);
+                        }).exec();
+                      });
+                    case 15:
+                      l = e.sent, t.lotteryPxSize = Math.floor(a.width), t.canvasImgPxSize = t.lotteryPxSize - Math.floor(o.left) + Math.floor(a.left), t.actionPxSize = Math.floor(o.width), t.strMarginPxOutside = Math.floor(r.left) - Math.floor(a.left), t.imgMarginPxStr = Math.floor(s.left) - Math.floor(a.left), t.imgPxWidth = Math.floor(l.width), t.imgPxHeight = Math.floor(l.height), c = setTimeout(function () {
+                        clearTimeout(c), c = null, t.transitionDuration = t.duration;
+                      }, 50);
+                    case 24:
+                    case "end":
+                      return e.stop();
+                  }
+                }, e);
+              }))();
+            }
+          },
+          mounted: function () {
+            var t = this;
+            this.$nextTick(function () {
+              var e = setTimeout(function () {
+                clearTimeout(e), e = null, t.beforeInit();
+              }, 50);
+            });
           }
-        })], 2);
-      },
-      i = [];
+        };
+      e.default = s;
+    }).call(this, i("0de9")["log"]);
   },
-  "883b": function (t, e, n) {
+  7791: function (t, e, i) {
     "use strict";
 
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
+    var a = i("9e62"),
+      n = i.n(a);
+    n.a;
+  },
+  "90a0": function (t, e, i) {
+    "use strict";
+
+    i.d(e, "b", function () {
+      return n;
+    }), i.d(e, "c", function () {
+      return o;
+    }), i.d(e, "a", function () {
       return a;
-    }), n.d(e, "a", function () {
-      return r;
     });
-    var r = {
-        uColumnNotice: n("0c1a").default,
-        uRowNotice: n("6565").default
+    var a = {
+        uPopup: i("3238").default
       },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return t.show ? n("v-uni-view", {
-          staticClass: "u-notice-bar",
-          style: [{
-            backgroundColor: t.bgColor
-          }, t.$u.addStyle(t.customStyle)]
-        }, ["column" === t.direction || "row" === t.direction && t.step ? [n("u-column-notice", {
+      n = function () {
+        var t = this.$createElement,
+          e = this._self._c || t;
+        return e("v-uni-view", [e("u-popup", {
           attrs: {
-            color: t.color,
-            bgColor: t.bgColor,
-            text: t.text,
-            mode: t.mode,
-            step: t.step,
-            icon: t.icon,
-            "disable-touch": t.disableTouch,
-            fontSize: t.fontSize,
-            duration: t.duration,
-            labelBg: t.labelBg
-          },
-          on: {
-            close: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.close.apply(undefined, arguments);
-            },
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.click.apply(undefined, arguments);
-            }
+            show: this.showAwsc,
+            mode: "center",
+            round: "14",
+            "safe-area-inset-bottom": true
           }
-        })] : [n("u-row-notice", {
+        }, [this.isInApp ? this._e() : e("v-uni-view", [this._v("璇峰厛鐧诲綍")]), this.isInApp ? e("div", {
           attrs: {
-            color: t.color,
-            bgColor: t.bgColor,
-            text: t.text,
-            mode: t.mode,
-            fontSize: t.fontSize,
-            speed: t.speed,
-            url: t.url,
-            linkType: t.linkType,
-            icon: t.icon
-          },
-          on: {
-            close: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.close.apply(undefined, arguments);
-            },
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.click.apply(undefined, arguments);
-            }
+            id: "nc"
           }
-        })]], 2) : t._e();
+        }) : this._e()], 1)], 1);
       },
-      a = [];
+      o = [];
   },
-  "887e": function (t, e, n) {
+  "93d4": function (t, e, i) {
     "use strict";
 
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
+    var a = i("3d72"),
+      n = i.n(a);
+    n.a;
+  },
+  "9e62": function (t, e, i) {
+    var a = i("9ec8");
+    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
+    var n = i("4f06").default;
+    n("0883d5a8", a, true, {
+      sourceMap: false,
+      shadowMode: false
     });
-    var r = {
-        uIcon: n("b969").default
+  },
+  "9ec8": function (t, e, i) {
+    var a = i("24fb");
+    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */.almost-lottery[data-v-bc8e5092]{display:flex;flex-direction:column;justify-content:center;align-items:center}.almost-lottery__canvas[data-v-bc8e5092]{position:absolute;left:-9999px;opacity:0;display:flex;justify-content:center;align-items:center}.lottery-action[data-v-bc8e5092],\r\n.str-margin-outside[data-v-bc8e5092],\r\n.img-margin-str[data-v-bc8e5092],\r\n.img-size[data-v-bc8e5092]{position:absolute;left:0;top:0;z-index:-1}.almost-lottery__measureText[data-v-bc8e5092]{position:absolute;left:0;top:0;white-space:nowrap;font-size:12px;opacity:0}.almost-lottery__wrap[data-v-bc8e5092]{position:relative}.almost-lottery__bg[data-v-bc8e5092],\r\n.almost-lottery__canvas-img[data-v-bc8e5092],\r\n.almost-lottery__action-bg[data-v-bc8e5092]{position:absolute;left:0;top:0}.almost-lottery__canvas-img[data-v-bc8e5092]{transition:-webkit-transform cubic-bezier(.34,.12,.05,.95);transition:transform cubic-bezier(.34,.12,.05,.95);transition:transform cubic-bezier(.34,.12,.05,.95),-webkit-transform cubic-bezier(.34,.12,.05,.95)}', ""]), t.exports = e;
+  },
+  a75d: function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("650c"),
+      n = i.n(a);
+    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return a[t];
+      });
+    }(o);
+    e["default"] = n.a;
+  },
+  a995: function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("6a07"),
+      n = i.n(a);
+    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return a[t];
+      });
+    }(o);
+    e["default"] = n.a;
+  },
+  ac3d: function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("90a0"),
+      n = i("a75d");
+    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return n[t];
+      });
+    }(o);
+    i("3b65");
+    var r = i("f0c5"),
+      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "68448dba", null, false, a["a"], undefined);
+    e["default"] = s.exports;
+  },
+  cb29: function (t, e, i) {
+    var a = i("23e7"),
+      n = i("81d5"),
+      o = i("44d2");
+    a({
+      target: "Array",
+      proto: true
+    }, {
+      fill: n
+    }), o("fill");
+  },
+  d35d: function (t, e, i) {
+    "use strict";
+
+    i.r(e);
+    var a = i("de8b"),
+      n = i("0602");
+    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
+      i.d(e, t, function () {
+        return n[t];
+      });
+    }(o);
+    i("93d4");
+    var r = i("f0c5"),
+      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "51889a42", null, false, a["a"], undefined);
+    e["default"] = s.exports;
+  },
+  dd85: function (t, e, i) {
+    var a = i("24fb");
+    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */[data-v-68448dba] .u-popup__content{width:300px;height:%?200?%;display:flex;align-items:center;justify-content:center}[data-v-68448dba] .u-popup__content{margin-top:20%}', ""]), t.exports = e;
+  },
+  de8b: function (t, e, i) {
+    "use strict";
+
+    i.d(e, "b", function () {
+      return n;
+    }), i.d(e, "c", function () {
+      return o;
+    }), i.d(e, "a", function () {
+      return a;
+    });
+    var a = {
+        uSwiper: i("0515").default,
+        uNoticeBar: i("754f").default,
+        uCol: i("4c10").default,
+        uButton: i("3570").default,
+        uLoadmore: i("59a4").default,
+        uPopup: i("3238").default,
+        uCodeInput: i("ce66").default
       },
-      i = function () {
+      n = function () {
         var t = this,
           e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-notice"
-        }, [t._t("icon", [t.icon ? n("v-uni-view", {
-          staticClass: "u-notice__left-icon"
-        }, [n("v-uni-text", {
+          i = t._self._c || e;
+        return i("v-uni-view", {
+          staticClass: "almost-lottery page",
           style: {
-            fontSize: "20rpx",
-            color: "#fff",
-            fontWeight: "bold",
-            backgroundColor: t.labelBg,
-            borderRadius: "8rpx 0 0 8rpx",
-            padding: "12rpx"
+            background: "#" + t.$store.state.config.bgColor
           }
-        }, [t._v(t._s(t.icon))])], 1) : t._e()]), n("v-uni-swiper", {
-          staticClass: "u-notice__swiper",
+        }, [t.videoUrl ? i("v-uni-view", {
+          staticStyle: {
+            width: "100%",
+            height: "421.875rpx"
+          }
+        }, [i("iframe", {
           attrs: {
-            "disable-touch": t.disableTouch,
-            vertical: !t.step,
+            src: t.videoUrl,
+            frameborder: "0",
+            width: "100%",
+            height: "100%"
+          }
+        })]) : t._e(), !t.videoUrl && t.info.imageUrls && t.info.imageUrls.length > 0 ? i("u-swiper", {
+          attrs: {
             circular: true,
-            interval: t.duration,
-            autoplay: true
+            indicator: true,
+            height: "420rpx",
+            list: t.info.imageUrls,
+            radius: 0,
+            current: t.swiperCurrent_img
           }
-        }, t._l(t.text, function (e, r) {
-          return n("v-uni-swiper-item", {
-            key: r,
-            staticClass: "u-notice__swiper__item"
-          }, [n("v-uni-text", {
-            staticClass: "u-notice__swiper__item__text u-line-1",
-            style: [t.textStyle],
-            on: {
-              click: function (e) {
-                arguments[0] = e = t.$handleEvent(e), t.clickHandler(r);
-              }
+        }) : t._e(), i("u-notice-bar", {
+          directives: [{
+            name: "show",
+            rawName: "v-show",
+            value: t.noticeList.length > 0,
+            expression: "noticeList.length>0"
+          }],
+          staticStyle: {
+            margin: "24rpx"
+          },
+          attrs: {
+            text: t.noticeList,
+            direction: "column",
+            icon: "涓鍚嶅崟",
+            bgColor: "#ffffff00",
+            color: "#ffffff",
+            labelBg: "#ffbe04",
+            customStyle: {
+              border: "1px solid #ffbe04",
+              borderRadius: "8rpx"
             }
-          }, [t._v(t._s(e.title || e.content))])], 1);
-        }), 1), ["link", "closable"].includes(t.mode) ? n("v-uni-view", {
-          staticClass: "u-notice__right-icon"
-        }, ["link" === t.mode ? n("u-icon", {
-          attrs: {
-            name: "arrow-right",
-            size: 17,
-            color: t.color
           }
-        }) : t._e(), "closable" === t.mode ? n("u-icon", {
+        }), t.prizeList.length > 0 ? i("v-uni-view", {
+          staticClass: "almost-lottery__wheel"
+        }, [i("almost-lottery-2", {
           attrs: {
-            name: "close",
-            size: 16,
-            color: t.color
+            colors: ["#fff", "#eef0ff"],
+            canvasId: t.canvasConfig.canvasId,
+            ringCount: 2,
+            duration: 1,
+            prizeList: t.prizeList,
+            prizeIndex: t.prizeIndex
           },
           on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.close.apply(undefined, arguments);
-            }
-          }
-        }) : t._e()], 1) : t._e()], 2);
-      },
-      a = [];
-  },
-  "8bea": function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        maxlength: {
-          type: [String, Number],
-          default: uni.$u.props.codeInput.maxlength
-        },
-        dot: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.dot
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.codeInput.mode
-        },
-        hairline: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.hairline
-        },
-        space: {
-          type: [String, Number],
-          default: uni.$u.props.codeInput.space
-        },
-        value: {
-          type: [String, Number],
-          default: uni.$u.props.codeInput.value
-        },
-        focus: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.focus
-        },
-        bold: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.bold
-        },
-        color: {
-          type: String,
-          default: uni.$u.props.codeInput.color
-        },
-        fontSize: {
-          type: [String, Number],
-          default: uni.$u.props.codeInput.fontSize
-        },
-        size: {
-          type: [String, Number],
-          default: uni.$u.props.codeInput.size
-        },
-        disabledKeyboard: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.disabledKeyboard
-        },
-        borderColor: {
-          type: String,
-          default: uni.$u.props.codeInput.borderColor
-        },
-        disabledDot: {
-          type: Boolean,
-          default: uni.$u.props.codeInput.disabledDot
-        }
-      }
-    };
-    e.default = r;
-  },
-  "8d37": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("1637"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "90a4": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("ee30"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "92a7": function (t, e, n) {
-    "use strict";
-
-    var r = n("7c95"),
-      i = n.n(r);
-    i.a;
-  },
-  9450: function (t, e, n) {
-    var r = n("fbca");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("3df77aea", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "9bbd": function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("21b3"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  "9cf8": function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
-    });
-    var r = {
-        uIcon: n("b969").default
-      },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-notice",
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.clickHandler.apply(undefined, arguments);
-            }
-          }
-        }, [t._t("icon", [t.icon ? n("v-uni-view", {
-          staticClass: "u-notice__left-icon"
-        }, [n("u-icon", {
-          attrs: {
-            name: t.icon,
-            color: t.color,
-            size: "19"
-          }
-        })], 1) : t._e()]), n("v-uni-view", {
-          ref: "u-notice__content",
-          staticClass: "u-notice__content"
-        }, [n("v-uni-text", {
-          ref: "u-notice__content__text",
-          staticClass: "u-notice__content__text",
-          style: [t.textStyle]
-        }, [t._v(t._s(t.text))])], 1), ["link", "closable"].includes(t.mode) ? n("v-uni-view", {
-          staticClass: "u-notice__right-icon"
-        }, ["link" === t.mode ? n("u-icon", {
-          attrs: {
-            name: "arrow-right",
-            size: 17,
-            color: t.color
-          }
-        }) : t._e(), "closable" === t.mode ? n("u-icon", {
-          attrs: {
-            name: "close",
-            size: 16,
-            color: t.color
-          },
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.close.apply(undefined, arguments);
-            }
-          }
-        }) : t._e()], 1) : t._e()], 2);
-      },
-      a = [];
-  },
-  "9d98": function (t, e, n) {
-    var r = n("cb5e");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("55770fa6", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  a2a3: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        color: {
-          type: String,
-          default: uni.$u.props.line.color
-        },
-        length: {
-          type: [String, Number],
-          default: uni.$u.props.line.length
-        },
-        direction: {
-          type: String,
-          default: uni.$u.props.line.direction
-        },
-        hairline: {
-          type: Boolean,
-          default: uni.$u.props.line.hairline
-        },
-        margin: {
-          type: [String, Number],
-          default: uni.$u.props.line.margin
-        },
-        dashed: {
-          type: Boolean,
-          default: uni.$u.props.line.dashed
-        }
-      }
-    };
-    e.default = r;
-  },
-  a2e4: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("aa04")),
-      a = {
-        name: "u-overlay",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        computed: {
-          overlayStyle: function () {
-            var t = {
-              position: "fixed",
-              top: 0,
-              left: 0,
-              right: 0,
-              zIndex: this.zIndex,
-              bottom: 0,
-              "background-color": "rgba(0, 0, 0, ".concat(this.opacity, ")")
-            };
-            return uni.$u.deepMerge(t, uni.$u.addStyle(this.customStyle));
-          }
-        },
-        methods: {
-          clickHandler: function () {
-            this.$emit("click");
-          }
-        }
-      };
-    e.default = a;
-  },
-  aa04: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        show: {
-          type: Boolean,
-          default: uni.$u.props.overlay.show
-        },
-        zIndex: {
-          type: [String, Number],
-          default: uni.$u.props.overlay.zIndex
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.overlay.duration
-        },
-        opacity: {
-          type: [String, Number],
-          default: uni.$u.props.overlay.opacity
-        }
-      }
-    };
-    e.default = r;
-  },
-  ae34: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this.$createElement,
-          e = this._self._c || t;
-        return e("v-uni-view", {
-          staticClass: "u-line",
-          style: [this.lineStyle]
-        });
-      },
-      i = [];
-  },
-  aed2: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("ac1f"), n("00b4");
-    var i = r(n("2ba46")),
-      a = {
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        watch: {
-          text: {
-            immediate: true,
-            handler: function (t, e) {
-              uni.$u.test.array(t) || uni.$u.error("noticebar缁勪欢direction涓篶olumn鏃讹紝瑕佹眰text鍙傛暟涓烘暟缁勫舰寮�");
-            }
-          }
-        },
-        computed: {
-          textStyle: function () {
-            var t = {};
-            return t.color = this.color, t.fontSize = uni.$u.addUnit(this.fontSize), t;
-          },
-          vertical: function () {
-            return "horizontal" != this.mode;
-          }
-        },
-        data: function () {
-          return {};
-        },
-        methods: {
-          clickHandler: function (t) {
-            this.$emit("click", t);
-          },
-          close: function () {
-            this.$emit("close");
-          }
-        }
-      };
-    e.default = a;
-  },
-  af39: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        span: {
-          type: [String, Number],
-          default: uni.$u.props.col.span
-        },
-        offset: {
-          type: [String, Number],
-          default: uni.$u.props.col.offset
-        },
-        justify: {
-          type: String,
-          default: uni.$u.props.col.justify
-        },
-        align: {
-          type: String,
-          default: uni.$u.props.col.align
-        },
-        textAlign: {
-          type: String,
-          default: uni.$u.props.col.textAlign
-        }
-      }
-    };
-    e.default = r;
-  },
-  b016: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("e69a"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  b384: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("5044"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  b4cc: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("0624"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  b556: function (t, e, n) {
-    "use strict";
-
-    var r = n("0750"),
-      i = n.n(r);
-    i.a;
-  },
-  b62b: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-6acab223], uni-scroll-view[data-v-6acab223], uni-swiper-item[data-v-6acab223]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-swiper[data-v-6acab223]{display:flex;flex-direction:row;justify-content:center;align-items:center;position:relative;overflow:hidden}.u-swiper__wrapper[data-v-6acab223]{flex:1}.u-swiper__wrapper__item[data-v-6acab223]{flex:1}.u-swiper__wrapper__item__wrapper[data-v-6acab223]{display:flex;flex-direction:row;position:relative;overflow:hidden;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;flex:1}.u-swiper__wrapper__item__wrapper__image[data-v-6acab223]{flex:1}.u-swiper__wrapper__item__wrapper__video[data-v-6acab223]{flex:1}.u-swiper__wrapper__item__wrapper__title[data-v-6acab223]{position:absolute;background-color:rgba(0,0,0,.3);bottom:0;left:0;right:0;font-size:%?28?%;padding:%?12?% %?24?%;color:#fff;flex:1}.u-swiper__indicator[data-v-6acab223]{position:absolute;bottom:10px}', ""]), t.exports = e;
-  },
-  c070: function (t, e, n) {
-    "use strict";
-
-    var r = n("004a"),
-      i = n.n(r);
-    i.a;
-  },
-  c126: function (t, e, n) {
-    var r = n("014c");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("c00257a0", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  c2bc: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        show: {
-          type: Boolean,
-          default: uni.$u.props.popup.show
-        },
-        overlay: {
-          type: Boolean,
-          default: uni.$u.props.popup.overlay
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.popup.mode
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.popup.duration
-        },
-        closeable: {
-          type: Boolean,
-          default: uni.$u.props.popup.closeable
-        },
-        overlayStyle: {
-          type: [Object, String],
-          default: uni.$u.props.popup.overlayStyle
-        },
-        closeOnClickOverlay: {
-          type: Boolean,
-          default: uni.$u.props.popup.closeOnClickOverlay
-        },
-        zIndex: {
-          type: [String, Number],
-          default: uni.$u.props.popup.zIndex
-        },
-        safeAreaInsetBottom: {
-          type: Boolean,
-          default: uni.$u.props.popup.safeAreaInsetBottom
-        },
-        safeAreaInsetTop: {
-          type: Boolean,
-          default: uni.$u.props.popup.safeAreaInsetTop
-        },
-        closeIconPos: {
-          type: String,
-          default: uni.$u.props.popup.closeIconPos
-        },
-        round: {
-          type: [Boolean, String, Number],
-          default: uni.$u.props.popup.round
-        },
-        zoom: {
-          type: Boolean,
-          default: uni.$u.props.popup.zoom
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.popup.bgColor
-        },
-        overlayOpacity: {
-          type: [Number, String],
-          default: uni.$u.props.popup.overlayOpacity
-        }
-      }
-    };
-    e.default = r;
-  },
-  cb5e: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-7b218239], uni-scroll-view[data-v-7b218239], uni-swiper-item[data-v-7b218239]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-col[data-v-7b218239]{padding:0}.u-col-0[data-v-7b218239]{width:0}.u-col-1[data-v-7b218239]{width:calc(100%/12)}.u-col-2[data-v-7b218239]{width:calc(100%/12 * 2)}.u-col-3[data-v-7b218239]{width:calc(100%/12 * 3)}.u-col-4[data-v-7b218239]{width:calc(100%/12 * 4)}.u-col-5[data-v-7b218239]{width:calc(100%/12 * 5)}.u-col-6[data-v-7b218239]{width:calc(100%/12 * 6)}.u-col-7[data-v-7b218239]{width:calc(100%/12 * 7)}.u-col-8[data-v-7b218239]{width:calc(100%/12 * 8)}.u-col-9[data-v-7b218239]{width:calc(100%/12 * 9)}.u-col-10[data-v-7b218239]{width:calc(100%/12 * 10)}.u-col-11[data-v-7b218239]{width:calc(100%/12 * 11)}.u-col-12[data-v-7b218239]{width:calc(100%/12 * 12)}', ""]), t.exports = e;
-  },
-  ccf2: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */.u-status-bar[data-v-38b9df1a]{width:100%}', ""]), t.exports = e;
-  },
-  ce66: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("8701"),
-      i = n("4ecb");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("ee1a");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "456472ce", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  d189: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */.u-safe-bottom[data-v-b1c30928]{width:100%}', ""]), t.exports = e;
-  },
-  d1e3: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var r = {
-      props: {
-        bgColor: {
-          type: String,
-          default: uni.$u.props.statusBar.bgColor
-        }
-      }
-    };
-    e.default = r;
-  },
-  d42a: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this.$createElement,
-          e = this._self._c || t;
-        return e("v-uni-view", {
-          staticClass: "u-safe-bottom",
-          class: [!this.isNvue && "u-safe-area-inset-bottom"],
-          style: [this.style]
-        });
-      },
-      i = [];
-  },
-  da9d: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return i;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return r;
-    });
-    var r = {
-        uLoadingIcon: n("8f0c").default,
-        uSwiperIndicator: n("5bb5").default
-      },
-      i = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          staticClass: "u-swiper",
-          style: {
-            backgroundColor: t.bgColor,
-            height: t.$u.addUnit(t.height),
-            borderRadius: t.$u.addUnit(t.radius)
-          }
-        }, [t.loading ? n("v-uni-view", {
-          staticClass: "u-swiper__loading"
-        }, [n("u-loading-icon", {
-          attrs: {
-            mode: "circle"
-          }
-        })], 1) : n("v-uni-swiper", {
-          staticClass: "u-swiper__wrapper",
-          style: {
-            height: t.$u.addUnit(t.height)
-          },
-          attrs: {
-            circular: t.circular,
-            interval: t.interval,
-            duration: t.duration,
-            autoplay: t.autoplay,
-            current: t.current,
-            currentItemId: t.currentItemId,
-            previousMargin: t.$u.addUnit(t.previousMargin),
-            nextMargin: t.$u.addUnit(t.nextMargin),
-            acceleration: t.acceleration,
-            displayMultipleItems: t.displayMultipleItems,
-            easingFunction: t.easingFunction
-          },
-          on: {
-            change: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.change.apply(undefined, arguments);
-            }
-          }
-        }, t._l(t.list, function (e, r) {
-          return n("v-uni-swiper-item", {
-            key: r,
-            staticClass: "u-swiper__wrapper__item"
-          }, [n("v-uni-view", {
-            staticClass: "u-swiper__wrapper__item__wrapper",
-            style: [t.itemStyle(r)]
-          }, [t.$u.test.image(t.getSource(e)) ? n("v-uni-image", {
-            staticClass: "u-swiper__wrapper__item__wrapper__image",
-            style: {
-              height: t.$u.addUnit(t.height),
-              borderRadius: t.$u.addUnit(t.radius)
+            "reset-index": function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.prizeIndex = -1;
             },
+            "draw-start": function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.handleDrawStart.apply(undefined, arguments);
+            },
+            "draw-end": function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.handleDrawEnd.apply(undefined, arguments);
+            },
+            finish: function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.handleDrawFinish.apply(undefined, arguments);
+            }
+          }
+        })], 1) : t._e(), i("v-uni-view", {
+          staticClass: "almost-lottery__rule"
+        }, [i("v-uni-view", {
+          staticClass: "rule-head"
+        }, [i("v-uni-view", {
+          staticClass: "line"
+        }), i("v-uni-text", {
+          staticClass: "title"
+        }, [t._v("鎶藉璁板綍")]), i("v-uni-view", {
+          staticClass: "line"
+        })], 1), i("v-uni-view", {
+          staticClass: "rule-body"
+        }, t._l(t.awards, function (e, a) {
+          return i("v-uni-view", {
+            staticClass: "item"
+          }, [i("v-uni-view", [i("v-uni-view", {
+            staticStyle: {
+              color: "#606266",
+              "font-size": "30rpx"
+            }
+          }, [i("strong", [t._v(t._s(e.awardName))])]), i("v-uni-view", {
+            staticStyle: {
+              color: "#909399"
+            }
+          }, [t._v(t._s(e.createTime))])], 1), e.awardName.indexOf("璋㈣阿") < 0 && 1 == t.$store.state.config.useType ? i("u-col", {
             attrs: {
-              src: t.getSource(e),
-              mode: t.imgMode
-            },
-            on: {
-              click: function (e) {
-                arguments[0] = e = t.$handleEvent(e), t.clickHandler(r);
-              }
+              span: "3"
             }
-          }) : t._e(), t.$u.test.video(t.getSource(e)) ? n("v-uni-video", {
-            staticClass: "u-swiper__wrapper__item__wrapper__video",
-            style: {
-              height: t.$u.addUnit(t.height)
-            },
+          }, [i("u-button", {
             attrs: {
-              id: "video-" + r,
-              "enable-progress-gesture": false,
-              src: t.getSource(e),
-              poster: t.getPoster(e),
-              title: t.showTitle && t.$u.test.object(e) && e.title ? e.title : "",
-              controls: true
+              type: "warning"
             },
             on: {
               click: function (e) {
-                arguments[0] = e = t.$handleEvent(e), t.clickHandler(r);
+                arguments[0] = e = t.$handleEvent(e), t.gotoForm();
               }
             }
-          }) : t._e(), t.showTitle && t.$u.test.object(e) && e.title && t.$u.test.image(t.getSource(e)) ? n("v-uni-text", {
-            staticClass: "u-swiper__wrapper__item__wrapper__title u-line-1"
-          }, [t._v(t._s(e.title))]) : t._e()], 1)], 1);
-        }), 1), n("v-uni-view", {
-          staticClass: "u-swiper__indicator",
-          style: [t.$u.addStyle(t.indicatorStyle)]
-        }, [t._t("indicator", [t.loading || !t.indicator || t.showTitle ? t._e() : n("u-swiper-indicator", {
+          }, [t._v("鍘婚鍙�")])], 1) : t._e(), e.awardName.indexOf("璋㈣阿") < 0 && 2 == t.$store.state.config.useType ? i("v-uni-view", [e.isUsed ? t._e() : i("u-button", {
+            attrs: {
+              type: "warning"
+            },
+            on: {
+              click: function (i) {
+                arguments[0] = i = t.$handleEvent(i), t.useAward(Object.assign({}, {
+                  index: a
+                }, e));
+              }
+            }
+          }, [t._v("浣跨敤")]), e.isUsed ? i("u-button", {
+            attrs: {
+              type: "warning",
+              disabled: true
+            }
+          }, [t._v("宸蹭娇鐢�")]) : t._e()], 1) : t._e()], 1);
+        }), 1)], 1), i("u-loadmore", {
           attrs: {
-            indicatorActiveColor: t.indicatorActiveColor,
-            indicatorInactiveColor: t.indicatorInactiveColor,
-            length: t.list.length,
-            current: t.currentIndex,
-            indicatorMode: t.indicatorMode
+            status: t.status,
+            loadmoreText: "鐐瑰嚮鎴栦笂鎷夊姞杞芥洿澶�",
+            color: "#ffffff"
+          },
+          on: {
+            loadmore: function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.loadmore.apply(undefined, arguments);
+            }
           }
-        })])], 2)], 1);
-      },
-      a = [];
-  },
-  db90: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = function (t) {
-      if ("undefined" !== typeof Symbol && null != t[Symbol.iterator] || null != t["@@iterator"]) return Array.from(t);
-    }, n("a4d3"), n("e01a"), n("d3b7"), n("d28b"), n("3ca3"), n("ddb0"), n("a630");
-  },
-  dd4d: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        text: {
-          type: String,
-          default: uni.$u.props.rowNotice.text
-        },
-        icon: {
-          type: String,
-          default: uni.$u.props.rowNotice.icon
-        },
-        mode: {
-          type: String,
-          default: uni.$u.props.rowNotice.mode
-        },
-        color: {
-          type: String,
-          default: uni.$u.props.rowNotice.color
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.rowNotice.bgColor
-        },
-        fontSize: {
-          type: [String, Number],
-          default: uni.$u.props.rowNotice.fontSize
-        },
-        speed: {
-          type: [String, Number],
-          default: uni.$u.props.rowNotice.speed
-        }
-      }
-    };
-    e.default = r;
-  },
-  e3b4: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("5aeb"),
-      i = n("b016");
-    for (var a in i) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return i[t];
-      });
-    }(a);
-    n("eeb0");
-    var o = n("f0c5"),
-      u = Object(o["a"])(i["default"], r["b"], r["c"], false, null, "38b9df1a", null, false, r["a"], undefined);
-    e["default"] = u.exports;
-  },
-  e5dd: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3");
-    var r = {
-      props: {
-        list: {
-          type: Array,
-          default: uni.$u.props.swiper.list
-        },
-        indicator: {
-          type: Boolean,
-          default: uni.$u.props.swiper.indicator
-        },
-        indicatorActiveColor: {
-          type: String,
-          default: uni.$u.props.swiper.indicatorActiveColor
-        },
-        indicatorInactiveColor: {
-          type: String,
-          default: uni.$u.props.swiper.indicatorInactiveColor
-        },
-        indicatorStyle: {
-          type: [String, Object],
-          default: uni.$u.props.swiper.indicatorStyle
-        },
-        indicatorMode: {
-          type: String,
-          default: uni.$u.props.swiper.indicatorMode
-        },
-        autoplay: {
-          type: Boolean,
-          default: uni.$u.props.swiper.autoplay
-        },
-        current: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.current
-        },
-        currentItemId: {
-          type: String,
-          default: uni.$u.props.swiper.currentItemId
-        },
-        interval: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.interval
-        },
-        duration: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.duration
-        },
-        circular: {
-          type: Boolean,
-          default: uni.$u.props.swiper.circular
-        },
-        previousMargin: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.previousMargin
-        },
-        nextMargin: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.nextMargin
-        },
-        acceleration: {
-          type: Boolean,
-          default: uni.$u.props.swiper.acceleration
-        },
-        displayMultipleItems: {
-          type: Number,
-          default: uni.$u.props.swiper.displayMultipleItems
-        },
-        easingFunction: {
-          type: String,
-          default: uni.$u.props.swiper.easingFunction
-        },
-        keyName: {
-          type: String,
-          default: uni.$u.props.swiper.keyName
-        },
-        imgMode: {
-          type: String,
-          default: uni.$u.props.swiper.imgMode
-        },
-        height: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.height
-        },
-        bgColor: {
-          type: String,
-          default: uni.$u.props.swiper.bgColor
-        },
-        radius: {
-          type: [String, Number],
-          default: uni.$u.props.swiper.radius
-        },
-        loading: {
-          type: Boolean,
-          default: uni.$u.props.swiper.loading
-        },
-        showTitle: {
-          type: Boolean,
-          default: uni.$u.props.swiper.showTitle
-        }
-      }
-    };
-    e.default = r;
-  },
-  e69a: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("d1e3")),
-      a = {
-        name: "u-status-bar",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {};
-        },
-        computed: {
-          style: function () {
-            var t = {};
-            return t.height = uni.$u.addUnit(uni.$u.sys().statusBarHeight, "px"), t.backgroundColor = this.bgColor, uni.$u.deepMerge(t, uni.$u.addStyle(this.customStyle));
-          }
-        }
-      };
-    e.default = a;
-  },
-  e7fd: function (t, e, n) {
-    "use strict";
-
-    n("7a82"), Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    e.default = {
-      props: {}
-    };
-  },
-  eb68: function (t, e, n) {
-    "use strict";
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return i;
-    }), n.d(e, "a", function () {});
-    var r = function () {
-        var t = this,
-          e = t.$createElement,
-          n = t._self._c || e;
-        return n("v-uni-view", {
-          ref: "u-col",
-          staticClass: "u-col",
-          class: ["u-col-" + t.span],
-          style: [t.colStyle],
+        }), i("v-uni-view", {
+          staticClass: "almost-lottery__rule"
+        }, [i("v-uni-view", {
+          staticClass: "rule-head"
+        }, [i("v-uni-view", {
+          staticClass: "line"
+        }), i("v-uni-text", {
+          staticClass: "title"
+        }, [t._v("娲诲姩瑙勫垯")]), i("v-uni-view", {
+          staticClass: "line"
+        })], 1), i("v-uni-view", {
+          staticClass: "rule-body"
+        }, [t._l(t.info.activityExplain, function (e, a) {
+          return i("v-uni-view", {
+            key: "info-" + a,
+            staticClass: "rule"
+          }, [i("v-uni-view", {
+            staticClass: "number"
+          }, [t._v(t._s(a + 1))]), i("v-uni-view", {
+            staticClass: "text"
+          }, [t._v(t._s(e))])], 1);
+        }), t.phone ? i("v-uni-view", {
+          staticClass: "rule",
           on: {
             click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.clickHandler.apply(undefined, arguments);
+              arguments[0] = e = t.$handleEvent(e), t.call(t.phone);
             }
           }
-        }, [t._t("default")], 2);
+        }, [i("v-uni-view", {
+          staticClass: "number"
+        }, [t._v(t._s(t.info.activityExplain.length + 1))]), i("v-uni-view", {
+          staticClass: "text"
+        }, [t._v("鍜ㄨ鐢佃瘽锛�" + t._s(t.phone))])], 1) : t._e()], 2)], 1), i("v-uni-view", {
+          staticStyle: {
+            display: "flex",
+            "justify-content": "center",
+            "flex-direction": "column",
+            "align-items": "center",
+            color: "#ffffff88",
+            "font-size": "24rpx",
+            padding: "64rpx"
+          }
+        }, [i("v-uni-text", [t._v("鍙板窞甯傛柊闂讳紶濯掍腑蹇�")])], 1), i("u-popup", {
+          attrs: {
+            show: t.showPop,
+            mode: "center",
+            round: "14",
+            closeable: true,
+            "safe-area-inset-bottom": true
+          },
+          on: {
+            close: function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.showPop = false;
+            }
+          }
+        }, [i("v-uni-view", {
+          staticStyle: {
+            padding: "80rpx",
+            display: "flex",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center"
+          }
+        }, [i("v-uni-view", {
+          staticStyle: {
+            color: "#606266",
+            "font-size": "34rpx",
+            "font-weight": "600"
+          }
+        }, [t._v("纭畾浣跨敤" + t._s(t.popAward.awardName) + "鍚�?")]), i("v-uni-view", {
+          staticStyle: {
+            color: "#909399",
+            margin: "25rpx 0"
+          }
+        }, [t._v("璇峰伐浣滀汉鍛樿緭鍏ユ牳閿€鐮�")]), i("u-code-input", {
+          attrs: {
+            maxlength: 4
+          },
+          on: {
+            finish: function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.finish.apply(undefined, arguments);
+            }
+          }
+        })], 1)], 1)], 1);
       },
-      i = [];
+      o = [];
   },
-  ee1a: function (t, e, n) {
+  f7fc: function (t, e, i) {
+    var a = i("24fb");
+    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-page-body[data-v-51889a42]{height:100%}.page[data-v-51889a42]{width:100%;min-height:100%}.almost-lottery[data-v-51889a42]{flex:1}.almost-lottery__head[data-v-51889a42]{position:relative;width:100%;height:%?640?%}.almost-lottery__head .action[data-v-51889a42]{position:relative;top:%?400?%;display:flex;justify-content:center;align-items:center;width:%?480?%;height:%?88?%;line-height:%?88?%;margin:0 auto;color:#fff;font-size:%?32?%;background-color:#f3b2b8;border-radius:%?44?%}.almost-lottery__head .action-shadow[data-v-51889a42]{box-shadow:0 %?14?% 0 0 #f3b2b8}.almost-lottery__head .num[data-v-51889a42]{color:#f9fc31}.almost-lottery__head .tip[data-v-51889a42]{position:relative;top:%?428?%;color:#fff;font-size:%?24?%;text-align:center}.almost-lottery__wheel[data-v-51889a42]{text-align:center;padding-top:%?20?%}.almost-lottery__wheel .count[data-v-51889a42]{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:%?40?% 0}.almost-lottery__wheel .text[data-v-51889a42]{color:#fff;font-size:%?24?%}.almost-lottery__rule[data-v-51889a42]{padding:0 %?28?%;color:#ffbe04}.almost-lottery__rule .rule-head[data-v-51889a42]{display:flex;justify-content:space-around;align-items:center;padding:%?40?% 0}.almost-lottery__rule .rule-head .line[data-v-51889a42]{flex:1;height:1px;background-color:#ffbe04}.almost-lottery__rule .rule-head .title[data-v-51889a42]{width:%?280?%;color:#fff;line-height:%?70?%;text-align:center;margin:0 %?20?%;border-radius:%?8?%;background-color:#ffbe04}.almost-lottery__rule .rule-body[data-v-51889a42]{color:#fff;font-size:%?24?%;padding:%?10?% 0 %?40?%}.almost-lottery__rule .rule-body .item[data-v-51889a42]{display:flex;justify-content:space-between;margin-bottom:%?16?%;background-color:#fff;border-radius:5px;padding:%?16?%}.almost-lottery__rule .rule-body .rule[data-v-51889a42]{display:flex;margin-bottom:%?10?%;text-align:justify}.almost-lottery__rule .rule-body .number[data-v-51889a42]{position:relative;top:%?4?%;width:%?28?%;height:%?28?%;line-height:%?28?%;text-align:center;color:#fff;background:#ffbe04;border-radius:50%;margin-right:%?10?%}.almost-lottery__rule .rule-body .number-hidden[data-v-51889a42]{opacity:0}.almost-lottery__rule .rule-body .text[data-v-51889a42]{flex:1}.almost-lottery__rule .rule-body .item-rule .text[data-v-51889a42]{display:flex;flex-direction:column}.almost-action[data-v-51889a42]{display:flex;flex-direction:row;justify-content:center;align-items:center;width:%?400?%;height:%?80?%;border-radius:%?10?%;text-align:center;background-color:red;margin:0 auto %?40?%}.almost-action .text[data-v-51889a42]{color:#fff;font-size:%?28?%}', ""]), t.exports = e;
+  },
+  fbe3: function (t, e, i) {
     "use strict";
 
-    var r = n("49f5"),
-      i = n.n(r);
-    i.a;
-  },
-  ee30: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("a2a3")),
-      a = {
-        name: "u-line",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        computed: {
-          lineStyle: function () {
-            var t = {};
-            return t.margin = this.margin, "row" === this.direction ? (t.borderBottomWidth = "1px", t.borderBottomStyle = this.dashed ? "dashed" : "solid", t.width = uni.$u.addUnit(this.length), this.hairline && (t.transform = "scaleY(0.5)")) : (t.borderLeftWidth = "1px", t.borderLeftStyle = this.dashed ? "dashed" : "solid", t.height = uni.$u.addUnit(this.length), this.hairline && (t.transform = "scaleX(0.5)")), t.borderColor = this.color, uni.$u.deepMerge(t, uni.$u.addStyle(this.customStyle));
+    i.d(e, "b", function () {
+      return a;
+    }), i.d(e, "c", function () {
+      return n;
+    }), i.d(e, "a", function () {});
+    var a = function () {
+        var t = this,
+          e = t.$createElement,
+          a = t._self._c || e;
+        return a("v-uni-view", {
+          staticClass: "almost-lottery"
+        }, [a("v-uni-view", {
+          staticClass: "almost-lottery__wrap",
+          style: {
+            width: t.lotterySize + "rpx",
+            height: t.lotterySize + "rpx"
           }
-        }
-      };
-    e.default = a;
-  },
-  eeb0: function (t, e, n) {
-    "use strict";
-
-    var r = n("5999"),
-      i = n.n(r);
-    i.a;
-  },
-  f066: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("1116")),
-      a = {
-        name: "u-notice-bar",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {
-            show: true
-          };
-        },
-        methods: {
-          click: function (t) {
-            this.$emit("click", t), this.url && this.linkType && this.openPage();
+        }, [a("v-uni-view", {
+          staticClass: "lottery-action",
+          style: {
+            width: t.actionSize + "rpx",
+            height: t.actionSize + "rpx",
+            left: t.canvasMarginOutside + "rpx"
+          }
+        }), a("v-uni-view", {
+          staticClass: "str-margin-outside",
+          style: {
+            left: t.strMarginOutside + "rpx"
+          }
+        }), a("v-uni-view", {
+          staticClass: "img-margin-str",
+          style: {
+            left: t.imgMarginStr + "rpx"
+          }
+        }), a("v-uni-view", {
+          staticClass: "img-size",
+          style: {
+            width: t.imgWidth + "rpx",
+            height: t.imgHeight + "rpx"
+          }
+        }), t.lotteryImg ? t._e() : a("v-uni-view", {
+          staticStyle: {
+            color: "#fff"
+          }
+        }, [t._v("濂栧搧鍑嗗涓�...")]), t.lotteryImg ? [a("v-uni-image", {
+          staticClass: "almost-lottery__bg",
+          style: {
+            width: t.lotteryPxSize + "px",
+            height: t.lotteryPxSize + "px"
           },
-          close: function () {
-            this.show = false, this.$emit("close");
+          attrs: {
+            mode: "widthFix",
+            src: t.lotteryBg
           }
-        }
-      };
-    e.default = a;
-  },
-  f283: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-ed62b646], uni-scroll-view[data-v-ed62b646], uni-swiper-item[data-v-ed62b646]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-overlay[data-v-ed62b646]{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.7)}', ""]), t.exports = e;
-  },
-  f592: function (t, e, n) {
-    var r = n("fae0");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("86b8fb5a", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  f63b: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined, n("a9e3"), n("99af"), n("ac1f"), n("5319");
-    var i = r(n("8bea")),
-      a = {
-        name: "u-code-input",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, i.default],
-        data: function () {
-          return {
-            inputValue: ""
-          };
-        },
-        watch: {
-          value: {
-            immediate: true,
-            handler: function (t) {
-              this.inputValue = String(t).substring(0, this.maxlength);
+        }), a("v-uni-image", {
+          staticClass: "almost-lottery__canvas-img",
+          style: {
+            width: t.canvasImgPxSize + "px",
+            height: t.canvasImgPxSize + "px",
+            left: t.canvasImgToLeftPx + "px",
+            top: t.canvasImgToLeftPx + "px",
+            transform: "rotate(" + (t.canvasAngle + t.targetAngle) + "deg)",
+            transitionDuration: t.transitionDuration + "s"
+          },
+          attrs: {
+            mode: "widthFix",
+            src: i("376b")
+          }
+        }), a("v-uni-image", {
+          staticClass: "almost-lottery__action-bg",
+          style: {
+            width: t.actionPxSize + "px",
+            height: t.actionPxSize + "px",
+            left: t.actionBgToLeftPx + "px",
+            top: t.actionBgToLeftPx + "px",
+            transform: "rotate(" + (t.actionAngle + t.targetActionAngle) + "deg)",
+            transitionDuration: t.transitionDuration + "s"
+          },
+          attrs: {
+            mode: "widthFix",
+            src: t.actionBg
+          },
+          on: {
+            click: function (e) {
+              arguments[0] = e = t.$handleEvent(e), t.handleActionStart.apply(undefined, arguments);
             }
           }
-        },
-        computed: {
-          codeLength: function () {
-            return new Array(Number(this.maxlength));
-          },
-          itemStyle: function () {
-            var t = this;
-            return function (e) {
-              var n = uni.$u.addUnit,
-                r = {
-                  width: n(t.size),
-                  height: n(t.size)
-                };
-              return "box" === t.mode && (r.border = "".concat(t.hairline ? .5 : 1, "px solid ").concat(t.borderColor), 0 === uni.$u.getPx(t.space) && (0 === e && (r.borderTopLeftRadius = "3px", r.borderBottomLeftRadius = "3px"), e === t.codeLength.length - 1 && (r.borderTopRightRadius = "3px", r.borderBottomRightRadius = "3px"), e !== t.codeLength.length - 1 && (r.borderRight = "none"))), e !== t.codeLength.length - 1 ? r.marginRight = n(t.space) : r.marginRight = 0, r;
-            };
-          },
-          codeArray: function () {
-            return String(this.inputValue).split("");
-          },
-          lineStyle: function () {
-            var t = {};
-            return t.height = this.hairline ? "2px" : "4px", t.width = uni.$u.addUnit(this.size), t.backgroundColor = this.borderColor, t;
+        })] : t._e()], 2), a("v-uni-text", {
+          staticClass: "almost-lottery__measureText",
+          style: {
+            fontSize: t.higtFontSize + "px"
           }
-        },
-        methods: {
-          inputHandler: function (t) {
-            var e = this,
-              n = t.detail.value;
-            this.inputValue = n, this.disabledDot && this.$nextTick(function () {
-              e.inputValue = n.replace(".", "");
-            }), this.$emit("change", n), this.$emit("input", n), String(n).length >= Number(this.maxlength) && this.$emit("finish", n);
+        }, [t._v(t._s(t.measureText))]), a("v-uni-canvas", {
+          class: t.className,
+          style: {
+            width: t.higtCanvasSize + "px",
+            height: t.higtCanvasSize + "px"
+          },
+          attrs: {
+            "canvas-id": t.canvasId,
+            width: t.higtCanvasSize,
+            height: t.higtCanvasSize
           }
-        }
-      };
-    e.default = a;
-  },
-  f816: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-09e9487a], uni-scroll-view[data-v-09e9487a], uni-swiper-item[data-v-09e9487a]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-line[data-v-09e9487a]{vertical-align:middle}', ""]), t.exports = e;
-  },
-  f848: function (t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var r = n("f066"),
-      i = n.n(r);
-    for (var a in r) ["default"].indexOf(a) < 0 && function (t) {
-      n.d(e, t, function () {
-        return r[t];
-      });
-    }(a);
-    e["default"] = i.a;
-  },
-  fa7a: function (t, e, n) {
-    var r = n("84bd");
-    r.__esModule && (r = r.default), "string" === typeof r && (r = [[t.i, r, ""]]), r.locals && (t.exports = r.locals);
-    var i = n("4f06").default;
-    i("e959196c", r, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  fae0: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-1496e4f8], uni-scroll-view[data-v-1496e4f8], uni-swiper-item[data-v-1496e4f8]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-notice[data-v-1496e4f8]{display:flex;flex-direction:row;align-items:center;justify-content:space-between}.u-notice__left-icon[data-v-1496e4f8]{align-items:center;margin-right:5px}.u-notice__right-icon[data-v-1496e4f8]{margin-left:5px;align-items:center}.u-notice__swiper[data-v-1496e4f8]{height:16px;display:flex;flex-direction:row;align-items:center;flex:1}.u-notice__swiper__item[data-v-1496e4f8]{display:flex;flex-direction:row;align-items:center;overflow:hidden}.u-notice__swiper__item__text[data-v-1496e4f8]{font-size:14px;color:#f9ae3d}', ""]), t.exports = e;
-  },
-  fbca: function (t, e, n) {
-    var r = n("24fb");
-    e = r(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-view[data-v-ca19a5c6], uni-scroll-view[data-v-ca19a5c6], uni-swiper-item[data-v-ca19a5c6]{display:flex;flex-direction:column;flex-shrink:0;flex-grow:0;flex-basis:auto;align-items:stretch;align-content:flex-start}.u-notice-bar[data-v-ca19a5c6]{overflow:hidden;flex:1}', ""]), t.exports = e;
-  },
-  fc68: function (t, e, n) {
-    "use strict";
-
-    n("7a82");
-    var r = n("4ea4").default;
-    Object.defineProperty(e, "__esModule", {
-      value: true
-    }), e.default = undefined;
-    var i = r(n("c7eb")),
-      a = r(n("1da1"));
-    n("a9e3");
-    var o = r(n("af39")),
-      u = {
-        name: "u-col",
-        mixins: [uni.$u.mpMixin, uni.$u.mixin, o.default],
-        data: function () {
-          return {
-            width: 0,
-            parentData: {
-              gutter: 0
-            },
-            gridNum: 12
-          };
-        },
-        computed: {
-          uJustify: function () {
-            return "end" == this.justify || "start" == this.justify ? "flex-" + this.justify : "around" == this.justify || "between" == this.justify ? "space-" + this.justify : this.justify;
-          },
-          uAlignItem: function () {
-            return "top" == this.align ? "flex-start" : "bottom" == this.align ? "flex-end" : this.align;
-          },
-          colStyle: function () {
-            var t = {
-              paddingLeft: uni.$u.addUnit(Number(this.parentData.gutter) / 2),
-              paddingRight: uni.$u.addUnit(Number(this.parentData.gutter) / 2),
-              alignItems: this.uAlignItem,
-              justifyContent: this.uJustify,
-              textAlign: this.textAlign,
-              flex: "0 0 ".concat(100 / this.gridNum * this.span, "%"),
-              marginLeft: 8.333333333333334 * this.offset + "%"
-            };
-            return uni.$u.deepMerge(t, uni.$u.addStyle(this.customStyle));
-          }
-        },
-        mounted: function () {
-          this.init();
-        },
-        methods: {
-          init: function () {
-            var t = this;
-            return (0, a.default)((0, i.default)().mark(function e() {
-              return (0, i.default)().wrap(function (e) {
-                while (1) switch (e.prev = e.next) {
-                  case 0:
-                    return t.updateParentData(), e.next = 3, t.parent.getComponentWidth();
-                  case 3:
-                    t.width = e.sent;
-                  case 4:
-                  case "end":
-                    return e.stop();
-                }
-              }, e);
-            }))();
-          },
-          updateParentData: function () {
-            this.getParentData("u-row");
-          },
-          clickHandler: function (t) {
-            this.$emit("click");
-          }
-        }
-      };
-    e.default = u;
+        })], 1);
+      },
+      n = [];
   }
 }]);
