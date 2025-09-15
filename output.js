@@ -1,1622 +1,2572 @@
-//Tue Aug 26 2025 05:57:23 GMT+0000 (Coordinated Universal Time)
+//Mon Sep 15 2025 09:12:45 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-luckdraw-circle-awsc"], {
-  "0602": function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("5eb6"),
-      n = i.n(a);
-    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return a[t];
-      });
-    }(o);
-    e["default"] = n.a;
-  },
-  2180: function (t, e, i) {
-    var a = i("dd85");
-    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
-    var n = i("4f06").default;
-    n("1acae6fe", a, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "30a9": function (t, e, i) {
-    "use strict";
-
-    (function (t) {
-      i("7a82");
-      var a = i("4ea4").default;
-      Object.defineProperty(e, "__esModule", {
-        value: true
-      }), e.setStore = e.pathToBase64 = e.getStore = e.downloadFile = e.clearStore = e.clearCacheFile = e.clacTextLen = e.circleImg = e.base64ToPath = undefined;
-      var n = a(i("53ca"));
-      i("e9c4"), i("cb29"), i("d3b7"), i("c975"), i("d9e2"), i("d401"), i("ac1f"), i("466d"), i("81b2"), i("0eb6"), i("b7ef"), i("8bd4"), i("ace4"), i("5cc6"), i("907a"), i("9a8c"), i("a975"), i("735e"), i("c1ac"), i("d139"), i("3a7b"), i("986a"), i("1d02"), i("d5d6"), i("82f8"), i("e91f"), i("60bd"), i("5f96"), i("3280"), i("3fcc"), i("ca91"), i("25a1"), i("cd26"), i("3c5d"), i("2954"), i("649e"), i("219c"), i("b39a"), i("72f7"), i("3ca3"), i("ddb0"), i("2b3d"), i("9861"), i("5319");
-      e.setStore = function (t, e) {
-        t && ("string" !== typeof e && (e = JSON.stringify(e)), uni.setStorageSync(t, e));
-      };
-      e.getStore = function (t) {
-        if (t) return uni.getStorageSync(t);
-      };
-      e.clearStore = function (e) {
-        e ? uni.removeStorageSync(e) : (t("log", "娓呯悊鏈湴鍏ㄩ儴缂撳瓨", " at uni_modules/almost-lottery/utils/almost-utils.js:31"), uni.clearStorageSync());
-      };
-      e.circleImg = function (t, e, i, a, n, o) {
-        var r = Math.floor(n / 2),
-          s = i + r,
-          l = a + r;
-        t.save(), t.beginPath(), t.arc(s, l, r, 0, 2 * Math.PI), t.fill(), t.clip(), t.drawImage(e, i, a, n, o), t.restore();
-      };
-      e.clacTextLen = function (t) {
-        if (!t) return {
-          byteLen: 0,
-          realLen: 0
-        };
-        t += "";
-        for (var e = 0, i = 0; i < "".length; i++) "".charCodeAt(i) < 0 || "".charCodeAt(i) > 255 ? e += 2 : e += 1;
-        return {
-          byteLen: e,
-          realLen: e / 2
-        };
-      };
-      e.downloadFile = function (t) {
-        return new Promise(function (e) {
-          uni.downloadFile({
-            url: t,
-            success: function (t) {
-              e({
-                ok: true,
-                data: t.errMsg,
-                tempFilePath: t.tempFilePath
-              });
-            },
-            fail: function (t) {
-              e({
-                ok: false,
-                data: t.errMsg,
-                msg: "鍥剧墖涓嬭浇澶辫触"
-              });
-            }
-          });
-        });
-      };
-      e.clearCacheFile = function () {};
-      e.pathToBase64 = function (e) {
-        return new Promise(function (i, a) {
-          if ("object" === ("undefined" === typeof window ? "undefined" : (0, n.default)(window)) && "document" in window) {
-            if ("function" === typeof FileReader) {
-              var o = new XMLHttpRequest();
-              return o.open("GET", e, true), o.responseType = "blob", o.onload = function () {
-                if (200 === this.status) {
-                  var t = new FileReader();
-                  t.onload = function (t) {
-                    i(t.target.result);
-                  }, t.onerror = a, t.readAsDataURL(this.response);
+const $ = new Env("鲸才服务");
+const notify = $.isNode() ? require("../sendNotify") : "";
+(() => {
+  var j = {
+    htmlO: "(((.+)+)+)+$",
+    llruT: function (P, Q) {
+      return P !== Q;
+    },
+    TSYoJ: "JsbwU",
+    nQHHO: function (P, Q) {
+      return P === Q;
+    },
+    BeRVv: function (P, Q) {
+      return P in Q;
+    },
+    Irijo: "jeEvV",
+    QDZxu: "function",
+    oCVMj: function (P, Q) {
+      return P === Q;
+    },
+    ssiWO: "symbol",
+    EfCfb: function (P, Q) {
+      return P !== Q;
+    },
+    kNCsS: "DcnRz",
+    ttQRi: function (P, Q) {
+      return P == Q;
+    },
+    XbUKM: function (P, Q) {
+      return P(Q);
+    },
+    oAhOO: function (P, Q) {
+      return P === Q;
+    },
+    PWdLK: "pFfPs",
+    Caqnu: function (P, Q) {
+      return P !== Q;
+    },
+    EvHRK: "UwNwg",
+    BEwvc: "string",
+    xWUVq: function (P, Q, R) {
+      return P(Q, R);
+    },
+    QTldB: "Map",
+    dGuqO: function (P, Q) {
+      return P === Q;
+    },
+    crazo: "Set",
+    XQfaN: function (P, Q) {
+      return P === Q;
+    },
+    FkdSB: "Arguments",
+    fFFpn: function (P, Q, R) {
+      return P(Q, R);
+    },
+    cgEka: function (P, Q) {
+      return P !== Q;
+    },
+    dxepq: "NBoLF",
+    goDdF: "uaosk",
+    TThLM: "oLfMe",
+    ISUpF: "OtgeH",
+    wuwuC: function (P, Q) {
+      return P === Q;
+    },
+    MOtoM: "XIfvu",
+    ftRFS: "wKZUI",
+    hEVhy: "EfgWo",
+    zqNDv: "zwrRu",
+    OWxzR: function (P, Q) {
+      return P === Q;
+    },
+    DChDO: function (P, Q) {
+      return P !== Q;
+    },
+    DsblN: function (P, Q) {
+      return P + Q;
+    },
+    klJZG: "The iterator does not provide a '",
+    BpEzV: "' method",
+    Gwgqy: "return",
+    IAyRx: "oEQMh",
+    uYwQm: function (P, Q) {
+      return P >= Q;
+    },
+    KYPXj: function (P, Q) {
+      return P === Q;
+    },
+    fpQOB: function (P, Q, R, S, T, U, V, W) {
+      return P(Q, R, S, T, U, V, W);
+    },
+    BrELI: function (P, Q) {
+      return P < Q;
+    },
+    daBmC: "CECzw",
+    YkeIH: "VPBln",
+    syfxQ: "Vjpmt",
+    pYDWw: "CUHLi",
+    KABxa: "Exrlz",
+    dDIla: function (P, Q) {
+      return P != Q;
+    },
+    ZtXcH: "undefined",
+    LiHSC: function (P, Q) {
+      return P === Q;
+    },
+    kwvzv: "XoHCQ",
+    LViYn: "number",
+    zkENL: function (P, Q) {
+      return P == Q;
+    },
+    dQmtg: "Object",
+    VsOXc: "CjIiO",
+    pLcSO: function (P, Q) {
+      return P > Q;
+    },
+    DWoYI: function (P, Q) {
+      return P < Q;
+    },
+    sWfnV: function (P, Q) {
+      return P === Q;
+    },
+    QmOPJ: "xglxi",
+    lPecU: "[object Generator]",
+    NZsox: function (P, Q) {
+      return P == Q;
+    },
+    AQOiF: "owDzU",
+    EUtMr: function (P, Q) {
+      return P instanceof Q;
+    },
+    dzFTH: function (P, Q, R, S) {
+      return P(Q, R, S);
+    },
+    wtOxk: "_invoke",
+    IlaEO: function (P, Q, R, S) {
+      return P(Q, R, S);
+    },
+    yAjJu: function (P, Q) {
+      return P == Q;
+    },
+    ryZFM: "TbJlf",
+    qhYOg: "jVqfM",
+    ZAebu: "mVznZ",
+    dJGki: function (P, Q, R, S, T) {
+      return P(Q, R, S, T);
+    },
+    OGaqi: function (P, Q) {
+      return P !== Q;
+    },
+    JSHHi: "HFhrM",
+    xrjet: "HzANo",
+    slGSS: "next",
+    Cfhqd: "throw",
+    sSEOq: function (P, Q) {
+      return P !== Q;
+    },
+    JoZtG: "pbWkI",
+    oSmLE: "pleGl",
+    wFopd: "root",
+    MJuUu: function (P, Q) {
+      return P !== Q;
+    },
+    dpNoB: "ivpCo",
+    cldor: "normal",
+    ZrLsU: function (P, Q, R) {
+      return P(Q, R);
+    },
+    wvYqX: function (P, Q) {
+      return P === Q;
+    },
+    xoTAB: "iNRzt",
+    ziIds: function (P, Q) {
+      return P(Q);
+    },
+    GQBoq: "eahXE",
+    XdtvS: "rdlcb",
+    gPyLf: "AQdsB",
+    kBWui: function (P) {
+      return P();
+    },
+    cpJOR: "end",
+    pMOnR: "cpTsd",
+    RoRPC: "XXlMA",
+    GIUSg: function (P, Q) {
+      return P(Q);
+    },
+    WeEDi: function (P, Q) {
+      return P <= Q;
+    },
+    BEMRq: function (P, Q) {
+      return P !== Q;
+    },
+    nkzJN: "finallyLoc",
+    jVuAq: function (P, Q) {
+      return P && Q;
+    },
+    NnWYX: "PvLJj",
+    cWMBq: function (P, Q) {
+      return P !== Q;
+    },
+    BStLE: function (P, Q) {
+      return P < Q;
+    },
+    ghJkn: "stJgN",
+    DmhdR: "ZJkAx",
+    MCdBu: function (P, Q) {
+      return P(Q);
+    },
+    iVuRs: "try statement without catch or finally",
+    qOUWZ: function (P, Q) {
+      return P < Q;
+    },
+    cNbfY: "catchLoc",
+    AAlBk: function (P, Q) {
+      return P === Q;
+    },
+    JMZDn: "NjJML",
+    IjWRR: function (P, Q) {
+      return P >= Q;
+    },
+    BayAq: function (P, Q) {
+      return P !== Q;
+    },
+    ZlFBn: "WnDgB",
+    yvXMJ: function (P, Q) {
+      return P <= Q;
+    },
+    okuLr: function (P, Q) {
+      return P !== Q;
+    },
+    ZWmST: "PaxzW",
+    YpzEO: "break",
+    DlwQD: function (P, Q) {
+      return P === Q;
+    },
+    XdCmy: "continue",
+    QSrIV: function (P, Q) {
+      return P <= Q;
+    },
+    Locra: "eKBde",
+    KlWal: "FlrNE",
+    ZRwOh: "EjaYV",
+    DkFHd: function (P, Q, R, S, T) {
+      return P(Q, R, S, T);
+    },
+    WPbNE: "hpQYP",
+    obaTp: "JVJlo",
+    QHflB: function (P, Q) {
+      return P !== Q;
+    },
+    lYGXc: "RSXwI",
+    fGotp: "ycETT",
+    rWYmT: "GeneratorFunction",
+    FGiaI: "vxBpH",
+    WUTAO: function (P) {
+      return P();
+    },
+    aIxLm: "WSnis",
+    yWPHY: function (P, Q) {
+      return P(Q);
+    },
+    RpLTk: function (P, Q) {
+      return P < Q;
+    },
+    izPAA: "uLNmP",
+    WmnUk: "vMSCl",
+    ygsnJ: "__await",
+    sUgzo: function (P, Q) {
+      return P instanceof Q;
+    },
+    HLWFK: "WSCxp",
+    lKOEl: function (P, Q) {
+      return P !== Q;
+    },
+    CCXLV: "ZTZYJ",
+    UMvgK: "Generator is already running",
+    JfmqY: "GSUCz",
+    HYOgu: "ZpVLF",
+    allre: function (P, Q) {
+      return P === Q;
+    },
+    eujzU: "ajDPG",
+    tnUSk: "juAtU",
+    Ueliw: "kqErr",
+    HQWZV: function (P, Q) {
+      return P === Q;
+    },
+    tLyIt: function (P, Q) {
+      return P !== Q;
+    },
+    HgTLo: "cQirI",
+    zaTDT: "FeoCm",
+    LDNHD: "hXpdk",
+    SDODr: "wLTuq",
+    ZrbBm: function (P, Q) {
+      return P === Q;
+    },
+    XGHiR: function (P, Q) {
+      return P === Q;
+    },
+    pPrxG: "XdWRL",
+    oIbEZ: function (P, Q) {
+      return P >= Q;
+    },
+    vTLYp: "illegal catch attempt",
+    CiQno: "wkxwq",
+    cafjL: "RwdVw",
+    RcgTj: "CQMqI",
+    ldCte: function (P, Q) {
+      return P === Q;
+    },
+    zDDLA: "AuHUn",
+    CIpln: "hqZRv",
+    IMhlC: "MONVw",
+    suzwj: "HOWXf",
+    SGKor: "ZKevC",
+    JFiJG: function (P, Q) {
+      return P < Q;
+    },
+    tusRR: "rePLS",
+    SuMKe: "CsLEJ",
+    mmAyP: function (P, Q) {
+      return P === Q;
+    },
+    yujHl: function (P, Q) {
+      return P === Q;
+    },
+    YRGcz: " API请求失败，请检查网路重试",
+    TMIVE: "RAQSj",
+    PHGnJ: function (P, Q) {
+      return P(Q);
+    },
+    pHqlw: function (P, Q) {
+      return P === Q;
+    },
+    RmUBz: "JjFBU",
+    NCgjk: "ySmDc",
+    NjBDB: "kSHUW",
+    fjyGv: function (P, Q) {
+      return P === Q;
+    },
+    aikIi: function (P, Q) {
+      return P !== Q;
+    },
+    NfEIH: function (P, Q) {
+      return P == Q;
+    },
+    koHeZ: "@@asyncIterator",
+    Esehv: "pZvAz",
+    Ebkin: function (P, Q, R) {
+      return P(Q, R);
+    },
+    OTFPp: "JaOFO",
+    mmxGt: "tLDBP",
+    UnsNH: "suspendedYield",
+    roQCX: "executing",
+    GulNX: function (P, Q) {
+      return P !== Q;
+    },
+    vGrgO: function (P, Q, R, S) {
+      return P(Q, R, S);
+    },
+    ytHjO: "constructor",
+    XpOsx: function (P, Q, R, S) {
+      return P(Q, R, S);
+    },
+    jbpJz: function (P, Q, R, S) {
+      return P(Q, R, S);
+    },
+    rhwcp: function (P, Q) {
+      return P(Q);
+    },
+    CGhJd: "Generator",
+    LzajN: "toString",
+    RAWcA: "MhwVe",
+    JYEXH: "ySKNd",
+    IaPAI: function (P, Q) {
+      return P !== Q;
+    },
+    rOVAK: "ltJLZ",
+    GEPgx: "QcVWx",
+    PjIPh: function (P, Q) {
+      return P(Q);
+    },
+    jnaVl: function (P, Q, R, S, T, U, V, W) {
+      return P(Q, R, S, T, U, V, W);
+    },
+    qipDs: function (P, Q) {
+      return P(Q);
+    },
+    YKWjC: "用户：",
+    okMUO: "开始任务",
+    JrEps: function (P, Q) {
+      return P != Q;
+    },
+    RjjAA: "/marketing/data/appletTurntable/isShareStatus.json",
+    gAvoX: "2513496",
+    eMeyH: "助力结果：",
+    hKyuz: "/marketing/inner/appletTurntablePrize/getLotteryPrizeInfo.json",
+    RHEYT: function (P, Q) {
+      return P == Q;
+    },
+    gfndU: "/marketing/data/appletTurntableLog/lotteryEntrance.json",
+    cNvFL: function (P, Q) {
+      return P !== Q;
+    },
+    obHqQ: function (P, Q) {
+      return P == Q;
+    },
+    YmQiW: " 抽奖获得微信红包：",
+    WwdFe: function (P, Q) {
+      return P == Q;
+    },
+    LgZLK: function (P, Q) {
+      return P === Q;
+    },
+    vdVoP: function (P, Q) {
+      return P === Q;
+    },
+    OZEnm: function (P, Q) {
+      return P == Q;
+    },
+    DLzIb: " 抽奖获得余额：",
+    FBRsx: "/marketing/data/appletTurntable/getTotalMoney.json",
+    RcQxv: function (P, Q) {
+      return P === Q;
+    },
+    KBUpX: "/marketing/data/appletTurntable/addReward.json",
+    UWoaS: function (P, Q) {
+      return P === Q;
+    },
+    WoMJc: function (P, Q) {
+      return P === Q;
+    },
+    ITFlp: "元 提现结果：",
+    BETmw: " 提现到钱包：",
+    OWCub: function (P, Q) {
+      return P === Q;
+    },
+    yueka: function (P, Q) {
+      return P === Q;
+    },
+    XpUye: "/mini/data/resume/getAccountAmount.json",
+    MIIwo: "/mini/data/resume/cashOut.json",
+    kHlzZ: function (P, Q) {
+      return P === Q;
+    },
+    gqkTC: "余额：",
+    IvmED: function (P, Q) {
+      return P === Q;
+    },
+    BHeAc: function (P, Q) {
+      return P === Q;
+    },
+    xspjl: " 钱包：",
+    taVkl: function (P, Q) {
+      return P === Q;
+    },
+    dfSbL: function (P, Q) {
+      return P === Q;
+    },
+    GizxW: function (P, Q) {
+      return P === Q;
+    },
+    UcYBW: function (P) {
+      return P();
+    },
+    HJLie: "JingCai",
+    laGys: function (P) {
+      return P();
+    },
+    FTxtN: function (P, Q) {
+      return P(Q);
+    },
+    PEcpZ: function (P) {
+      return P();
+    },
+    oRgTZ: "https://gateway.5jingcai.com",
+    LTvTs: "application/json;charset=UTF-8",
+    UxYDZ: "https://servicewechat.com/wxa66427ada336778f/9/page-frame.html",
+    lYNLo: function (P) {
+      return P();
+    },
+    NAovV: function (P, Q) {
+      return P(Q);
+    },
+    MrzbD: function (P, Q) {
+      return P !== Q;
+    },
+    MijCP: function (P, Q) {
+      return P(Q);
+    },
+    gkcRL: function (P) {
+      return P();
+    },
+    EKpPE: "https://fastly.jsdelivr.net/gh/xzxxn777/Surge@main/Utils/Notice.json",
+    RUSBH: function (P) {
+      return P();
+    },
+    MCzfy: function (P) {
+      return P();
+    },
+    JfhgG: function (P) {
+      return P();
+    },
+    RAdMg: function (P, Q) {
+      return P(Q);
+    },
+    xwLXO: function (P) {
+      return P();
+    }
+  };
+  function k(P) {
+    k = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (S) {
+      {
+        return typeof S;
+      }
+    } : function (S) {
+      {
+        return S && "function" == typeof Symbol && S.constructor === Symbol && S !== Symbol.prototype ? "symbol" : typeof S;
+      }
+    };
+    return k(P);
+  }
+  function q(P, Q) {
+    var R = {
+      fWjSZ: function (Y, Z, a0, a1, a2) {
+        return Y(Z, a0, a1, a2);
+      },
+      ThIru: "throw",
+      XYCzD: function (Y, Z) {
+        return Y === Z;
+      },
+      yfGMy: function (Y, Z) {
+        return Y === Z;
+      },
+      gWPel: function (Y, Z) {
+        return Y !== Z;
+      },
+      HyFCk: function (Y, Z) {
+        return Y + Z;
+      },
+      cyHcV: function (Y, Z) {
+        return Y + Z;
+      },
+      VsHWs: "The iterator does not provide a '",
+      uLSCf: "' method",
+      hqMuj: "return",
+      EpfPE: "iterator result is not an object",
+      pbeEq: function (Y, Z) {
+        return Y === Z;
+      },
+      XAVwm: "function",
+      JMSxu: function (Y, Z) {
+        return Y(Z);
+      },
+      clVix: function (Y, Z) {
+        return Y + Z;
+      },
+      RhbiL: " is not iterable",
+      vcgOP: function (Y, Z) {
+        return Y === Z;
+      },
+      vDxuu: function (Y, Z) {
+        return Y(Z);
+      },
+      XHsDQ: "oEQMh",
+      gEoXv: function (Y, Z) {
+        return Y >= Z;
+      },
+      rRgEV: function (Y, Z) {
+        return Y === Z;
+      },
+      qItBK: function (Y, Z) {
+        return Y === Z;
+      },
+      XDbCQ: function (Y, Z) {
+        return Y(Z);
+      },
+      QOxOO: function (Y, Z, a0, a1, a2, a3, a4, a5) {
+        return Y(Z, a0, a1, a2, a3, a4, a5);
+      },
+      upWKN: "next",
+      GbMpu: function (Y, Z) {
+        return Y == Z;
+      },
+      qtGUn: function (Y, Z) {
+        return Y < Z;
+      },
+      emZCg: function (Y, Z) {
+        return Y !== Z;
+      },
+      OvoWz: "CECzw",
+      NEvWQ: function (Y, Z) {
+        return Y !== Z;
+      },
+      fUYuT: "VPBln",
+      dQVcK: "Vjpmt",
+      wkWYo: "CUHLi"
+    };
+    {
+      var S = "undefined" != typeof Symbol && P[Symbol.iterator] || P["@@iterator"];
+      if (!S) {
+        {
+          if (Array.isArray(P) || (S = function (Z, a0) {
+            {
+              if (Z) {
+                {
+                  if ("string" == typeof Z) {
+                    return w(Z, a0);
+                  }
+                  var a1 = {}.toString.call(Z).slice(8, -1);
+                  "Object" === a1 && Z.constructor && (a1 = Z.constructor.name);
+                  return "Map" === a1 || "Set" === a1 ? Array.from(Z) : "Arguments" === a1 || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a1) ? w(Z, a0) : undefined;
                 }
-              }, o.onerror = a, void o.send();
-            }
-            var r = document.createElement("canvas"),
-              s = r.getContext("2d"),
-              l = new Image();
-            return l.onload = function () {
-              r.width = l.width, r.height = l.height, s.drawImage(l, 0, 0), i(r.toDataURL()), r.height = r.width = 0;
-            }, l.onerror = a, void (l.src = e);
-          }
-          if ("object" !== ("undefined" === typeof plus ? "undefined" : (0, n.default)(plus))) "object" === ("undefined" === typeof wx ? "undefined" : (0, n.default)(wx)) && wx.canIUse("getFileSystemManager") ? wx.getFileSystemManager().readFile({
-            filePath: e,
-            encoding: "base64",
-            success: function (t) {
-              i("data:image/png;base64," + t.data);
-            },
-            fail: function (t) {
-              a(t);
-            }
-          }) : a(new Error("not support"));else {
-            var c = function (t) {
-              if (0 === t.indexOf("_www") || 0 === t.indexOf("_doc") || 0 === t.indexOf("_documents") || 0 === t.indexOf("_downloads")) return t;
-              if (0 === t.indexOf("/storage/emulated/0/")) return t;
-              if (0 === t.indexOf("/storage/sdcard0/")) return t;
-              if (0 === t.indexOf("/var/mobile/")) return t;
-              if (0 === t.indexOf("file://")) return t;
-              if (0 === t.indexOf("/")) {
-                var e = "iOS" === plus.os.name ? t : plus.io.convertLocalFileSystemURL(t);
-                if (e !== t) return e;
-                t = t.substring(1);
               }
-              return "_www/" + t;
-            }(e);
-            plus.io.resolveLocalFileSystemURL(c, function (e) {
-              e.file(function (e) {
-                var n = new plus.io.FileReader();
-                n.onload = function (t) {
-                  i(t.target.result);
-                }, n.onerror = function (e) {
-                  t("log", e, " at uni_modules/almost-lottery/utils/almost-utils.js:212"), a(e);
-                }, n.readAsDataURL(e);
-              }, function (t) {
-                a(t);
-              });
-            }, function (t) {
-              a(t);
-            });
-          }
-        });
-      };
-      e.base64ToPath = function (t) {
-        return new Promise(function (e, i) {
-          if ("object" === ("undefined" === typeof window ? "undefined" : (0, n.default)(window)) && "document" in window) {
-            t = t.split(",");
-            var a = t[0].match(/:(.*?);/)[1],
-              o = atob(t[1]),
-              r = o.length,
-              s = new Uint8Array(r);
-            while (r--) s[r] = o.charCodeAt(r);
-            return e((window.URL || window.webkitURL).createObjectURL(new Blob([s], {
-              type: a
-            })));
-          }
-          var l = t.match(/data\:\S+\/(\S+);/);
-          l ? l = l[1] : i(new Error("base64 error"));
-          var c = Date.now() + "." + l;
-          if ("object" !== ("undefined" === typeof plus ? "undefined" : (0, n.default)(plus))) {
-            if ("object" === ("undefined" === typeof wx ? "undefined" : (0, n.default)(wx)) && wx.canIUse("getFileSystemManager")) {
-              var u = wx.env.USER_DATA_PATH + "/" + c;
-              wx.getFileSystemManager().writeFile({
-                filePath: u,
-                data: t.replace(/^data:\S+\/\S+;base64,/, ""),
-                encoding: "base64",
-                success: function () {
-                  e(u);
-                },
-                fail: function (t) {
-                  i(t);
-                }
-              });
-            } else i(new Error("not support"));
-          } else {
-            var d = new plus.nativeObj.Bitmap("bitmap" + Date.now());
-            d.loadBase64Data(t, function () {
-              var t = "_doc/uniapp_temp/" + c;
-              d.save(t, {}, function () {
-                d.clear(), e(t);
-              }, function (t) {
-                d.clear(), i(t);
-              });
-            }, function (t) {
-              d.clear(), i(t);
-            });
-          }
-        });
-      };
-    }).call(this, i("0de9")["log"]);
-  },
-  "376b": function (t, e, i) {
-    t.exports = i.p + "static/img/1.e5701211.png";
-  },
-  "3b65": function (t, e, i) {
-    "use strict";
-
-    var a = i("2180"),
-      n = i.n(a);
-    n.a;
-  },
-  "3d72": function (t, e, i) {
-    var a = i("f7fc");
-    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
-    var n = i("4f06").default;
-    n("4dbf7d73", a, true, {
-      sourceMap: false,
-      shadowMode: false
-    });
-  },
-  "3efb": function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("fbe3"),
-      n = i("a995");
-    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return n[t];
-      });
-    }(o);
-    i("7791");
-    var r = i("f0c5"),
-      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "bc8e5092", null, false, a["a"], undefined);
-    e["default"] = s.exports;
-  },
-  "5eb6": function (t, e, i) {
-    "use strict";
-
-    (function (t) {
-      i("7a82");
-      var a = i("4ea4").default;
-      Object.defineProperty(e, "__esModule", {
-        value: true
-      }), e.default = undefined;
-      var n = a(i("2909")),
-        o = a(i("c7eb")),
-        r = a(i("1da1"));
-      i("99af"), i("d3b7"), i("159b"), i("d81d");
-      var s = a(i("ac3d")),
-        l = a(i("3efb")),
-        c = i("30a9"),
-        u = {
-          components: {
-            Awsc: s.default,
-            AlmostLottery2: l.default
-          },
-          data: function () {
+            }
+          }(P)) || Q && P && "number" == typeof P.length) {
+            S && (P = S);
+            var T = 0;
+            var U = function () {};
             return {
-              showAwsc: true,
-              awscData: {},
-              swiperCurrent_img: 0,
-              info: {},
-              noticeList: [],
-              videoUrl: "",
-              isDev: true,
-              canvasConfig: {
-                canvasId: "almostLotteryCanvas"
+              s: U,
+              n: function () {
+                {
+                  var a0 = {
+                    done: true
+                  };
+                  return T >= P.length ? a0 : {
+                    done: false,
+                    value: P[T++]
+                  };
+                }
               },
-              prizeList: [],
-              onStock: true,
-              prizeIndex: -1,
-              prizeing: false,
-              onFrontend: false,
-              weightTotal: 0,
-              weightArr: [],
-              freeNum: 0,
-              freeNumDay: 3,
-              showPop: false,
-              popAward: {},
-              awards: [],
-              size: 10,
-              current: 1,
-              total: 0,
-              pages: 1,
-              status: "loadmore",
-              loadText: {
-                loadmore: "鐐瑰嚮鎴栦笂鎷夊姞杞芥洿澶�",
-                loading: "鍔姏鍔犺浇涓�",
-                nomore: "娌℃湁鏇村"
+              e: function (a0) {
+                {
+                  throw a0;
+                }
               },
-              isInit: true,
-              phone: "",
-              activityId: this.$store.state.config.activityId || 29,
-              msg: ""
+              f: U
             };
-          },
-          computed: {
-            isApple: function () {
-              return "ios" === uni.getSystemInfoSync().platform;
-            },
-            isInApp: function () {
-              return window.$isInWC;
-            }
-          },
-          methods: {
-            gotoForm: function () {
-              location.href = "https://srvdt-app.taizhou.com.cn/questionnaire/#/?activityId=" + this.$store.state.config.formId + "&withUserAgent=true&back=" + encodeURIComponent(location.href);
-            },
-            gotoApp: function () {
-              var e = this;
-              uni.showModal({
-                content: "璇疯繘鍏ユ湜娼瓵PP鍙備笌鎶藉浜掑姩",
-                showCancel: false,
-                success: function () {
-                  var i = document.createElement("a"),
-                    a = "wangchao://".concat(location.host + location.pathname + location.hash);
-                  t("log", "uni.getSystemInfoSync().platform==", uni.getSystemInfoSync().platform, " at pages/luckdraw/circle-awsc.vue:188"), "android" == uni.getSystemInfoSync().platform ? (i.href = "https://a.app.qq.com/o/simple.jsp?pkgname=com.shangc.tiennews.taizhou&" + uni.getSystemInfoSync().platform + "_schema=" + (e.$store.state.config.newsId ? "wangchao://vapp.taizhou.com.cn/webDetails/news?id=" + e.$store.state.config.newsId + "&tenantId=64" : encodeURIComponent(a)), setTimeout(function () {
-                    window.location.href = i.href;
-                  }, 3e3)) : (i.href = "https://vapp.taizhou.com.cn/com.huidu.taizhounews/?url=https%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.shangc.tiennews.taizhou%26" + uni.getSystemInfoSync().platform + "_scheme%3Dwangchao%3A%2F%2Fvapp.taizhou.com.cn%2FwebDetails%2Fnews%3Fid%3D" + e.$store.state.config.newsId + "%26tenantId%3D64", e.$store.state.config.newsId || (i.href = "https://vapp.taizhou.com.cn/com.huidu.taizhounews/?url=https%3A%2F%2Fa.app.qq.com%2Fo%2Fsimple.jsp%3Fpkgname%3Dcom.shangc.tiennews.taizhou%26" + uni.getSystemInfoSync().platform + "_scheme%3D" + encodeURIComponent(a))), t("log", "a.href", i.href, " at pages/luckdraw/circle-awsc.vue:211"), i.click();
-                }
-              });
-            },
-            finish: function (t) {
-              var e = this.popAward,
-                i = this;
-              uni.request({
-                url: i.$baseUrl + "/tzrb/userAwardRecordUpgrade/writeOffByCode",
-                method: "POST",
-                data: {
-                  id: e.id,
-                  writeOffCode: t
-                },
-                header: {
-                  "Content-type": "application/x-www-form-urlencoded"
-                },
-                success: function (t) {
-                  200 == t.data.code ? (uni.showToast({
-                    title: t.data.message,
-                    duration: 3e3,
-                    mask: true
-                  }), i.size = 10, i.current = 1, i.pages = 1, i.getAward(false)) : uni.showToast({
-                    title: t.data.message,
-                    duration: 3e3,
-                    mask: true,
-                    icon: "none"
-                  });
-                }
-              }), this.showPop = false;
-            },
-            useAward: function (t) {
-              this.showPop = true, this.popAward = t;
-            },
-            getAward: function (t) {
-              var e = this;
-              uni.request({
-                url: e.$baseUrl + "/tzrb/userAwardRecordUpgrade/pageList",
-                data: {
-                  pageSize: e.size,
-                  pageNum: e.current,
-                  activityId: this.activityId
-                },
-                success: function (i) {
-                  if (200 == i.data.code) {
-                    var a = i.data.data.records;
-                    e.awards = t ? e.awards.concat(a) : a, e.pages = i.data.data.pages, e.total = i.data.data.total, e.status = 0 == e.total ? "nomore" : "loadmore";
-                  } else if (-1 == i.data.code) {
-                    if (!e.isInApp) return void e.gotoApp();
-                  } else uni.showModal({
-                    content: i.data.message,
-                    showCancel: false
-                  });
-                }
-              });
-            },
-            handleInitCanvas: function () {
-              (0, c.clearCacheFile)(), this.prizeList = [], this.getPrizeList();
-            },
-            getPrizeList: function () {
-              var e = this;
-              return (0, r.default)((0, o.default)().mark(function i() {
-                var a, n;
-                return (0, o.default)().wrap(function (i) {
-                  while (1) switch (i.prev = i.next) {
-                    case 0:
-                      return i.next = 2, e.requestApiGetPrizeList();
-                    case 2:
-                      a = i.sent, a.ok ? (n = a.data, n.length && (e.prizeList = n, t("log", "宸茶幏鍙栧埌濂栧搧鍒楄〃鏁版嵁锛屽紑濮嬬粯鍒舵娊濂栬浆鐩�", " at pages/luckdraw/circle-awsc.vue:333"), e.onFrontend && (e.weightTotal = 0, e.prizeList.forEach(function (t) {
-                        return e.weightTotal += t.weight;
-                      }), e.weightArr = e.prizeList.map(function (t) {
-                        return t.weight;
-                      })))) : uni.showToast({
-                        title: "鑾峰彇濂栧搧澶辫触",
-                        icon: "none"
-                      });
-                    case 4:
-                    case "end":
-                      return i.stop();
-                  }
-                }, i);
-              }))();
-            },
-            requestApiGetPrizeList: function () {
-              var t = this;
-              return new Promise(function (e, i) {
-                uni.request({
-                  url: t.$baseUrl + "/tzrb/awardUpgrade/list?activityId=" + t.activityId,
-                  success: function (i) {
-                    if (200 == i.data.code) {
-                      t.videoUrl = i.data.info.videoUrl, t.phone = i.data.info.phone ? i.data.info.phone : t.phone, t.freeNum = i.data.info.remainCount;
-                      i.data.data.map(function (e) {
-                        e.prizeName = e.title, e.prizeId = e.id, e.prizeImage = t.$baseUrl + e.imgUrl;
-                      });
-                      e({
-                        ok: true,
-                        data: i.data.data
-                      });
-                    } else e({
-                      ok: false
-                    });
-                  }
-                });
-              });
-            },
-            handleDrawStart: function () {
-              var e = this;
-              if (uni.showLoading({
-                title: "鎶藉涓�..."
-              }), t("log", "瑙﹀彂鎶藉鎸夐挳", " at pages/luckdraw/circle-awsc.vue:396"), !this.prizeing) {
-                this.prizeing = true;
-                var i = this.awscData,
-                  a = i.sessionId,
-                  o = i.sig,
-                  r = i.token;
-                uni.request({
-                  url: this.$baseUrl + "/tzrb/userAwardRecordUpgrade/saveUpdate",
-                  method: "POST",
-                  header: {
-                    "Content-type": "application/x-www-form-urlencoded"
-                  },
-                  data: {
-                    activityId: this.activityId,
-                    sessionId: a,
-                    sig: o,
-                    token: r
-                  },
-                  success: function (t) {
-                    if (200 == t.data.code) {
-                      var i = (0, n.default)(e.prizeList),
-                        a = t.data.data;
-                      e.msg = t.data.msg;
-                      for (var o = 0; o < i.length; o++) {
-                        var r = i[o];
-                        if (r.prizeId === a) {
-                          e.prizeIndex = o;
-                          break;
-                        }
-                      }
-                    } else if (-1 == t.data.code) {
-                      if (e.prizeing = false, uni.hideLoading(), !e.isInApp) return void e.gotoApp();
-                    } else e.prizeing = false, uni.hideLoading(), uni.showModal({
-                      content: t.data.message,
-                      showCancel: false
-                    });
-                  }
-                });
+          }
+          throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+        }
+      }
+      var V;
+      var W = true;
+      var X = false;
+      return {
+        s: function () {
+          {
+            S = S.call(P);
+          }
+        },
+        n: function () {
+          {
+            var a0 = S.next();
+            W = a0.done;
+            return a0;
+          }
+        },
+        e: function (a0) {
+          {
+            X = true;
+            V = a0;
+          }
+        },
+        f: function () {
+          {
+            try {
+              {
+                W || null == S.return || S.return();
               }
-            },
-            handleDrawEnd: function () {
-              t("log", "鏃嬭浆缁撴潫锛屾墽琛屾嬁鍒扮粨鏋滃悗鍒伴€昏緫", " at pages/luckdraw/circle-awsc.vue:454"), this.prizeing = false, uni.hideLoading(), this.getNoticeList(), uni.showModal({
-                content: this.msg ? this.msg : this.prizeList[this.prizeIndex].prizeName,
-                showCancel: false
-              }), this.size = 10, this.current = 1, this.pages = 1, this.getAward(false);
-            },
-            handleDrawFinish: function (t) {},
-            loadmore: function () {
-              this.status = "loading", this.current = ++this.current, this.current > this.pages ? this.status = "nomore" : (this.status = "loading", this.getAward(true));
-            },
-            getInfo: function () {
-              var t = this;
-              uni.request({
-                url: this.$baseUrl + "/tzrb/activity/findById",
-                method: "GET",
-                data: {
-                  id: this.activityId
-                },
-                success: function (e) {
-                  200 == e.data.code ? (t.info = e.data.data, t.info.activityExplain = t.info.activityExplain.split("<br/>")) : uni.showToast({
-                    title: e.data.message,
-                    duration: 3e3,
-                    mask: true,
-                    icon: "none"
-                  });
+            } finally {
+              {
+                if (X) {
+                  throw V;
                 }
-              });
-            },
-            getNoticeList: function () {
-              var t = this;
-              uni.request({
-                url: this.$baseUrl + "/tzrb/systemNotice/list?activityId=" + this.activityId,
-                method: "GET",
-                success: function (e) {
-                  200 == e.data.code ? t.noticeList = e.data.data : uni.showModal({
-                    content: e.data.message,
-                    showCancel: false
-                  });
-                }
-              });
-            },
-            noticeEnd: function () {
-              this.getNoticeList();
-            },
-            call: function (e) {
-              uni.makePhoneCall({
-                phoneNumber: "ios" == uni.getSystemInfoSync().platform ? "" + e : "//" + e,
-                success: function (e) {
-                  t("log", "璋冪敤鎴愬姛!", " at pages/luckdraw/circle-awsc.vue:539");
-                },
-                fail: function (e) {
-                  t("log", "璋冪敤澶辫触!", " at pages/luckdraw/circle-awsc.vue:542"), uni.showToast({
-                    icon: "none",
-                    title: "鎷ㄦ墦澶辫触"
-                  });
-                }
-              });
-            },
-            back: function () {
-              uni.navigateBack({
-                delta: 1
-              });
-            },
-            getUserInfo: function () {
-              var e = this;
-              uni.showLoading({
-                title: "鐧诲綍涓�..."
-              }), uni.request({
-                url: this.$baseUrl + "/tzrb/user/loginWC",
-                method: "GET",
-                data: {
-                  accountId: window.$accountId,
-                  sessionId: window.$sessionId
-                },
-                success: function (i) {
-                  uni.hideLoading(), 200 == i.data.code ? (t("log", i.data, " at pages/luckdraw/circle-awsc.vue:570"), e.getAward()) : uni.showToast({
-                    title: i.data.message,
-                    duration: 3e3,
-                    mask: true,
-                    icon: "none"
-                  });
-                }
-              });
+              }
             }
-          },
-          onShow: function () {
-            window.$isInWC && (t("log", "store==", this.$store.state, " at pages/luckdraw/circle-awsc.vue:593"), uni.setNavigationBarTitle({
-              title: this.info.activityName || this.$store.state.config.title
-            }), this.handleInitCanvas(), this.getNoticeList(), this.getInfo(), this.isInApp && this.getUserInfo());
-          },
-          onUnload: function () {
-            uni.hideLoading();
-          },
-          onReachBottom: function () {
-            this.loadmore();
-          }
-        };
-      e.default = u;
-    }).call(this, i("0de9")["log"]);
-  },
-  "650c": function (t, e, i) {
-    "use strict";
-
-    (function (t) {
-      i("7a82"), Object.defineProperty(e, "__esModule", {
-        value: true
-      }), e.default = undefined;
-      var a = {
-        name: "Awsc",
-        props: {
-          showAwsc: {
-            type: Boolean,
-            default: true
-          }
-        },
-        data: function () {
-          return {};
-        },
-        computed: {
-          isInApp: function () {
-            return window.$isInWC;
-          }
-        },
-        created: function () {
-          this.init();
-        },
-        methods: {
-          init: function () {
-            var e = this;
-            AWSC.use("nc", function (i, a) {
-              window.nc = a.init({
-                appkey: "FFFF0N0000000000B5B0",
-                scene: "nc_activity_h5",
-                renderTo: "nc",
-                success: function (t) {
-                  e.$emit("submit", t);
-                },
-                fail: function (e) {
-                  t("log", e, " at components/awsc.vue:58");
-                },
-                error: function (e) {
-                  t("log", e, " at components/awsc.vue:62");
-                }
-              });
-            });
           }
         }
       };
-      e.default = a;
-    }).call(this, i("0de9")["log"]);
-  },
-  "6a07": function (t, e, i) {
+    }
+  }
+  function w(P, Q) {
+    {
+      (null == Q || Q > P.length) && (Q = P.length);
+      for (var R = 0, S = Array(Q); R < Q; R++) {
+        S[R] = P[R];
+      }
+      return S;
+    }
+  }
+  function x() {
     "use strict";
 
-    (function (t) {
-      i("7a82");
-      var a = i("4ea4").default;
-      Object.defineProperty(e, "__esModule", {
-        value: true
-      }), e.default = undefined;
-      var n = a(i("c7eb")),
-        o = a(i("1da1"));
-      i("a9e3"), i("cb29"), i("14d9"), i("ac1f"), i("00b4"), i("c975"), i("d3b7"), i("fb6a"), i("e9c4");
-      var r = i("30a9"),
-        s = {
-          name: "AlmostLottery2",
-          props: {
-            pixelRatio: {
-              type: Number,
-              default: 2
-            },
-            canvasId: {
-              type: String,
-              default: "almostLottery"
-            },
-            lotterySize: {
-              type: Number,
-              default: 600
-            },
-            actionSize: {
-              type: Number,
-              default: 200
-            },
-            canvasMarginOutside: {
-              type: Number,
-              default: 90
-            },
-            prizeList: {
-              type: Array,
-              required: true,
-              validator: function (t) {
-                return t.length > 1;
-              }
-            },
-            prizeIndex: {
-              type: Number,
-              required: true
-            },
-            colors: {
-              type: Array,
-              default: function () {
-                return ["#FFFFFF", "#FFBF05"];
-              }
-            },
-            lotteryBg: {
-              type: String,
-              default: "/uni_modules/almost-lottery/static/almost-lottery/almost-lottery__bg2x.png"
-            },
-            actionBg: {
-              type: String,
-              default: "/uni_modules/almost-lottery/static/almost-lottery/almost-lottery__action2x.png"
-            },
-            prizeNameDrawed: {
-              type: Boolean,
-              default: false
-            },
-            stroked: {
-              type: Boolean,
-              default: false
-            },
-            strokeColor: {
-              type: String,
-              default: "#FFBF05"
-            },
-            rotateType: {
-              type: String,
-              default: "roulette"
-            },
-            duration: {
-              type: Number,
-              default: 8
-            },
-            ringCount: {
-              type: Number,
-              default: 8
-            },
-            pointerPosition: {
-              type: String,
-              default: "edge",
-              validator: function (t) {
-                return "edge" === t || "middle" === t;
-              }
-            },
-            strDirection: {
-              type: String,
-              default: "horizontal",
-              validator: function (t) {
-                return "horizontal" === t || "vertical" === t;
-              }
-            },
-            strFontColors: {
-              type: Array,
-              default: function () {
-                return ["#666", "#666"];
-              }
-            },
-            strFontSize: {
-              type: Number,
-              default: 24
-            },
-            strMarginOutside: {
-              type: Number,
-              default: 0
-            },
-            imgMarginStr: {
-              type: Number,
-              default: 60
-            },
-            strLineHeight: {
-              type: Number,
-              default: 1.2
-            },
-            strMaxLen: {
-              type: Number,
-              default: 12
-            },
-            strLineLen: {
-              type: Number,
-              default: 6
-            },
-            imgWidth: {
-              type: Number,
-              default: 50
-            },
-            imgHeight: {
-              type: Number,
-              default: 50
-            },
-            imgDrawed: {
-              type: Boolean,
-              default: true
-            },
-            imgCircled: {
-              type: Boolean,
-              default: false
-            },
-            successMsg: {
-              type: String,
-              default: "濂栧搧鍑嗗灏辩华锛屽揩鏉ュ弬涓庢娊濂栧惂"
-            },
-            failMsg: {
-              type: String,
-              default: "濂栧搧浠嶅湪鍑嗗涓紝璇风◢鍚庡啀鏉�..."
-            },
-            canvasCached: {
-              type: Boolean,
-              default: false
-            }
-          },
-          data: function () {
-            return {
-              className: "almost-lottery__canvas",
-              systemPixelRatio: 2,
-              lotteryPxSize: 0,
-              canvasImgPxSize: 0,
-              actionPxSize: 0,
-              strMarginPxOutside: 0,
-              imgMarginPxStr: 0,
-              imgPxWidth: 0,
-              imgPxHeight: 0,
-              lotteryImg: "@/static/images/1.png",
-              targetAngle: 0,
-              targetActionAngle: 0,
-              transitionDuration: 0,
-              isRotate: false,
-              stayIndex: 0,
-              targetIndex: 0,
-              isCacheImg: false,
-              oldLotteryImg: "",
-              measureText: ""
+    var Q = {
+      rBCDb: "eKBde",
+      xQcWB: function (ap, aq) {
+        return ap === aq;
+      },
+      vFHYK: function (ap, aq) {
+        return ap !== aq;
+      },
+      PBGHk: "FlrNE",
+      hXimB: "EjaYV",
+      QhQfE: function (ap, aq, ar, as, at) {
+        return ap(aq, ar, as, at);
+      },
+      nYUFr: function (ap, aq) {
+        return ap !== aq;
+      },
+      haaQc: "hpQYP",
+      qWBwH: "JVJlo",
+      vEnmQ: function (ap, aq) {
+        return ap !== aq;
+      },
+      UtjHM: "RSXwI",
+      GOtDm: "oFPNf",
+      BPSlq: "normal",
+      crcIP: "ycETT",
+      Xfpud: "TLHyh",
+      dFrlo: "throw",
+      LCths: "next",
+      MBxPj: function (ap, aq) {
+        return ap !== aq;
+      },
+      KppsM: "IdOET",
+      ElCcu: function (ap, aq, ar, as) {
+        return ap(aq, ar, as);
+      },
+      TAOtQ: function (ap, aq, ar, as) {
+        return ap(aq, ar, as);
+      },
+      mtUfn: "GeneratorFunction",
+      MYVvf: "vxBpH",
+      SBDXy: function (ap) {
+        return ap();
+      },
+      iviSO: function (ap, aq) {
+        return ap === aq;
+      },
+      TQeZS: "uFhZg",
+      EFqXn: "nPBbh",
+      cPzou: "WSnis",
+      XMpxM: function (ap, aq) {
+        return ap(aq);
+      },
+      HBGGo: function (ap, aq) {
+        return ap < aq;
+      },
+      QdVlP: "uLNmP",
+      yJCNX: "vMSCl",
+      NXXRZ: "yqvbt",
+      bnCWh: "ykBTE",
+      ePaif: function (ap, aq) {
+        return ap == aq;
+      },
+      dEYcZ: "object",
+      McpfY: "__await",
+      tokCG: function (ap, aq) {
+        return ap instanceof aq;
+      },
+      Bsqcc: "_invoke",
+      ODyfp: "WSCxp",
+      nJVao: "scLWg",
+      mPdTD: function (ap, aq) {
+        return ap !== aq;
+      },
+      ZPbCf: "ZTZYJ",
+      dFZZf: "Generator is already running",
+      abvcY: function (ap, aq) {
+        return ap === aq;
+      },
+      FhcmZ: "GSUCz",
+      IRPyy: "ZpVLF",
+      ExzkC: function (ap, aq) {
+        return ap === aq;
+      },
+      lvKOQ: "ajDPG",
+      dxKff: "FhYfy",
+      AHWcQ: "juAtU",
+      tvPsi: "return",
+      oShCS: function (ap, aq) {
+        return ap === aq;
+      },
+      UgsZX: "kqErr",
+      PVNjh: "thtXh",
+      wBRYt: function (ap, aq) {
+        return ap === aq;
+      },
+      vDGpI: function (ap, aq, ar) {
+        return ap(aq, ar);
+      },
+      pmsDz: function (ap, aq) {
+        return ap === aq;
+      },
+      GuTAu: function (ap, aq) {
+        return ap !== aq;
+      },
+      bynNa: "The iterator does not provide a '",
+      EAxiV: "' method",
+      ltTOo: "cQirI",
+      zFzWZ: "FeoCm",
+      bETQz: "hXpdk",
+      rXLGp: function (ap, aq) {
+        return ap === aq;
+      },
+      DXBEe: "wLTuq",
+      dkQGu: "function",
+      jZeWI: function (ap, aq) {
+        return ap === aq;
+      },
+      DFziW: function (ap, aq) {
+        return ap === aq;
+      },
+      VoVBl: function (ap, aq) {
+        return ap !== aq;
+      },
+      opbwz: "UUZOZ",
+      sayil: "XdWRL",
+      tEXDr: function (ap, aq) {
+        return ap - aq;
+      },
+      nNOPX: function (ap, aq) {
+        return ap >= aq;
+      },
+      hIoFd: function (ap, aq) {
+        return ap(aq);
+      },
+      SiOaQ: function (ap, aq) {
+        return ap(aq);
+      },
+      NlQkM: "illegal catch attempt",
+      jqUKl: "wkxwq",
+      BVicR: function (ap, aq) {
+        return ap in aq;
+      },
+      WhgtM: "RwdVw",
+      MRUUD: function (ap, aq) {
+        return ap === aq;
+      },
+      zBpZN: function (ap, aq, ar, as, at) {
+        return ap(aq, ar, as, at);
+      },
+      iWsrA: function (ap, aq) {
+        return ap == aq;
+      },
+      QbcWi: "CQMqI",
+      cYnOO: function (ap, aq) {
+        return ap === aq;
+      },
+      cvtML: "hRzry",
+      KQqrv: "[object Generator]",
+      osvuk: "KfQvh",
+      sqjqx: function (ap, aq) {
+        return ap !== aq;
+      },
+      CUJpR: "AuHUn",
+      TznGz: function (ap, aq) {
+        return ap in aq;
+      },
+      cvLof: "hqZRv",
+      ijBEF: "ndGwi",
+      KiMBM: "MONVw",
+      aYZxN: function (ap, aq, ar, as, at) {
+        return ap(aq, ar, as, at);
+      },
+      xLSZe: function (ap, aq) {
+        return ap === aq;
+      },
+      WnaaD: "HOWXf",
+      suaKU: "ZKevC",
+      gzBQY: function (ap, aq) {
+        return ap < aq;
+      },
+      lzWJO: function (ap, aq) {
+        return ap(aq);
+      },
+      WWvKA: function (ap, aq) {
+        return ap !== aq;
+      },
+      CdLha: "rePLS",
+      RQsdm: "CsLEJ",
+      Tyexs: function (ap, aq) {
+        return ap === aq;
+      },
+      lsOeY: "break",
+      tFstx: "continue",
+      OfAEs: "end",
+      XrFrd: function (ap, aq) {
+        return ap === aq;
+      },
+      LqtoH: " API请求失败，请检查网路重试",
+      fxQbK: function (ap, aq) {
+        return ap === aq;
+      },
+      VGAKj: "RAQSj",
+      omujx: function (ap, aq) {
+        return ap - aq;
+      },
+      yPQyL: function (ap, aq) {
+        return ap >= aq;
+      },
+      vwITX: "cewUU",
+      PMOea: function (ap, aq) {
+        return ap(aq);
+      },
+      KxTBq: function (ap, aq) {
+        return ap === aq;
+      },
+      bchLb: function (ap, aq) {
+        return ap !== aq;
+      },
+      GeBzz: "JjFBU",
+      qNwgQ: "VCzwH",
+      qnbYo: "ySmDc",
+      VckeQ: "kSHUW",
+      wmZKn: function (ap, aq) {
+        return ap === aq;
+      },
+      HpfxH: function (ap, aq) {
+        return ap !== aq;
+      },
+      esZsM: "zNVgF",
+      aHsNO: function (ap, aq) {
+        return ap(aq);
+      },
+      ObWAu: function (ap, aq) {
+        return ap !== aq;
+      },
+      iHSzx: "kKTjO"
+    };
+    x = function () {
+      {
+        return U;
+      }
+    };
+    var R;
+    var U = {};
+    var V = Object.prototype;
+    var W = V.hasOwnProperty;
+    var X = Object.defineProperty || function (ap, aq, ar) {
+      ap[aq] = ar.value;
+    };
+    var Y = "function" == typeof Symbol ? Symbol : {};
+    var Z = Y.iterator || "@@iterator";
+    var a0 = Y.asyncIterator || "@@asyncIterator";
+    var a1 = Y.toStringTag || "@@toStringTag";
+    function a2(ap, aq, ar) {
+      {
+        var as = {
+          value: ar,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        };
+        Object.defineProperty(ap, aq, as);
+        return ap[aq];
+      }
+    }
+    try {
+      {
+        a2({}, "");
+      }
+    } catch (aq) {
+      {
+        a2 = function (as, at, au) {
+          return as[at] = au;
+        };
+      }
+    }
+    function a3(as, at, au, av) {
+      {
+        var aw = at && at.prototype instanceof aa ? at : aa;
+        var ax = Object.create(aw.prototype);
+        var ay = new an(av || []);
+        X(ax, "_invoke", {
+          value: aj(as, au, ay)
+        });
+        return ax;
+      }
+    }
+    function a4(as, at, au) {
+      {
+        try {
+          return {
+            type: "normal",
+            arg: as.call(at, au)
+          };
+        } catch (ax) {
+          {
+            var av = {
+              type: "throw",
+              arg: ax
             };
-          },
-          computed: {
-            higtCanvasSize: function () {
-              return this.canvasImgPxSize * this.systemPixelRatio;
-            },
-            higtFontSize: function () {
-              return Math.round(this.strFontSize / this.pixelRatio) * this.systemPixelRatio;
-            },
-            higtHeightMultiple: function () {
-              return Math.round(this.strFontSize / this.pixelRatio) * this.strLineHeight * this.systemPixelRatio;
-            },
-            canvasImgToLeftPx: function () {
-              return (this.lotteryPxSize - this.canvasImgPxSize) / 2;
-            },
-            actionBgToLeftPx: function () {
-              return (this.lotteryPxSize - this.actionPxSize) / 2;
-            },
-            canvasAngle: function () {
-              var t = 0,
-                e = this.prizeList.length,
-                i = 360 / e,
-                a = 90 / i;
-              return t = "edge" === this.pointerPosition || "pointer" === this.rotateType ? -i * a : -(i * a + i / 2), t;
-            },
-            actionAngle: function () {
-              return 0;
-            },
-            outsideRadius: function () {
-              return this.higtCanvasSize / 2;
-            },
-            insideRadius: function () {
-              return 20 * this.systemPixelRatio;
-            },
-            textRadius: function () {
-              return this.strMarginPxOutside * this.systemPixelRatio || this.higtFontSize / 2;
-            },
-            textDistance: function () {
-              var t = Math.round(this.outsideRadius - this.insideRadius / 2);
-              return t - this.textRadius;
+            return av;
+          }
+        }
+      }
+    }
+    U.wrap = a3;
+    var a5 = "suspendedStart";
+    var a6 = "suspendedYield";
+    var a7 = "executing";
+    var a8 = "completed";
+    var a9 = {};
+    function aa() {}
+    function ab() {}
+    function ac() {}
+    var ad = {};
+    a2(ad, Z, function () {
+      return this;
+    });
+    var ae = Object.getPrototypeOf;
+    var af = ae && ae(ae(ao([])));
+    af && af !== V && W.call(af, Z) && (ad = af);
+    ac.prototype = aa.prototype = Object.create(ad);
+    var ag = ac.prototype;
+    function ah(as) {
+      {
+        ["next", "throw", "return"].forEach(function (au) {
+          a2(as, au, function (aw) {
+            {
+              return this._invoke(au, aw);
             }
-          },
-          watch: {
-            prizeIndex: function (e, i) {
-              e > -1 ? (this.targetIndex = e, this.onRotateStart()) : t("info", "鏃嬭浆缁撴潫锛宲rizeIndex 宸查噸缃�", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:343");
-            }
-          },
-          methods: {
-            onRotateStart: function () {
-              var e = this;
-              if (!this.isRotate) {
-                this.isRotate = true;
-                var i = this.prizeList.length,
-                  a = 360 / i,
-                  n = 0;
-                "pointer" === this.rotateType ? (n = 0 === this.targetActionAngle ? (this.targetIndex - this.stayIndex) * a + a / 2 - this.actionAngle : (this.targetIndex - this.stayIndex) * a, this.stayIndex = this.targetIndex, this.targetActionAngle += n + 360 * this.ringCount, t("log", "targetActionAngle", this.targetActionAngle, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:371")) : (n = 0 === this.targetAngle ? 270 - (this.targetIndex - this.stayIndex) * a - a / 2 - this.canvasAngle : -(this.targetIndex - this.stayIndex) * a, this.stayIndex = this.targetIndex, this.targetAngle += n + 360 * this.ringCount);
-                var o = 1e3 * this.transitionDuration + 100,
-                  r = setTimeout(function () {
-                    clearTimeout(r), r = null, e.isRotate = false, e.$emit("draw-end");
-                  }, o),
-                  s = setTimeout(function () {
-                    clearTimeout(s), s = null, e.$emit("reset-index");
-                  }, o + 50);
+          });
+        });
+      }
+    }
+    function ai(as, at) {
+      {
+        function aw(ax, ay, az, aA) {
+          {
+            var aC = a4(as[ax], as, ay);
+            if ("throw" !== aC.type) {
+              {
+                var aD = aC.arg;
+                var aE = aD.value;
+                return aE && "object" == k(aE) && W.call(aE, "__await") ? at.resolve(aE.__await).then(function (aH) {
+                  {
+                    aw("next", aH, az, aA);
+                  }
+                }, function (aH) {
+                  {
+                    aw("throw", aH, az, aA);
+                  }
+                }) : at.resolve(aE).then(function (aH) {
+                  {
+                    aD.value = aH;
+                    az(aD);
+                  }
+                }, function (aH) {
+                  {
+                    return aw("throw", aH, az, aA);
+                  }
+                });
               }
-            },
-            handleActionStart: function () {
-              this.lotteryImg && (this.isRotate || this.$emit("draw-start"));
-            },
-            onCreateCanvas: function () {
-              var e = this;
-              return (0, o.default)((0, n.default)().mark(function i() {
-                var a, o, s, l, c, u, d, f, h, m, g, p, v, y, w, x, b, _, I, z, S, C, P, k, L, F, T, A, M, R, U, $, D, N, O, B, j, E, q, H;
-                return (0, n.default)().wrap(function (i) {
-                  while (1) switch (i.prev = i.next) {
-                    case 0:
-                      a = e.canvasId, o = uni.createCanvasContext(a, e), s = e.higtCanvasSize, l = e.higtCanvasSize, c = e.prizeList.length, u = 2 * Math.PI / c, o.setFontSize(e.higtFontSize), d = 0;
-                    case 8:
-                      if (!(d < c)) {
-                        i.next = 125;
-                        break;
-                      }
-                      if (f = e.prizeList[d], h = d * u, o.save(), o.beginPath(), o.arc(.5 * s, .5 * l, e.outsideRadius, h, h + u, false), o.arc(.5 * s, .5 * l, e.insideRadius, h + u, h, true), 2 === e.colors.length ? o.setFillStyle(e.colors[d % 2]) : o.setFillStyle(e.colors[d]), o.fill(), e.stroked && (o.setStrokeStyle("".concat(e.strokeColor)), o.stroke()), m = .5 * s + Math.cos(h + u / 2) * e.textDistance, g = .5 * l + Math.sin(h + u / 2) * e.textDistance, o.translate(m, g), p = e.strLimit(f.prizeName), 1 === e.strFontColors.length ? o.setFillStyle(e.strFontColors[0]) : 2 === e.strFontColors.length ? o.setFillStyle(e.strFontColors[d % 2]) : o.setFillStyle(e.strFontColors[d]), o.rotate(h + u / 2 + Math.PI / 2), "horizontal" !== e.strDirection) {
-                        i.next = 70;
-                        break;
-                      }
-                      if (!p || !e.prizeNameDrawed) {
-                        i.next = 68;
-                        break;
-                      }
-                      if (v = (0, r.clacTextLen)(p).realLen, y = v > e.strLineLen, !y) {
-                        i.next = 54;
-                        break;
-                      }
-                      for (w = 0, x = "", b = [], _ = 0; _ < p.length; _++) w += (0, r.clacTextLen)(p[_]).byteLen, x += p[_], (w === 2 * e.strLineLen || p.length - 1 === _) && (b.push(x), w = 0, x = "");
-                      I = 0;
-                    case 34:
-                      if (!(I < b.length)) {
-                        i.next = 52;
-                        break;
-                      }
-                      if (!(o.measureText && o.measureText(b[I]).width > 0)) {
-                        i.next = 41;
-                        break;
-                      }
-                      z = o.measureText(b[I]), S = -(z.width / 2).toFixed(2), o.fillText(b[I], S, I * e.higtHeightMultiple), i.next = 49;
-                      break;
-                    case 41:
-                      return e.measureText = b[I], i.next = 44, e.$nextTick();
-                    case 44:
-                      return i.next = 46, e.getTextWidth();
-                    case 46:
-                      C = i.sent, P = -(C / 2).toFixed(2), o.fillText(b[I], P, I * e.higtHeightMultiple);
-                    case 49:
-                      I++, i.next = 34;
-                      break;
-                    case 52:
-                      i.next = 68;
-                      break;
-                    case 54:
-                      if (!(o.measureText && o.measureText(p).width > 0)) {
-                        i.next = 60;
-                        break;
-                      }
-                      k = o.measureText(p), L = -(k.width / 2).toFixed(2), o.fillText(p, L, 0), i.next = 68;
-                      break;
-                    case 60:
-                      return e.measureText = p, i.next = 63, e.$nextTick();
-                    case 63:
-                      return i.next = 65, e.getTextWidth();
-                    case 65:
-                      F = i.sent, T = -(F / 2).toFixed(2), o.fillText(p, T, 0);
-                    case 68:
-                      i.next = 90;
-                      break;
-                    case 70:
-                      A = p.split(""), M = 0;
-                    case 72:
-                      if (!(M < A.length)) {
-                        i.next = 90;
-                        break;
-                      }
-                      if (!(o.measureText && o.measureText(A[M]).width > 0)) {
-                        i.next = 79;
-                        break;
-                      }
-                      R = o.measureText(A[M]), U = -(R.width / 2).toFixed(2), o.fillText(A[M], U, M * e.higtHeightMultiple), i.next = 87;
-                      break;
-                    case 79:
-                      return e.measureText = A[M], i.next = 82, e.$nextTick();
-                    case 82:
-                      return i.next = 84, e.getTextWidth();
-                    case 84:
-                      $ = i.sent, D = -($ / 2).toFixed(2), o.fillText(A[M], D, M * e.higtHeightMultiple);
-                    case 87:
-                      M++, i.next = 72;
-                      break;
-                    case 90:
-                      if (!e.imgDrawed || !f.prizeImage || "vertical" === e.strDirection) {
-                        i.next = 121;
-                        break;
-                      }
-                      if (N = /^(https|http)/g, !N.test(f.prizeImage)) {
-                        i.next = 110;
-                        break;
-                      }
-                      return "", "闇€瑕佸鐞嗗ソ璺ㄥ煙闂锛�", t("warn", "###褰撳墠鏁版嵁鍒楄〃涓殑濂栧搧鍥剧墖涓虹綉缁滃浘鐗囷紝".concat("闇€瑕佸鐞嗗ソ璺ㄥ煙闂锛�", "寮€濮嬪皾璇曚笅杞藉浘鐗�...###"), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:597"), i.next = 98, (0, r.downloadFile)(f.prizeImage);
-                    case 98:
-                      if (O = i.sent, t("log", "澶勭悊杩滅▼鍥剧墖", O, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:599"), !O.ok) {
-                        i.next = 107;
-                        break;
-                      }
-                      return B = O.tempFilePath, i.next = 104, (0, r.pathToBase64)(B);
-                    case 104:
-                      f.prizeImage = i.sent, i.next = 108;
-                      break;
-                    case 107:
-                      e.handlePrizeImgSuc({
-                        ok: false,
-                        data: O.data,
-                        msg: O.msg
-                      });
-                    case 108:
-                      i.next = 116;
-                      break;
-                    case 110:
-                      if (-1 !== f.prizeImage.indexOf(";base64,")) {
-                        i.next = 116;
-                        break;
-                      }
-                      return t("log", "寮€濮嬪鐞嗘湰鍦板浘鐗�", f.prizeImage, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:619"), i.next = 114, (0, r.pathToBase64)(f.prizeImage);
-                    case 114:
-                      f.prizeImage = i.sent, t("log", "澶勭悊鏈湴鍥剧墖缁撴潫", f.prizeImage, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:621");
-                    case 116:
-                      j = -e.imgPxWidth * e.systemPixelRatio / 2, E = e.imgMarginPxStr * e.systemPixelRatio, q = e.imgPxWidth * e.systemPixelRatio, H = e.imgPxHeight * e.systemPixelRatio, e.imgCircled ? (2 === e.colors.length ? o.setFillStyle(e.colors[d % 2]) : o.setFillStyle(e.colors[d]), (0, r.circleImg)(o, f.prizeImage, j, E, q, H)) : o.drawImage(f.prizeImage, j, E, q, H);
-                    case 121:
-                      o.restore();
-                    case 122:
-                      d++, i.next = 8;
-                      break;
-                    case 125:
-                      o.draw(true, function () {
-                        var t = setTimeout(function () {
-                          clearTimeout(t), t = null, uni.canvasToTempFilePath({
-                            canvasId: e.canvasId,
-                            destWidth: e.higtCanvasSize,
-                            destHeight: e.higtCanvasSize,
-                            success: function (t) {
-                              e.handlePrizeImg({
-                                ok: true,
-                                data: t.tempFilePath,
-                                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖鎴愬姛"
-                              });
-                            },
-                            fail: function (t) {
-                              e.handlePrizeImg({
-                                ok: false,
-                                data: t,
-                                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖澶辫触"
-                              });
-                            }
-                          }, e);
-                        }, 500);
-                      });
-                    case 126:
-                    case "end":
-                      return i.stop();
-                  }
-                }, i);
-              }))();
-            },
-            handlePrizeImg: function (e) {
-              if (e.ok) {
-                var i = e.data;
-                if (!this.canvasCached) return this.lotteryImg = i, void this.handlePrizeImgSuc(e);
-                (0, r.setStore)("".concat(this.canvasId, "LotteryImg"), i), this.lotteryImg = i, this.handlePrizeImgSuc(e);
-                var a = this.isCacheImg ? "缂撳瓨" : "瀵煎嚭";
-                t("info", "褰撳墠涓� H5 绔紝浣跨敤".concat(a, "涓殑 base64 鍥�"), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:783");
-              } else t("error", e.msg, e, " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:786"), t("error", "###褰撳墠涓� H5 绔紝涓嬭浇缃戠粶鍥剧墖闇€瑕佸悗绔厤缃厑璁歌法鍩�###", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:788");
-            },
-            handlePrizeImgSuc: function (t) {
-              this.$emit("finish", {
-                ok: t.ok,
-                data: t.data,
-                msg: t.ok ? this.successMsg : this.failMsg
-              });
-            },
-            getTextWidth: function () {
-              t("warn", "姝ｅ湪閲囩敤鍏煎鏂瑰紡鑾峰彇鏂囨湰鐨� size 淇℃伅", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:807");
-              var e = uni.createSelectorQuery().in(this),
-                i = e.select(".almost-lottery__measureText");
-              return new Promise(function (t, e) {
-                i.fields({
-                  size: true
-                }, function (e) {
-                  t(e.width);
-                }).exec();
-              });
-            },
-            strLimit: function (t) {
-              var e = this.strMaxLen;
-              return t && e && (0, r.clacTextLen)(t).realLen > e ? t.slice(0, e - 1) + ".." : t;
-            },
-            checkCacheImg: function () {
-              t("log", "妫€鏌ユ湰鍦扮紦瀛樹腑鏄惁瀛樺湪杞洏鍥�", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:826"), this.oldLotteryImg = (0, r.getStore)("".concat(this.canvasId, "LotteryImg"));
-              var e = (0, r.getStore)("".concat(this.canvasId, "PrizeList")),
-                i = JSON.stringify(this.prizeList);
-              if (this.oldLotteryImg && e === i) return t("log", "缁忔煡锛屾湰鍦扮紦瀛樹腑瀛樺湪杞洏鍥� => ".concat(this.oldLotteryImg), " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:834"), this.isCacheImg = true, t("log", "闇€瑕佺户缁垽鏂繖寮犵紦瀛樺浘鏄惁鍙敤", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:837"), void this.handlePrizeImg({
-                ok: true,
-                data: this.oldLotteryImg,
-                msg: "鐢诲竷瀵煎嚭鐢熸垚鍥剧墖鎴愬姛"
-              });
-              t("log", "缁忔煡锛屾湰鍦扮紦瀛樹腑涓嶅瓨鍦ㄨ浆鐩樺浘", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:847"), this.initCanvasDraw();
-            },
-            initCanvasDraw: function () {
-              t("log", "寮€濮嬪垵濮嬪寲杞洏缁樺埗", " at uni_modules/almost-lottery/components/almost-lottery/almost-lottery2.vue:852"), this.isCacheImg = false, this.lotteryImg = "", (0, r.clearStore)("".concat(this.canvasId, "LotteryImg")), (0, r.setStore)("".concat(this.canvasId, "PrizeList"), this.prizeList), this.onCreateCanvas();
-            },
-            beforeInit: function () {
-              var t = this;
-              return (0, o.default)((0, n.default)().mark(function e() {
-                var i, a, o, r, s, l, c;
-                return (0, n.default)().wrap(function (e) {
-                  while (1) switch (e.prev = e.next) {
-                    case 0:
-                      return i = uni.createSelectorQuery().in(t), e.next = 3, new Promise(function (t) {
-                        i.select(".almost-lottery__wrap").boundingClientRect(function (e) {
-                          t(e);
-                        }).exec();
-                      });
-                    case 3:
-                      return a = e.sent, e.next = 6, new Promise(function (t) {
-                        i.select(".lottery-action").boundingClientRect(function (e) {
-                          t(e);
-                        }).exec();
-                      });
-                    case 6:
-                      return o = e.sent, e.next = 9, new Promise(function (t) {
-                        i.select(".str-margin-outside").boundingClientRect(function (e) {
-                          t(e);
-                        }).exec();
-                      });
-                    case 9:
-                      return r = e.sent, e.next = 12, new Promise(function (t) {
-                        i.select(".img-margin-str").boundingClientRect(function (e) {
-                          t(e);
-                        }).exec();
-                      });
-                    case 12:
-                      return s = e.sent, e.next = 15, new Promise(function (t) {
-                        i.select(".img-size").boundingClientRect(function (e) {
-                          t(e);
-                        }).exec();
-                      });
-                    case 15:
-                      l = e.sent, t.lotteryPxSize = Math.floor(a.width), t.canvasImgPxSize = t.lotteryPxSize - Math.floor(o.left) + Math.floor(a.left), t.actionPxSize = Math.floor(o.width), t.strMarginPxOutside = Math.floor(r.left) - Math.floor(a.left), t.imgMarginPxStr = Math.floor(s.left) - Math.floor(a.left), t.imgPxWidth = Math.floor(l.width), t.imgPxHeight = Math.floor(l.height), c = setTimeout(function () {
-                        clearTimeout(c), c = null, t.transitionDuration = t.duration;
-                      }, 50);
-                    case 24:
-                    case "end":
-                      return e.stop();
-                  }
-                }, e);
-              }))();
             }
-          },
-          mounted: function () {
-            var t = this;
-            this.$nextTick(function () {
-              var e = setTimeout(function () {
-                clearTimeout(e), e = null, t.beforeInit();
-              }, 50);
-            });
+            aA(aC.arg);
+          }
+        }
+        var av;
+        X(this, "_invoke", {
+          value: function (ax, ay) {
+            {
+              function aB() {
+                {
+                  return new at(function (aF, aG) {
+                    aw(ax, ay, aF, aG);
+                  });
+                }
+              }
+              return av = av ? av.then(aB, aB) : aB();
+            }
+          }
+        });
+      }
+    }
+    function aj(as, at, au) {
+      {
+        var aw = a5;
+        return function (ax, ay) {
+          {
+            if (aw === a7) {
+              throw Error("Generator is already running");
+            }
+            if (aw === a8) {
+              {
+                if ("throw" === ax) {
+                  throw ay;
+                }
+                var aA = {
+                  value: R,
+                  done: true
+                };
+                return aA;
+              }
+            }
+            for (au.method = ax, au.arg = ay;;) {
+              {
+                var aB = au.delegate;
+                if (aB) {
+                  {
+                    var aC = ak(aB, au);
+                    if (aC) {
+                      {
+                        if (aC === a9) {
+                          continue;
+                        }
+                        return aC;
+                      }
+                    }
+                  }
+                }
+                if ("next" === au.method) {
+                  au.sent = au._sent = au.arg;
+                } else {
+                  if ("throw" === au.method) {
+                    {
+                      if (aw === a5) {
+                        throw aw = a8, au.arg;
+                      }
+                      au.dispatchException(au.arg);
+                    }
+                  } else {
+                    "return" === au.method && au.abrupt("return", au.arg);
+                  }
+                }
+                aw = a7;
+                var aD = a4(as, at, au);
+                if ("normal" === aD.type) {
+                  {
+                    if (aw = au.done ? a8 : a6, aD.arg === a9) {
+                      continue;
+                    }
+                    var aE = {
+                      value: aD.arg,
+                      done: au.done
+                    };
+                    return aE;
+                  }
+                }
+                "throw" === aD.type && (aw = a8, au.method = "throw", au.arg = aD.arg);
+              }
+            }
           }
         };
-      e.default = s;
-    }).call(this, i("0de9")["log"]);
-  },
-  7791: function (t, e, i) {
-    "use strict";
-
-    var a = i("9e62"),
-      n = i.n(a);
-    n.a;
-  },
-  "90a0": function (t, e, i) {
-    "use strict";
-
-    i.d(e, "b", function () {
-      return n;
-    }), i.d(e, "c", function () {
-      return o;
-    }), i.d(e, "a", function () {
-      return a;
+      }
+    }
+    function ak(as, at) {
+      {
+        var au = at.method;
+        var av = as.iterator[au];
+        if (av === R) {
+          at.delegate = null;
+          "throw" === au && as.iterator.return && (at.method = "return", at.arg = R, ak(as, at), "throw" === at.method) || "return" !== au && (at.method = "throw", at.arg = new TypeError("The iterator does not provide a '" + au + "' method"));
+          return a9;
+        }
+        var aw = a4(av, as.iterator, at.arg);
+        if ("throw" === aw.type) {
+          at.method = "throw";
+          at.arg = aw.arg;
+          at.delegate = null;
+          return a9;
+        }
+        var ax = aw.arg;
+        return ax ? ax.done ? (at[as.resultName] = ax.value, at.next = as.nextLoc, "return" !== at.method && (at.method = "next", at.arg = R), at.delegate = null, a9) : ax : (at.method = "throw", at.arg = new TypeError("iterator result is not an object"), at.delegate = null, a9);
+      }
+    }
+    function al(as) {
+      {
+        var aw = {
+          tryLoc: as[0]
+        };
+        1 in as && (aw.catchLoc = as[1]);
+        2 in as && (aw.finallyLoc = as[2], aw.afterLoc = as[3]);
+        this.tryEntries.push(aw);
+      }
+    }
+    function am(as) {
+      {
+        var av = as.completion || {};
+        av.type = "normal";
+        delete av.arg;
+        as.completion = av;
+      }
+    }
+    function an(as) {
+      {
+        var at = {
+          tryLoc: "root"
+        };
+        this.tryEntries = [at];
+        as.forEach(al, this);
+        this.reset(true);
+      }
+    }
+    function ao(as) {
+      {
+        if (as || "" === as) {
+          var au = as[Z];
+          if (au) {
+            return au.call(as);
+          }
+          if ("function" == typeof as.next) {
+            return as;
+          }
+          if (!isNaN(as.length)) {
+            {
+              var av = -1;
+              var aw = function az() {
+                {
+                  for (; ++av < as.length;) {
+                    if (W.call(as, av)) {
+                      az.value = as[av];
+                      az.done = false;
+                      return az;
+                    }
+                  }
+                  az.value = R;
+                  az.done = true;
+                  return az;
+                }
+              };
+              return aw.next = aw;
+            }
+          }
+        }
+        throw new TypeError(k(as) + " is not iterable");
+      }
+    }
+    ab.prototype = ac;
+    X(ag, "constructor", {
+      value: ac,
+      configurable: true
     });
-    var a = {
-        uPopup: i("3238").default
-      },
-      n = function () {
-        var t = this.$createElement,
-          e = this._self._c || t;
-        return e("v-uni-view", [e("u-popup", {
-          attrs: {
-            show: this.showAwsc,
-            mode: "center",
-            round: "14",
-            "safe-area-inset-bottom": true
-          }
-        }, [this.isInApp ? this._e() : e("v-uni-view", [this._v("璇峰厛鐧诲綍")]), this.isInApp ? e("div", {
-          attrs: {
-            id: "nc"
-          }
-        }) : this._e()], 1)], 1);
-      },
-      o = [];
-  },
-  "93d4": function (t, e, i) {
-    "use strict";
-
-    var a = i("3d72"),
-      n = i.n(a);
-    n.a;
-  },
-  "9e62": function (t, e, i) {
-    var a = i("9ec8");
-    a.__esModule && (a = a.default), "string" === typeof a && (a = [[t.i, a, ""]]), a.locals && (t.exports = a.locals);
-    var n = i("4f06").default;
-    n("0883d5a8", a, true, {
-      sourceMap: false,
-      shadowMode: false
+    X(ac, "constructor", {
+      value: ab,
+      configurable: true
     });
-  },
-  "9ec8": function (t, e, i) {
-    var a = i("24fb");
-    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */.almost-lottery[data-v-bc8e5092]{display:flex;flex-direction:column;justify-content:center;align-items:center}.almost-lottery__canvas[data-v-bc8e5092]{position:absolute;left:-9999px;opacity:0;display:flex;justify-content:center;align-items:center}.lottery-action[data-v-bc8e5092],\r\n.str-margin-outside[data-v-bc8e5092],\r\n.img-margin-str[data-v-bc8e5092],\r\n.img-size[data-v-bc8e5092]{position:absolute;left:0;top:0;z-index:-1}.almost-lottery__measureText[data-v-bc8e5092]{position:absolute;left:0;top:0;white-space:nowrap;font-size:12px;opacity:0}.almost-lottery__wrap[data-v-bc8e5092]{position:relative}.almost-lottery__bg[data-v-bc8e5092],\r\n.almost-lottery__canvas-img[data-v-bc8e5092],\r\n.almost-lottery__action-bg[data-v-bc8e5092]{position:absolute;left:0;top:0}.almost-lottery__canvas-img[data-v-bc8e5092]{transition:-webkit-transform cubic-bezier(.34,.12,.05,.95);transition:transform cubic-bezier(.34,.12,.05,.95);transition:transform cubic-bezier(.34,.12,.05,.95),-webkit-transform cubic-bezier(.34,.12,.05,.95)}', ""]), t.exports = e;
-  },
-  a75d: function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("650c"),
-      n = i.n(a);
-    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return a[t];
-      });
-    }(o);
-    e["default"] = n.a;
-  },
-  a995: function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("6a07"),
-      n = i.n(a);
-    for (var o in a) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return a[t];
-      });
-    }(o);
-    e["default"] = n.a;
-  },
-  ac3d: function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("90a0"),
-      n = i("a75d");
-    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return n[t];
-      });
-    }(o);
-    i("3b65");
-    var r = i("f0c5"),
-      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "68448dba", null, false, a["a"], undefined);
-    e["default"] = s.exports;
-  },
-  cb29: function (t, e, i) {
-    var a = i("23e7"),
-      n = i("81d5"),
-      o = i("44d2");
-    a({
-      target: "Array",
-      proto: true
-    }, {
-      fill: n
-    }), o("fill");
-  },
-  d35d: function (t, e, i) {
-    "use strict";
-
-    i.r(e);
-    var a = i("de8b"),
-      n = i("0602");
-    for (var o in n) ["default"].indexOf(o) < 0 && function (t) {
-      i.d(e, t, function () {
-        return n[t];
-      });
-    }(o);
-    i("93d4");
-    var r = i("f0c5"),
-      s = Object(r["a"])(n["default"], a["b"], a["c"], false, null, "51889a42", null, false, a["a"], undefined);
-    e["default"] = s.exports;
-  },
-  dd85: function (t, e, i) {
-    var a = i("24fb");
-    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */[data-v-68448dba] .u-popup__content{width:300px;height:%?200?%;display:flex;align-items:center;justify-content:center}[data-v-68448dba] .u-popup__content{margin-top:20%}', ""]), t.exports = e;
-  },
-  de8b: function (t, e, i) {
-    "use strict";
-
-    i.d(e, "b", function () {
-      return n;
-    }), i.d(e, "c", function () {
-      return o;
-    }), i.d(e, "a", function () {
-      return a;
+    ab.displayName = a2(ac, a1, "GeneratorFunction");
+    U.isGeneratorFunction = function (as) {
+      {
+        var at = "function" == typeof as && as.constructor;
+        return !!at && (at === ab || "GeneratorFunction" === (at.displayName || at.name));
+      }
+    };
+    U.mark = function (as) {
+      {
+        Object.setPrototypeOf ? Object.setPrototypeOf(as, ac) : (as.__proto__ = ac, a2(as, a1, "GeneratorFunction"));
+        as.prototype = Object.create(ag);
+        return as;
+      }
+    };
+    U.awrap = function (as) {
+      {
+        var at = {
+          __await: as
+        };
+        return at;
+      }
+    };
+    ah(ai.prototype);
+    a2(ai.prototype, a0, function () {
+      {
+        return this;
+      }
     });
-    var a = {
-        uSwiper: i("0515").default,
-        uNoticeBar: i("754f").default,
-        uCol: i("4c10").default,
-        uButton: i("3570").default,
-        uLoadmore: i("59a4").default,
-        uPopup: i("3238").default,
-        uCodeInput: i("ce66").default
-      },
-      n = function () {
-        var t = this,
-          e = t.$createElement,
-          i = t._self._c || e;
-        return i("v-uni-view", {
-          staticClass: "almost-lottery page",
-          style: {
-            background: "#" + t.$store.state.config.bgColor
+    U.AsyncIterator = ai;
+    U.async = function (as, at, au, av, aw) {
+      {
+        undefined === aw && (aw = Promise);
+        var ay = new ai(a3(as, at, au, av), aw);
+        return U.isGeneratorFunction(at) ? ay : ay.next().then(function (az) {
+          {
+            return az.done ? az.value : ay.next();
           }
-        }, [t.videoUrl ? i("v-uni-view", {
-          staticStyle: {
-            width: "100%",
-            height: "421.875rpx"
-          }
-        }, [i("iframe", {
-          attrs: {
-            src: t.videoUrl,
-            frameborder: "0",
-            width: "100%",
-            height: "100%"
-          }
-        })]) : t._e(), !t.videoUrl && t.info.imageUrls && t.info.imageUrls.length > 0 ? i("u-swiper", {
-          attrs: {
-            circular: true,
-            indicator: true,
-            height: "420rpx",
-            list: t.info.imageUrls,
-            radius: 0,
-            current: t.swiperCurrent_img
-          }
-        }) : t._e(), i("u-notice-bar", {
-          directives: [{
-            name: "show",
-            rawName: "v-show",
-            value: t.noticeList.length > 0,
-            expression: "noticeList.length>0"
-          }],
-          staticStyle: {
-            margin: "24rpx"
-          },
-          attrs: {
-            text: t.noticeList,
-            direction: "column",
-            icon: "涓鍚嶅崟",
-            bgColor: "#ffffff00",
-            color: "#ffffff",
-            labelBg: "#ffbe04",
-            customStyle: {
-              border: "1px solid #ffbe04",
-              borderRadius: "8rpx"
-            }
-          }
-        }), t.prizeList.length > 0 ? i("v-uni-view", {
-          staticClass: "almost-lottery__wheel"
-        }, [i("almost-lottery-2", {
-          attrs: {
-            colors: ["#fff", "#eef0ff"],
-            canvasId: t.canvasConfig.canvasId,
-            ringCount: 2,
-            duration: 1,
-            prizeList: t.prizeList,
-            prizeIndex: t.prizeIndex
-          },
-          on: {
-            "reset-index": function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.prizeIndex = -1;
-            },
-            "draw-start": function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.handleDrawStart.apply(undefined, arguments);
-            },
-            "draw-end": function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.handleDrawEnd.apply(undefined, arguments);
-            },
-            finish: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.handleDrawFinish.apply(undefined, arguments);
-            }
-          }
-        })], 1) : t._e(), i("v-uni-view", {
-          staticClass: "almost-lottery__rule"
-        }, [i("v-uni-view", {
-          staticClass: "rule-head"
-        }, [i("v-uni-view", {
-          staticClass: "line"
-        }), i("v-uni-text", {
-          staticClass: "title"
-        }, [t._v("鎶藉璁板綍")]), i("v-uni-view", {
-          staticClass: "line"
-        })], 1), i("v-uni-view", {
-          staticClass: "rule-body"
-        }, t._l(t.awards, function (e, a) {
-          return i("v-uni-view", {
-            staticClass: "item"
-          }, [i("v-uni-view", [i("v-uni-view", {
-            staticStyle: {
-              color: "#606266",
-              "font-size": "30rpx"
-            }
-          }, [i("strong", [t._v(t._s(e.awardName))])]), i("v-uni-view", {
-            staticStyle: {
-              color: "#909399"
-            }
-          }, [t._v(t._s(e.createTime))])], 1), e.awardName.indexOf("璋㈣阿") < 0 && 1 == t.$store.state.config.useType ? i("u-col", {
-            attrs: {
-              span: "3"
-            }
-          }, [i("u-button", {
-            attrs: {
-              type: "warning"
-            },
-            on: {
-              click: function (e) {
-                arguments[0] = e = t.$handleEvent(e), t.gotoForm();
+        });
+      }
+    };
+    ah(ag);
+    a2(ag, a1, "Generator");
+    a2(ag, Z, function () {
+      return this;
+    });
+    a2(ag, "toString", function () {
+      {
+        return "[object Generator]";
+      }
+    });
+    U.keys = function (as) {
+      {
+        var at = Object(as);
+        var au = [];
+        for (var av in at) au.push(av);
+        au.reverse();
+        return function ax() {
+          {
+            for (; au.length;) {
+              {
+                var ay = au.pop();
+                if (ay in at) {
+                  ax.value = ay;
+                  ax.done = false;
+                  return ax;
+                }
               }
             }
-          }, [t._v("鍘婚鍙�")])], 1) : t._e(), e.awardName.indexOf("璋㈣阿") < 0 && 2 == t.$store.state.config.useType ? i("v-uni-view", [e.isUsed ? t._e() : i("u-button", {
-            attrs: {
-              type: "warning"
-            },
-            on: {
-              click: function (i) {
-                arguments[0] = i = t.$handleEvent(i), t.useAward(Object.assign({}, {
-                  index: a
-                }, e));
+            ax.done = true;
+            return ax;
+          }
+        };
+      }
+    };
+    U.values = ao;
+    an.prototype = {
+      constructor: an,
+      reset: function (as) {
+        {
+          if (this.prev = 0, this.next = 0, this.sent = this._sent = R, this.done = false, this.delegate = null, this.method = "next", this.arg = R, this.tryEntries.forEach(am), !as) {
+            for (var at in this) "t" === at.charAt(0) && W.call(this, at) && !isNaN(+at.slice(1)) && (this[at] = R);
+          }
+        }
+      },
+      stop: function () {
+        {
+          this.done = true;
+          var as = this.tryEntries[0].completion;
+          if ("throw" === as.type) {
+            throw as.arg;
+          }
+          return this.rval;
+        }
+      },
+      dispatchException: function (as) {
+        {
+          if (this.done) {
+            throw as;
+          }
+          var au = this;
+          function aB(aC, aD) {
+            {
+              ax.type = "throw";
+              ax.arg = as;
+              au.next = aC;
+              aD && (au.method = "next", au.arg = R);
+              return !!aD;
+            }
+          }
+          for (var av = this.tryEntries.length - 1; av >= 0; --av) {
+            {
+              var aw = this.tryEntries[av];
+              var ax = aw.completion;
+              if ("root" === aw.tryLoc) {
+                return aB("end");
+              }
+              if (aw.tryLoc <= this.prev) {
+                {
+                  var ay = W.call(aw, "catchLoc");
+                  var az = W.call(aw, "finallyLoc");
+                  if (ay && az) {
+                    {
+                      if (this.prev < aw.catchLoc) {
+                        return aB(aw.catchLoc, true);
+                      }
+                      if (this.prev < aw.finallyLoc) {
+                        return aB(aw.finallyLoc);
+                      }
+                    }
+                  } else {
+                    if (ay) {
+                      {
+                        if (this.prev < aw.catchLoc) {
+                          return aB(aw.catchLoc, true);
+                        }
+                      }
+                    } else {
+                      {
+                        if (!az) {
+                          throw Error("try statement without catch or finally");
+                        }
+                        if (this.prev < aw.finallyLoc) {
+                          return aB(aw.finallyLoc);
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
-          }, [t._v("浣跨敤")]), e.isUsed ? i("u-button", {
-            attrs: {
-              type: "warning",
-              disabled: true
-            }
-          }, [t._v("宸蹭娇鐢�")]) : t._e()], 1) : t._e()], 1);
-        }), 1)], 1), i("u-loadmore", {
-          attrs: {
-            status: t.status,
-            loadmoreText: "鐐瑰嚮鎴栦笂鎷夊姞杞芥洿澶�",
-            color: "#ffffff"
-          },
-          on: {
-            loadmore: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.loadmore.apply(undefined, arguments);
-            }
           }
-        }), i("v-uni-view", {
-          staticClass: "almost-lottery__rule"
-        }, [i("v-uni-view", {
-          staticClass: "rule-head"
-        }, [i("v-uni-view", {
-          staticClass: "line"
-        }), i("v-uni-text", {
-          staticClass: "title"
-        }, [t._v("娲诲姩瑙勫垯")]), i("v-uni-view", {
-          staticClass: "line"
-        })], 1), i("v-uni-view", {
-          staticClass: "rule-body"
-        }, [t._l(t.info.activityExplain, function (e, a) {
-          return i("v-uni-view", {
-            key: "info-" + a,
-            staticClass: "rule"
-          }, [i("v-uni-view", {
-            staticClass: "number"
-          }, [t._v(t._s(a + 1))]), i("v-uni-view", {
-            staticClass: "text"
-          }, [t._v(t._s(e))])], 1);
-        }), t.phone ? i("v-uni-view", {
-          staticClass: "rule",
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.call(t.phone);
-            }
-          }
-        }, [i("v-uni-view", {
-          staticClass: "number"
-        }, [t._v(t._s(t.info.activityExplain.length + 1))]), i("v-uni-view", {
-          staticClass: "text"
-        }, [t._v("鍜ㄨ鐢佃瘽锛�" + t._s(t.phone))])], 1) : t._e()], 2)], 1), i("v-uni-view", {
-          staticStyle: {
-            display: "flex",
-            "justify-content": "center",
-            "flex-direction": "column",
-            "align-items": "center",
-            color: "#ffffff88",
-            "font-size": "24rpx",
-            padding: "64rpx"
-          }
-        }, [i("v-uni-text", [t._v("鍙板窞甯傛柊闂讳紶濯掍腑蹇�")])], 1), i("u-popup", {
-          attrs: {
-            show: t.showPop,
-            mode: "center",
-            round: "14",
-            closeable: true,
-            "safe-area-inset-bottom": true
-          },
-          on: {
-            close: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.showPop = false;
-            }
-          }
-        }, [i("v-uni-view", {
-          staticStyle: {
-            padding: "80rpx",
-            display: "flex",
-            "flex-direction": "column",
-            "justify-content": "center",
-            "align-items": "center"
-          }
-        }, [i("v-uni-view", {
-          staticStyle: {
-            color: "#606266",
-            "font-size": "34rpx",
-            "font-weight": "600"
-          }
-        }, [t._v("纭畾浣跨敤" + t._s(t.popAward.awardName) + "鍚�?")]), i("v-uni-view", {
-          staticStyle: {
-            color: "#909399",
-            margin: "25rpx 0"
-          }
-        }, [t._v("璇峰伐浣滀汉鍛樿緭鍏ユ牳閿€鐮�")]), i("u-code-input", {
-          attrs: {
-            maxlength: 4
-          },
-          on: {
-            finish: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.finish.apply(undefined, arguments);
-            }
-          }
-        })], 1)], 1)], 1);
+        }
       },
-      o = [];
-  },
-  f7fc: function (t, e, i) {
-    var a = i("24fb");
-    e = a(false), e.push([t.i, '@charset "UTF-8";\r\n/**\r\n * 杩欓噷鏄痷ni-app鍐呯疆鐨勫父鐢ㄦ牱寮忓彉閲廫r\n *\r\n * uni-app 瀹樻柟鎵╁睍鎻掍欢鍙婃彃浠跺競鍦猴紙https://ext.dcloud.net.cn锛変笂寰堝涓夋柟鎻掍欢鍧囦娇鐢ㄤ簡杩欎簺鏍峰紡鍙橀噺\r\n * 濡傛灉浣犳槸鎻掍欢寮€鍙戣€咃紝寤鸿浣犱娇鐢╯css棰勫鐞嗭紝骞跺湪鎻掍欢浠ｇ爜涓洿鎺ヤ娇鐢ㄨ繖浜涘彉閲忥紙鏃犻渶 import 杩欎釜鏂囦欢锛夛紝鏂逛究鐢ㄦ埛閫氳繃鎼Н鏈ㄧ殑鏂瑰紡寮€鍙戞暣浣撻鏍间竴鑷寸殑App\r\n *\r\n */\r\n/**\r\n * 濡傛灉浣犳槸App寮€鍙戣€咃紙鎻掍欢浣跨敤鑰咃級锛屼綘鍙互閫氳繃淇敼杩欎簺鍙橀噺鏉ュ畾鍒惰嚜宸辩殑鎻掍欢涓婚锛屽疄鐜拌嚜瀹氫箟涓婚鍔熻兘\r\n *\r\n * 濡傛灉浣犵殑椤圭洰鍚屾牱浣跨敤浜唖css棰勫鐞嗭紝浣犱篃鍙互鐩存帴鍦ㄤ綘鐨� scss 浠ｇ爜涓娇鐢ㄥ涓嬪彉閲忥紝鍚屾椂鏃犻渶 import 杩欎釜鏂囦欢\r\n */\r\n/* 棰滆壊鍙橀噺 */\r\n/* 琛屼负鐩稿叧棰滆壊 */\r\n/* 鏂囧瓧鍩烘湰棰滆壊 */\r\n/* 鑳屾櫙棰滆壊 */\r\n/* 杈规棰滆壊 */\r\n/* 灏哄鍙橀噺 */\r\n/* 鏂囧瓧灏哄 */\r\n/* 鍥剧墖灏哄 */\r\n/* Border Radius */\r\n/* 姘村钩闂磋窛 */\r\n/* 鍨傜洿闂磋窛 */\r\n/* 閫忔槑搴� */\r\n/* 鏂囩珷鍦烘櫙鐩稿叧 */uni-page-body[data-v-51889a42]{height:100%}.page[data-v-51889a42]{width:100%;min-height:100%}.almost-lottery[data-v-51889a42]{flex:1}.almost-lottery__head[data-v-51889a42]{position:relative;width:100%;height:%?640?%}.almost-lottery__head .action[data-v-51889a42]{position:relative;top:%?400?%;display:flex;justify-content:center;align-items:center;width:%?480?%;height:%?88?%;line-height:%?88?%;margin:0 auto;color:#fff;font-size:%?32?%;background-color:#f3b2b8;border-radius:%?44?%}.almost-lottery__head .action-shadow[data-v-51889a42]{box-shadow:0 %?14?% 0 0 #f3b2b8}.almost-lottery__head .num[data-v-51889a42]{color:#f9fc31}.almost-lottery__head .tip[data-v-51889a42]{position:relative;top:%?428?%;color:#fff;font-size:%?24?%;text-align:center}.almost-lottery__wheel[data-v-51889a42]{text-align:center;padding-top:%?20?%}.almost-lottery__wheel .count[data-v-51889a42]{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:%?40?% 0}.almost-lottery__wheel .text[data-v-51889a42]{color:#fff;font-size:%?24?%}.almost-lottery__rule[data-v-51889a42]{padding:0 %?28?%;color:#ffbe04}.almost-lottery__rule .rule-head[data-v-51889a42]{display:flex;justify-content:space-around;align-items:center;padding:%?40?% 0}.almost-lottery__rule .rule-head .line[data-v-51889a42]{flex:1;height:1px;background-color:#ffbe04}.almost-lottery__rule .rule-head .title[data-v-51889a42]{width:%?280?%;color:#fff;line-height:%?70?%;text-align:center;margin:0 %?20?%;border-radius:%?8?%;background-color:#ffbe04}.almost-lottery__rule .rule-body[data-v-51889a42]{color:#fff;font-size:%?24?%;padding:%?10?% 0 %?40?%}.almost-lottery__rule .rule-body .item[data-v-51889a42]{display:flex;justify-content:space-between;margin-bottom:%?16?%;background-color:#fff;border-radius:5px;padding:%?16?%}.almost-lottery__rule .rule-body .rule[data-v-51889a42]{display:flex;margin-bottom:%?10?%;text-align:justify}.almost-lottery__rule .rule-body .number[data-v-51889a42]{position:relative;top:%?4?%;width:%?28?%;height:%?28?%;line-height:%?28?%;text-align:center;color:#fff;background:#ffbe04;border-radius:50%;margin-right:%?10?%}.almost-lottery__rule .rule-body .number-hidden[data-v-51889a42]{opacity:0}.almost-lottery__rule .rule-body .text[data-v-51889a42]{flex:1}.almost-lottery__rule .rule-body .item-rule .text[data-v-51889a42]{display:flex;flex-direction:column}.almost-action[data-v-51889a42]{display:flex;flex-direction:row;justify-content:center;align-items:center;width:%?400?%;height:%?80?%;border-radius:%?10?%;text-align:center;background-color:red;margin:0 auto %?40?%}.almost-action .text[data-v-51889a42]{color:#fff;font-size:%?28?%}', ""]), t.exports = e;
-  },
-  fbe3: function (t, e, i) {
-    "use strict";
-
-    i.d(e, "b", function () {
-      return a;
-    }), i.d(e, "c", function () {
-      return n;
-    }), i.d(e, "a", function () {});
-    var a = function () {
-        var t = this,
-          e = t.$createElement,
-          a = t._self._c || e;
-        return a("v-uni-view", {
-          staticClass: "almost-lottery"
-        }, [a("v-uni-view", {
-          staticClass: "almost-lottery__wrap",
-          style: {
-            width: t.lotterySize + "rpx",
-            height: t.lotterySize + "rpx"
-          }
-        }, [a("v-uni-view", {
-          staticClass: "lottery-action",
-          style: {
-            width: t.actionSize + "rpx",
-            height: t.actionSize + "rpx",
-            left: t.canvasMarginOutside + "rpx"
-          }
-        }), a("v-uni-view", {
-          staticClass: "str-margin-outside",
-          style: {
-            left: t.strMarginOutside + "rpx"
-          }
-        }), a("v-uni-view", {
-          staticClass: "img-margin-str",
-          style: {
-            left: t.imgMarginStr + "rpx"
-          }
-        }), a("v-uni-view", {
-          staticClass: "img-size",
-          style: {
-            width: t.imgWidth + "rpx",
-            height: t.imgHeight + "rpx"
-          }
-        }), t.lotteryImg ? t._e() : a("v-uni-view", {
-          staticStyle: {
-            color: "#fff"
-          }
-        }, [t._v("濂栧搧鍑嗗涓�...")]), t.lotteryImg ? [a("v-uni-image", {
-          staticClass: "almost-lottery__bg",
-          style: {
-            width: t.lotteryPxSize + "px",
-            height: t.lotteryPxSize + "px"
-          },
-          attrs: {
-            mode: "widthFix",
-            src: t.lotteryBg
-          }
-        }), a("v-uni-image", {
-          staticClass: "almost-lottery__canvas-img",
-          style: {
-            width: t.canvasImgPxSize + "px",
-            height: t.canvasImgPxSize + "px",
-            left: t.canvasImgToLeftPx + "px",
-            top: t.canvasImgToLeftPx + "px",
-            transform: "rotate(" + (t.canvasAngle + t.targetAngle) + "deg)",
-            transitionDuration: t.transitionDuration + "s"
-          },
-          attrs: {
-            mode: "widthFix",
-            src: i("376b")
-          }
-        }), a("v-uni-image", {
-          staticClass: "almost-lottery__action-bg",
-          style: {
-            width: t.actionPxSize + "px",
-            height: t.actionPxSize + "px",
-            left: t.actionBgToLeftPx + "px",
-            top: t.actionBgToLeftPx + "px",
-            transform: "rotate(" + (t.actionAngle + t.targetActionAngle) + "deg)",
-            transitionDuration: t.transitionDuration + "s"
-          },
-          attrs: {
-            mode: "widthFix",
-            src: t.actionBg
-          },
-          on: {
-            click: function (e) {
-              arguments[0] = e = t.$handleEvent(e), t.handleActionStart.apply(undefined, arguments);
+      abrupt: function (as, at) {
+        {
+          for (var av = this.tryEntries.length - 1; av >= 0; --av) {
+            {
+              var aw = this.tryEntries[av];
+              if (aw.tryLoc <= this.prev && W.call(aw, "finallyLoc") && this.prev < aw.finallyLoc) {
+                {
+                  var ax = aw;
+                  break;
+                }
+              }
             }
           }
-        })] : t._e()], 2), a("v-uni-text", {
-          staticClass: "almost-lottery__measureText",
-          style: {
-            fontSize: t.higtFontSize + "px"
-          }
-        }, [t._v(t._s(t.measureText))]), a("v-uni-canvas", {
-          class: t.className,
-          style: {
-            width: t.higtCanvasSize + "px",
-            height: t.higtCanvasSize + "px"
-          },
-          attrs: {
-            "canvas-id": t.canvasId,
-            width: t.higtCanvasSize,
-            height: t.higtCanvasSize
-          }
-        })], 1);
+          ax && ("break" === as || "continue" === as) && ax.tryLoc <= at && at <= ax.finallyLoc && (ax = null);
+          var ay = ax ? ax.completion : {};
+          ay.type = as;
+          ay.arg = at;
+          return ax ? (this.method = "next", this.next = ax.finallyLoc, a9) : this.complete(ay);
+        }
       },
-      n = [];
+      complete: function (as, at) {
+        {
+          if ("throw" === as.type) {
+            throw as.arg;
+          }
+          "break" === as.type || "continue" === as.type ? this.next = as.arg : "return" === as.type ? (this.rval = this.arg = as.arg, this.method = "return", this.next = "end") : "normal" === as.type && at && (this.next = at);
+          return a9;
+        }
+      },
+      finish: function (as) {
+        {
+          for (var av = this.tryEntries.length - 1; av >= 0; --av) {
+            {
+              var aw = this.tryEntries[av];
+              if (aw.finallyLoc === as) {
+                this.complete(aw.completion, aw.afterLoc);
+                am(aw);
+                return a9;
+              }
+            }
+          }
+        }
+      },
+      catch: function (as) {
+        {
+          for (var au = this.tryEntries.length - 1; au >= 0; --au) {
+            {
+              var av = this.tryEntries[au];
+              if (av.tryLoc === as) {
+                {
+                  var aw = av.completion;
+                  if ("throw" === aw.type) {
+                    {
+                      var ax = aw.arg;
+                      am(av);
+                    }
+                  }
+                  return ax;
+                }
+              }
+            }
+          }
+          throw Error("illegal catch attempt");
+        }
+      },
+      delegateYield: function (as, at, au) {
+        {
+          this.delegate = {
+            iterator: ao(as),
+            resultName: at,
+            nextLoc: au
+          };
+          "next" === this.method && (this.arg = R);
+          return a9;
+        }
+      }
+    };
+    return U;
   }
-}]);
+  function z(P, Q, R, S, T, U, V) {
+    {
+      try {
+        {
+          var X = P[U](V);
+          var Y = X.value;
+        }
+      } catch (a1) {
+        {
+          return void R(a1);
+        }
+      }
+      X.done ? Q(Y) : Promise.resolve(Y).then(S, T);
+    }
+  }
+  function A(P) {
+    return function () {
+      var S = this;
+      var T = arguments;
+      return new Promise(function (U, V) {
+        var X = P.apply(S, T);
+        function Y(a0) {
+          z(X, U, V, Y, Z, "next", a0);
+        }
+        function Z(a0) {
+          z(X, U, V, Y, Z, "throw", a0);
+        }
+        Y(undefined);
+      });
+    };
+  }
+  var B = ($.isNode() ? JSON.parse(process.env.JingCai) : $.getjson("JingCai")) || [];
+  var C = "";
+  var D = "";
+  var E = "";
+  function F() {
+    return G.apply(this, arguments);
+  }
+  function G() {
+    G = A(x().mark(function P() {
+      var V;
+      var Z;
+      var a0;
+      var a1;
+      var a2;
+      var a3;
+      var a4;
+      var a5;
+      var a6;
+      var a7;
+      var a8;
+      var a9;
+      var aa;
+      var ab;
+      var ac;
+      var ad;
+      var ae;
+      var af;
+      var ag;
+      var ah;
+      var ai;
+      var aj;
+      var ak;
+      var al;
+      var am;
+      var an;
+      var ao;
+      var ap;
+      var aq;
+      var ar;
+      var as;
+      var at;
+      var au;
+      var av;
+      var aw;
+      var ax;
+      var ay;
+      var az;
+      var aA;
+      var aB;
+      return x().wrap(function (aC) {
+        for (;;) {
+          switch (aC.prev = aC.next) {
+            case 0:
+              V = q(B);
+              aC.prev = 1;
+              V.s();
+            case 3:
+              if ((Z = V.n()).done) {
+                aC.next = 66;
+                break;
+              }
+              if (a0 = Z.value, aC.prev = 5, C = a0.memberId, D = a0.cookie, console.log("用户：".concat(C, "开始任务")), C != B[0].memberId) {
+                aC.next = 16;
+                break;
+              }
+              aC.next = 12;
+              return J("/marketing/data/appletTurntable/isShareStatus.json", {
+                platform: 4,
+                appletRecommendId: "2513496"
+              });
+            case 12:
+              a8 = aC.sent;
+              console.log("助力结果：".concat(null == a8 || null === (a7 = a8.data) || undefined === a7 ? undefined : a7.status));
+              aC.next = 20;
+              break;
+            case 16:
+              var aD = {
+                platform: 4,
+                appletRecommendId: B[0].memberId
+              };
+              aC.next = 18;
+              return J("/marketing/data/appletTurntable/isShareStatus.json", aD);
+            case 18:
+              aa = aC.sent;
+              console.log("助力结果：".concat(null == aa || null === (a9 = aa.data) || undefined === a9 ? undefined : a9.status));
+            case 20:
+              aC.next = 22;
+              return J("/marketing/inner/appletTurntablePrize/getLotteryPrizeInfo.json");
+            case 22:
+              ab = aC.sent;
+              console.log("剩余抽奖次数：".concat(null == ab || null === (a1 = ab.data) || undefined === a1 ? undefined : a1.surplusNum));
+              ac = 0;
+            case 25:
+              if (!(ac < (null == ab || null === (ad = ab.data) || undefined === ad ? undefined : ad.surplusNum))) {
+                aC.next = 33;
+                break;
+              }
+              aC.next = 28;
+              return J("/marketing/data/appletTurntableLog/lotteryEntrance.json");
+            case 28:
+              af = aC.sent;
+              null != af && null !== (ae = af.data) && undefined !== ae && ae.prizeAmount ? 1 == (null == af || null === (ag = af.data) || undefined === ag ? undefined : ag.amountType) ? (console.log("抽奖获得微信红包：".concat(null == af || null === (ai = af.data) || undefined === ai ? undefined : ai.prizeName, " ").concat(null == af || null === (aj = af.data) || undefined === aj ? undefined : aj.prizeAmount, "元")), E += "用户".concat(C, " 抽奖获得微信红包：").concat(null == af || null === (ak = af.data) || undefined === ak ? undefined : ak.prizeName, " ").concat(null == af || null === (al = af.data) || undefined === al ? undefined : al.prizeAmount, "元\n")) : 2 == (null == af || null === (ah = af.data) || undefined === ah ? undefined : ah.amountType) ? (console.log("抽奖获得余额：".concat(null == af || null === (am = af.data) || undefined === am ? undefined : am.prizeName, " ").concat(null == af || null === (an = af.data) || undefined === an ? undefined : an.prizeAmount, "元")), E += "用户".concat(C, " 抽奖获得余额：").concat(null == af || null === (ao = af.data) || undefined === ao ? undefined : ao.prizeName, " ").concat(null == af || null === (ap = af.data) || undefined === ap ? undefined : ap.prizeAmount, "元\n")) : console.log(null == af || null === (aq = af.data) || undefined === aq ? undefined : aq.prizeName) : console.log(JSON.stringify(af));
+            case 30:
+              ac++;
+              aC.next = 25;
+              break;
+            case 33:
+              aC.next = 35;
+              return J("/marketing/data/appletTurntable/getTotalMoney.json");
+            case 35:
+              if (ar = aC.sent, !((null === (a2 = ar) || undefined === a2 || null === (a2 = a2.data) || undefined === a2 ? undefined : a2.totalMoney) >= 0.5)) {
+                aC.next = 45;
+                break;
+              }
+              aC.next = 39;
+              return J("/marketing/data/appletTurntable/addReward.json", {
+                platform: 4,
+                rewardMoney: null === (as = ar) || undefined === as || null === (as = as.data) || undefined === as ? undefined : as.totalMoney
+              });
+            case 39:
+              av = aC.sent;
+              console.log("提现到钱包：".concat(null === (at = ar) || undefined === at || null === (at = at.data) || undefined === at ? undefined : at.totalMoney, "元 提现结果：").concat(null == av ? undefined : av.msg));
+              E += "用户".concat(C, " 提现到钱包：").concat(null === (au = ar) || undefined === au || null === (au = au.data) || undefined === au ? undefined : au.totalMoney, "元 提现结果：").concat(null == av ? undefined : av.msg, "\n");
+              aC.next = 44;
+              return J("/marketing/data/appletTurntable/getTotalMoney.json");
+            case 44:
+              ar = aC.sent;
+            case 45:
+              aC.next = 47;
+              return J("/mini/data/resume/getAccountAmount.json");
+            case 47:
+              if (aw = aC.sent, !((null === (a3 = aw) || undefined === a3 || null === (a3 = a3.data) || undefined === a3 ? undefined : a3.amount) >= 0.5)) {
+                aC.next = 57;
+                break;
+              }
+              aC.next = 51;
+              return J("/mini/data/resume/cashOut.json", {
+                platform: 4,
+                resumeAccountId: null === (ax = aw) || undefined === ax || null === (ax = ax.data) || undefined === ax ? undefined : ax.resumeAccountId,
+                allAmount: null === (ay = aw) || undefined === ay || null === (ay = ay.data) || undefined === ay ? undefined : ay.amount
+              });
+            case 51:
+              aB = aC.sent;
+              console.log("提现到微信：".concat(null === (az = aw) || undefined === az || null === (az = az.data) || undefined === az ? undefined : az.amount, "元 提现结果：").concat(null == aB ? undefined : aB.msg));
+              E += "用户".concat(C, " 提现到微信：").concat(null === (aA = aw) || undefined === aA || null === (aA = aA.data) || undefined === aA ? undefined : aA.amount, "元 提现结果：").concat(null == aB ? undefined : aB.msg, "\n");
+              aC.next = 56;
+              return J("/mini/data/resume/getAccountAmount.json");
+            case 56:
+              aw = aC.sent;
+            case 57:
+              console.log("余额：".concat(null === (a4 = ar) || undefined === a4 || null === (a4 = a4.data) || undefined === a4 ? undefined : a4.totalMoney, " 钱包：").concat(null === (a5 = aw) || undefined === a5 || null === (a5 = a5.data) || undefined === a5 ? undefined : a5.amount));
+              E += "用户".concat(C, " 钱包余额：").concat(null === (a6 = ar) || undefined === a6 || null === (a6 = a6.data) || undefined === a6 ? undefined : a6.totalMoney, "元\n");
+              aC.next = 64;
+              break;
+            case 61:
+              aC.prev = 61;
+              aC.t0 = aC.catch(5);
+              console.log(aC.t0);
+            case 64:
+              aC.next = 3;
+              break;
+            case 66:
+              aC.next = 71;
+              break;
+            case 68:
+              aC.prev = 68;
+              aC.t1 = aC.catch(1);
+              V.e(aC.t1);
+            case 71:
+              aC.prev = 71;
+              V.f();
+              return aC.finish(71);
+            case 74:
+              if (!E) {
+                aC.next = 77;
+                break;
+              }
+              aC.next = 77;
+              return N(E);
+            case 77:
+            case "end":
+              return aC.stop();
+          }
+        }
+      }, P, null, [[1, 68, 71, 74], [5, 61]]);
+    }));
+    return G.apply(this, arguments);
+  }
+  function H() {
+    return I.apply(this, arguments);
+  }
+  function I() {
+    I = A(x().mark(function Q() {
+      var S;
+      var T;
+      var U;
+      var V;
+      var W;
+      return x().wrap(function (X) {
+        for (;;) {
+          switch (X.prev = X.next) {
+            case 0:
+              if (S = $request.headers.cookie || $request.headers.Cookie, T = $.toObj($response.body), S && T) {
+                X.next = 4;
+                break;
+              }
+              return X.abrupt("return");
+            case 4:
+              if (U = T.data.resumeId, V = {
+                memberId: U,
+                cookie: S
+              }, W = B.findIndex(function (Y) {
+                return Y.memberId == V.memberId;
+              }), -1 === W) {
+                X.next = 17;
+                break;
+              }
+              if (B[W].cookie != V.cookie) {
+                X.next = 12;
+                break;
+              }
+              return X.abrupt("return");
+            case 12:
+              B[W].cookie = S;
+              console.log(V.cookie);
+              $.msg($.name, "🎉用户".concat(V.memberId, "更新token成功!"), "");
+            case 15:
+              X.next = 20;
+              break;
+            case 17:
+              B.push(V);
+              console.log(V.cookie);
+              $.msg($.name, "🎉新增用户".concat(V.memberId, "成功!"), "");
+            case 20:
+              $.setjson(B, "JingCai");
+            case 21:
+            case "end":
+              return X.stop();
+          }
+        }
+      }, Q);
+    }));
+    return I.apply(this, arguments);
+  }
+  function J(P) {
+    return K.apply(this, arguments);
+  }
+  function K() {
+    K = A(x().mark(function Q(R) {
+      var U;
+      var V = arguments;
+      return x().wrap(function (W) {
+        for (;;) {
+          switch (W.prev = W.next) {
+            case 0:
+              var Y = {
+                platform: 4
+              };
+              U = V.length > 1 && undefined !== V[1] ? V[1] : Y;
+              return W.abrupt("return", new Promise(function (Z) {
+                var a0 = {
+                  url: "https://gateway.5jingcai.com".concat(R),
+                  headers: {
+                    "content-type": "application/json;charset=UTF-8",
+                    cookie: D,
+                    "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.56(0x1800383b) NetType/WIFI Language/zh_CN",
+                    Referer: "https://servicewechat.com/wxa66427ada336778f/9/page-frame.html"
+                  },
+                  body: JSON.stringify(U)
+                };
+                $.post(a0, function () {
+                  var a2 = A(x().mark(function a3(a4, a5, a6) {
+                    return x().wrap(function (a8) {
+                      for (;;) {
+                        switch (a8.prev = a8.next) {
+                          case 0:
+                            if (a8.prev = 0, !a4) {
+                              a8.next = 6;
+                              break;
+                            }
+                            console.log("".concat(JSON.stringify(a4)));
+                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            a8.next = 9;
+                            break;
+                          case 6:
+                            a8.next = 8;
+                            return $.wait(2000);
+                          case 8:
+                            Z(JSON.parse(a6));
+                          case 9:
+                            a8.next = 14;
+                            break;
+                          case 11:
+                            a8.prev = 11;
+                            a8.t0 = a8.catch(0);
+                            $.logErr(a8.t0, a5);
+                          case 14:
+                            a8.prev = 14;
+                            Z();
+                            return a8.finish(14);
+                          case 17:
+                          case "end":
+                            return a8.stop();
+                        }
+                      }
+                    }, a3, null, [[0, 11, 14, 17]]);
+                  }));
+                  return function (a4, a5, a6) {
+                    return a2.apply(this, arguments);
+                  };
+                }());
+              }));
+            case 2:
+            case "end":
+              return W.stop();
+          }
+        }
+      }, Q);
+    }));
+    return K.apply(this, arguments);
+  }
+  function L() {
+    return M.apply(this, arguments);
+  }
+  function M() {
+    M = A(x().mark(function Q() {
+      return x().wrap(function (S) {
+        for (;;) {
+          switch (S.prev = S.next) {
+            case 0:
+              return S.abrupt("return", new Promise(function (T) {
+                var V = {
+                  url: "https://fastly.jsdelivr.net/gh/xzxxn777/Surge@main/Utils/Notice.json"
+                };
+                $.get(V, function () {
+                  var X = A(x().mark(function Y(Z, a0, a1) {
+                    return x().wrap(function (a3) {
+                      for (;;) {
+                        switch (a3.prev = a3.next) {
+                          case 0:
+                            try {
+                              Z ? (console.log("".concat(JSON.stringify(Z))), console.log("".concat($.name, " API请求失败，请检查网路重试"))) : console.log(JSON.parse(a1).notice);
+                            } catch (a4) {
+                              $.logErr(a4, a0);
+                            } finally {
+                              T();
+                            }
+                          case 1:
+                          case "end":
+                            return a3.stop();
+                        }
+                      }
+                    }, Y);
+                  }));
+                  return function (Z, a0, a1) {
+                    return X.apply(this, arguments);
+                  };
+                }());
+              }));
+            case 1:
+            case "end":
+              return S.stop();
+          }
+        }
+      }, Q);
+    }));
+    return M.apply(this, arguments);
+  }
+  function N(P) {
+    return O.apply(this, arguments);
+  }
+  function O() {
+    O = A(x().mark(function P(Q) {
+      return x().wrap(function (R) {
+        for (;;) {
+          switch (R.prev = R.next) {
+            case 0:
+              if (!$.isNode()) {
+                R.next = 5;
+                break;
+              }
+              R.next = 3;
+              return notify.sendNotify($.name, Q);
+            case 3:
+              R.next = 6;
+              break;
+            case 5:
+              $.msg($.name, "", Q);
+            case 6:
+            case "end":
+              return R.stop();
+          }
+        }
+      }, P);
+    }));
+    return O.apply(this, arguments);
+  }
+  A(x().mark(function P() {
+    return x().wrap(function (R) {
+      for (;;) {
+        switch (R.prev = R.next) {
+          case 0:
+            if ("undefined" == typeof $request || "OPTIONS" == $request.method) {
+              R.next = 5;
+              break;
+            }
+            R.next = 3;
+            return H();
+          case 3:
+            R.next = 9;
+            break;
+          case 5:
+            R.next = 7;
+            return L();
+          case 7:
+            R.next = 9;
+            return F();
+          case 9:
+          case "end":
+            return R.stop();
+        }
+      }
+    }, P);
+  }))().catch(function (Q) {
+    $.log(Q);
+  }).finally(function () {
+    $.done({});
+  });
+})();
+function Env(t, e) {
+  class s {
+    constructor(t) {
+      this.env = t;
+    }
+    send(t, e = "GET") {
+      t = "string" == typeof t ? {
+        url: t
+      } : t;
+      let s = this.get;
+      "POST" === e && (s = this.post);
+      return new Promise((e, i) => {
+        s.call(this, t, (t, s, o) => {
+          t ? i(t) : e(s);
+        });
+      });
+    }
+    get(t) {
+      return this.send.call(this.env, t);
+    }
+    post(t) {
+      return this.send.call(this.env, t, "POST");
+    }
+  }
+  return new class {
+    constructor(t, e) {
+      this.logLevels = {
+        debug: 0,
+        info: 1,
+        warn: 2,
+        error: 3
+      };
+      this.logLevelPrefixs = {
+        debug: "[DEBUG] ",
+        info: "[INFO] ",
+        warn: "[WARN] ",
+        error: "[ERROR] "
+      };
+      this.logLevel = "info";
+      this.name = t;
+      this.http = new s(this);
+      this.data = null;
+      this.dataFile = "box.dat";
+      this.logs = [];
+      this.isMute = false;
+      this.isNeedRewrite = false;
+      this.logSeparator = "\n";
+      this.encoding = "utf-8";
+      this.startTime = new Date().getTime();
+      Object.assign(this, e);
+      this.log("", `🔔${this.name}, 开始!`);
+    }
+    getEnv() {
+      return "undefined" != typeof $environment && $environment["surge-version"] ? "Surge" : "undefined" != typeof $environment && $environment["stash-version"] ? "Stash" : "undefined" != typeof module && module.exports ? "Node.js" : "undefined" != typeof $task ? "Quantumult X" : "undefined" != typeof $loon ? "Loon" : "undefined" != typeof $rocket ? "Shadowrocket" : undefined;
+    }
+    isNode() {
+      return "Node.js" === this.getEnv();
+    }
+    isQuanX() {
+      return "Quantumult X" === this.getEnv();
+    }
+    isSurge() {
+      return "Surge" === this.getEnv();
+    }
+    isLoon() {
+      return "Loon" === this.getEnv();
+    }
+    isShadowrocket() {
+      return "Shadowrocket" === this.getEnv();
+    }
+    isStash() {
+      return "Stash" === this.getEnv();
+    }
+    toObj(t, e = null) {
+      try {
+        return JSON.parse(t);
+      } catch {
+        return e;
+      }
+    }
+    toStr(t, e = null, ...s) {
+      try {
+        return JSON.stringify(t, ...s);
+      } catch {
+        return e;
+      }
+    }
+    getjson(t, e) {
+      let s = e;
+      if (this.getdata(t)) {
+        try {
+          s = JSON.parse(this.getdata(t));
+        } catch {}
+      }
+      return s;
+    }
+    setjson(t, e) {
+      try {
+        return this.setdata(JSON.stringify(t), e);
+      } catch {
+        return false;
+      }
+    }
+    getScript(t) {
+      return new Promise(e => {
+        this.get({
+          url: t
+        }, (t, s, i) => e(i));
+      });
+    }
+    runScript(t, e) {
+      return new Promise(s => {
+        let i = this.getdata("@chavy_boxjs_userCfgs.httpapi");
+        i = i ? i.replace(/\n/g, "").trim() : i;
+        let o = this.getdata("@chavy_boxjs_userCfgs.httpapi_timeout");
+        o = o ? 1 * o : 20;
+        o = e && e.timeout ? e.timeout : o;
+        const [r, a] = i.split("@");
+        const n = {
+          url: `http://${a}/v1/scripting/evaluate`,
+          body: {
+            script_text: t,
+            mock_type: "cron",
+            timeout: o
+          },
+          headers: {
+            "X-Key": r,
+            Accept: "*/*"
+          },
+          timeout: o
+        };
+        this.post(n, (t, e, i) => s(i));
+      }).catch(t => this.logErr(t));
+    }
+    loaddata() {
+      if (!this.isNode()) {
+        return {};
+      }
+      {
+        this.fs = this.fs ? this.fs : require("fs");
+        this.path = this.path ? this.path : require("path");
+        const t = this.path.resolve(this.dataFile);
+        const e = this.path.resolve(process.cwd(), this.dataFile);
+        const s = this.fs.existsSync(t);
+        const i = !s && this.fs.existsSync(e);
+        if (!s && !i) {
+          return {};
+        }
+        {
+          const i = s ? t : e;
+          try {
+            return JSON.parse(this.fs.readFileSync(i));
+          } catch (t) {
+            return {};
+          }
+        }
+      }
+    }
+    writedata() {
+      if (this.isNode()) {
+        this.fs = this.fs ? this.fs : require("fs");
+        this.path = this.path ? this.path : require("path");
+        const t = this.path.resolve(this.dataFile);
+        const e = this.path.resolve(process.cwd(), this.dataFile);
+        const s = this.fs.existsSync(t);
+        const i = !s && this.fs.existsSync(e);
+        const o = JSON.stringify(this.data);
+        s ? this.fs.writeFileSync(t, o) : i ? this.fs.writeFileSync(e, o) : this.fs.writeFileSync(t, o);
+      }
+    }
+    lodash_get(t, e, s) {
+      const i = e.replace(/\[(\d+)\]/g, ".$1").split(".");
+      let o = t;
+      for (const t of i) if (o = Object(o)[t], undefined === o) {
+        return s;
+      }
+      return o;
+    }
+    lodash_set(t, e, s) {
+      Object(t) !== t || (Array.isArray(e) || (e = e.toString().match(/[^.[\]]+/g) || []), e.slice(0, -1).reduce((t, s, i) => Object(t[s]) === t[s] ? t[s] : t[s] = Math.abs(e[i + 1]) >> 0 == +e[i + 1] ? [] : {}, t)[e[e.length - 1]] = s);
+      return t;
+    }
+    getdata(t) {
+      let e = this.getval(t);
+      if (/^@/.test(t)) {
+        const [, s, i] = /^@(.*?)\.(.*?)$/.exec(t);
+        const o = s ? this.getval(s) : "";
+        if (o) {
+          try {
+            const t = JSON.parse(o);
+            e = t ? this.lodash_get(t, i, "") : e;
+          } catch (t) {
+            e = "";
+          }
+        }
+      }
+      return e;
+    }
+    setdata(t, e) {
+      let s = false;
+      if (/^@/.test(e)) {
+        const [, i, o] = /^@(.*?)\.(.*?)$/.exec(e);
+        const r = this.getval(i);
+        const a = i ? "null" === r ? null : r || "{}" : "{}";
+        try {
+          const e = JSON.parse(a);
+          this.lodash_set(e, o, t);
+          s = this.setval(JSON.stringify(e), i);
+        } catch (e) {
+          const r = {};
+          this.lodash_set(r, o, t);
+          s = this.setval(JSON.stringify(r), i);
+        }
+      } else {
+        s = this.setval(t, e);
+      }
+      return s;
+    }
+    getval(t) {
+      switch (this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+          return $persistentStore.read(t);
+        case "Quantumult X":
+          return $prefs.valueForKey(t);
+        case "Node.js":
+          this.data = this.loaddata();
+          return this.data[t];
+        default:
+          return this.data && this.data[t] || null;
+      }
+    }
+    setval(t, e) {
+      switch (this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+          return $persistentStore.write(t, e);
+        case "Quantumult X":
+          return $prefs.setValueForKey(t, e);
+        case "Node.js":
+          this.data = this.loaddata();
+          this.data[e] = t;
+          this.writedata();
+          return true;
+        default:
+          return this.data && this.data[e] || null;
+      }
+    }
+    initGotEnv(t) {
+      this.got = this.got ? this.got : require("got");
+      this.cktough = this.cktough ? this.cktough : require("tough-cookie");
+      this.ckjar = this.ckjar ? this.ckjar : new this.cktough.CookieJar();
+      t && (t.headers = t.headers ? t.headers : {}, t && (t.headers = t.headers ? t.headers : {}, undefined === t.headers.cookie && undefined === t.headers.Cookie && undefined === t.cookieJar && (t.cookieJar = this.ckjar)));
+    }
+    get(t, e = () => {}) {
+      switch (t.headers && (delete t.headers["Content-Type"], delete t.headers["Content-Length"], delete t.headers["content-type"], delete t.headers["content-length"]), t.params && (t.url += "?" + this.queryStr(t.params)), undefined === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = false), this.isQuanX() && (t.opts ? t.opts.redirection = false : t.opts = {
+        redirection: false
+      })), this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+        default:
+          this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
+            "X-Surge-Skip-Scripting": false
+          }));
+          $httpClient.get(t, (t, s, i) => {
+            !t && s && (s.body = i, s.statusCode = s.status ? s.status : s.statusCode, s.status = s.statusCode);
+            e(t, s, i);
+          });
+          break;
+        case "Quantumult X":
+          this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
+            hints: false
+          }));
+          $task.fetch(t).then(t => {
+            const {
+              statusCode: s,
+              statusCode: i,
+              headers: o,
+              body: r,
+              bodyBytes: a
+            } = t;
+            e(null, {
+              status: s,
+              statusCode: i,
+              headers: o,
+              body: r,
+              bodyBytes: a
+            }, r, a);
+          }, t => e(t && t.error || "UndefinedError"));
+          break;
+        case "Node.js":
+          let s = require("iconv-lite");
+          this.initGotEnv(t);
+          this.got(t).on("redirect", (t, e) => {
+            try {
+              if (t.headers["set-cookie"]) {
+                const s = t.headers["set-cookie"].map(this.cktough.Cookie.parse).toString();
+                s && this.ckjar.setCookieSync(s, null);
+                e.cookieJar = this.ckjar;
+              }
+            } catch (t) {
+              this.logErr(t);
+            }
+          }).then(t => {
+            const {
+              statusCode: i,
+              statusCode: o,
+              headers: r,
+              rawBody: a
+            } = t;
+            const n = s.decode(a, this.encoding);
+            e(null, {
+              status: i,
+              statusCode: o,
+              headers: r,
+              rawBody: a,
+              body: n
+            }, n);
+          }, t => {
+            const {
+              message: i,
+              response: o
+            } = t;
+            e(i, o, o && s.decode(o.rawBody, this.encoding));
+          });
+          break;
+      }
+    }
+    post(t, e = () => {}) {
+      const s = t.method ? t.method.toLocaleLowerCase() : "post";
+      switch (t.body && t.headers && !t.headers["Content-Type"] && !t.headers["content-type"] && (t.headers["content-type"] = "application/x-www-form-urlencoded"), t.headers && (delete t.headers["Content-Length"], delete t.headers["content-length"]), undefined === t.followRedirect || t.followRedirect || ((this.isSurge() || this.isLoon()) && (t["auto-redirect"] = false), this.isQuanX() && (t.opts ? t.opts.redirection = false : t.opts = {
+        redirection: false
+      })), this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+        default:
+          this.isSurge() && this.isNeedRewrite && (t.headers = t.headers || {}, Object.assign(t.headers, {
+            "X-Surge-Skip-Scripting": false
+          }));
+          $httpClient[s](t, (t, s, i) => {
+            !t && s && (s.body = i, s.statusCode = s.status ? s.status : s.statusCode, s.status = s.statusCode);
+            e(t, s, i);
+          });
+          break;
+        case "Quantumult X":
+          t.method = s;
+          this.isNeedRewrite && (t.opts = t.opts || {}, Object.assign(t.opts, {
+            hints: false
+          }));
+          $task.fetch(t).then(t => {
+            const {
+              statusCode: s,
+              statusCode: i,
+              headers: o,
+              body: r,
+              bodyBytes: a
+            } = t;
+            e(null, {
+              status: s,
+              statusCode: i,
+              headers: o,
+              body: r,
+              bodyBytes: a
+            }, r, a);
+          }, t => e(t && t.error || "UndefinedError"));
+          break;
+        case "Node.js":
+          let i = require("iconv-lite");
+          this.initGotEnv(t);
+          const {
+            url: o,
+            ...r
+          } = t;
+          this.got[s](o, r).then(t => {
+            const {
+              statusCode: s,
+              statusCode: o,
+              headers: r,
+              rawBody: a
+            } = t;
+            const n = i.decode(a, this.encoding);
+            e(null, {
+              status: s,
+              statusCode: o,
+              headers: r,
+              rawBody: a,
+              body: n
+            }, n);
+          }, t => {
+            const {
+              message: s,
+              response: o
+            } = t;
+            e(s, o, o && i.decode(o.rawBody, this.encoding));
+          });
+          break;
+      }
+    }
+    time(t, e = null) {
+      const s = e ? new Date(e) : new Date();
+      let i = {
+        "M+": s.getMonth() + 1,
+        "d+": s.getDate(),
+        "H+": s.getHours(),
+        "m+": s.getMinutes(),
+        "s+": s.getSeconds(),
+        "q+": Math.floor((s.getMonth() + 3) / 3),
+        S: s.getMilliseconds()
+      };
+      /(y+)/.test(t) && (t = t.replace(RegExp.$1, (s.getFullYear() + "").substr(4 - RegExp.$1.length)));
+      for (let e in i) new RegExp("(" + e + ")").test(t) && (t = t.replace(RegExp.$1, 1 == RegExp.$1.length ? i[e] : ("00" + i[e]).substr(("" + i[e]).length)));
+      return t;
+    }
+    queryStr(t) {
+      let e = "";
+      for (const s in t) {
+        let i = t[s];
+        null != i && "" !== i && ("object" == typeof i && (i = JSON.stringify(i)), e += `${s}=${i}&`);
+      }
+      e = e.substring(0, e.length - 1);
+      return e;
+    }
+    msg(e = t, s = "", i = "", o = {}) {
+      const r = t => {
+        const {
+          $open: e,
+          $copy: s,
+          $media: i,
+          $mediaMime: o
+        } = t;
+        switch (typeof t) {
+          case undefined:
+            return t;
+          case "string":
+            switch (this.getEnv()) {
+              case "Surge":
+              case "Stash":
+              default:
+                return {
+                  url: t
+                };
+              case "Loon":
+              case "Shadowrocket":
+                return t;
+              case "Quantumult X":
+                return {
+                  "open-url": t
+                };
+              case "Node.js":
+                return;
+            }
+          case "object":
+            switch (this.getEnv()) {
+              case "Surge":
+              case "Stash":
+              case "Shadowrocket":
+              default:
+                {
+                  const r = {};
+                  let a = t.openUrl || t.url || t["open-url"] || e;
+                  a && Object.assign(r, {
+                    action: "open-url",
+                    url: a
+                  });
+                  let n = t["update-pasteboard"] || t.updatePasteboard || s;
+                  if (n && Object.assign(r, {
+                    action: "clipboard",
+                    text: n
+                  }), i) {
+                    let t;
+                    let e;
+                    let s;
+                    if (i.startsWith("http")) {
+                      t = i;
+                    } else {
+                      if (i.startsWith("data:")) {
+                        const [t] = i.split(";");
+                        const [, o] = i.split(",");
+                        e = o;
+                        s = t.replace("data:", "");
+                      } else {
+                        e = i;
+                        s = (t => {
+                          const e = {
+                            JVBERi0: "application/pdf",
+                            R0lGODdh: "image/gif",
+                            R0lGODlh: "image/gif",
+                            iVBORw0KGgo: "image/png",
+                            "/9j/": "image/jpg"
+                          };
+                          for (var s in e) if (0 === t.indexOf(s)) {
+                            return e[s];
+                          }
+                          return null;
+                        })(i);
+                      }
+                    }
+                    Object.assign(r, {
+                      "media-url": t,
+                      "media-base64": e,
+                      "media-base64-mime": o ?? s
+                    });
+                  }
+                  Object.assign(r, {
+                    "auto-dismiss": t["auto-dismiss"],
+                    sound: t.sound
+                  });
+                  return r;
+                }
+              case "Loon":
+                {
+                  const s = {};
+                  let o = t.openUrl || t.url || t["open-url"] || e;
+                  o && Object.assign(s, {
+                    openUrl: o
+                  });
+                  let r = t.mediaUrl || t["media-url"];
+                  i?.startsWith("http") && (r = i);
+                  r && Object.assign(s, {
+                    mediaUrl: r
+                  });
+                  console.log(JSON.stringify(s));
+                  return s;
+                }
+              case "Quantumult X":
+                {
+                  const o = {};
+                  let r = t["open-url"] || t.url || t.openUrl || e;
+                  r && Object.assign(o, {
+                    "open-url": r
+                  });
+                  let a = t["media-url"] || t.mediaUrl;
+                  i?.startsWith("http") && (a = i);
+                  a && Object.assign(o, {
+                    "media-url": a
+                  });
+                  let n = t["update-pasteboard"] || t.updatePasteboard || s;
+                  n && Object.assign(o, {
+                    "update-pasteboard": n
+                  });
+                  console.log(JSON.stringify(o));
+                  return o;
+                }
+              case "Node.js":
+                return;
+            }
+          default:
+            return;
+        }
+      };
+      if (!this.isMute) {
+        switch (this.getEnv()) {
+          case "Surge":
+          case "Loon":
+          case "Stash":
+          case "Shadowrocket":
+          default:
+            $notification.post(e, s, i, r(o));
+            break;
+          case "Quantumult X":
+            $notify(e, s, i, r(o));
+            break;
+          case "Node.js":
+            break;
+        }
+      }
+      if (!this.isMuteLog) {
+        let t = ["", "==============📣系统通知📣=============="];
+        t.push(e);
+        s && t.push(s);
+        i && t.push(i);
+        console.log(t.join("\n"));
+        this.logs = this.logs.concat(t);
+      }
+    }
+    debug(...t) {
+      this.logLevels[this.logLevel] <= this.logLevels.debug && (t.length > 0 && (this.logs = [...this.logs, ...t]), console.log(`${this.logLevelPrefixs.debug}${t.map(t => t ?? String(t)).join(this.logSeparator)}`));
+    }
+    info(...t) {
+      this.logLevels[this.logLevel] <= this.logLevels.info && (t.length > 0 && (this.logs = [...this.logs, ...t]), console.log(`${this.logLevelPrefixs.info}${t.map(t => t ?? String(t)).join(this.logSeparator)}`));
+    }
+    warn(...t) {
+      this.logLevels[this.logLevel] <= this.logLevels.warn && (t.length > 0 && (this.logs = [...this.logs, ...t]), console.log(`${this.logLevelPrefixs.warn}${t.map(t => t ?? String(t)).join(this.logSeparator)}`));
+    }
+    error(...t) {
+      this.logLevels[this.logLevel] <= this.logLevels.error && (t.length > 0 && (this.logs = [...this.logs, ...t]), console.log(`${this.logLevelPrefixs.error}${t.map(t => t ?? String(t)).join(this.logSeparator)}`));
+    }
+    log(...t) {
+      t.length > 0 && (this.logs = [...this.logs, ...t]);
+      console.log(t.map(t => t ?? String(t)).join(this.logSeparator));
+    }
+    logErr(t, e) {
+      switch (this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+        case "Quantumult X":
+        default:
+          this.log("", `❗️${this.name}, 错误!`, e, t);
+          break;
+        case "Node.js":
+          this.log("", `❗️${this.name}, 错误!`, e, undefined !== t.message ? t.message : t, t.stack);
+          break;
+      }
+    }
+    wait(t) {
+      return new Promise(e => setTimeout(e, t));
+    }
+    done(t = {}) {
+      const e = (new Date().getTime() - this.startTime) / 1000;
+      switch (this.log("", `🔔${this.name}, 结束! 🕛 ${e} 秒`), this.log(), this.getEnv()) {
+        case "Surge":
+        case "Loon":
+        case "Stash":
+        case "Shadowrocket":
+        case "Quantumult X":
+        default:
+          $done(t);
+          break;
+        case "Node.js":
+          process.exit(1);
+      }
+    }
+  }(t, e);
+}
