@@ -1,6 +1,6 @@
 /**
  * cron "1,10 8,16 * * *" AiLuQiao.js
- * export AiLuQiao='uid1 uid3'
+ * export AiLuQiao='uid1 uid2'
  */
 const $ = new Env('爱路桥');
 const notify = $.isNode() ? require('../sendNotify') : '';
