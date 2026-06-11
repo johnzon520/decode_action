@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+
+env:
+  # 兼容旧版 Node Action，消除弃用警告
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
 jobs:
   decode:
     runs-on: ubuntu-latest
@@ -13,6 +18,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    # 固定 Node.js 20，解决 isolated-vm 编译报错
+    - name: Setup Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    # 安装 Ubuntu 编译原生模块必备依赖（解决 node-gyp 编译失败）
+    - name: Install build tools
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
     - name: Execute Python script for decoding
       run: |
         python src/decode.py
@@ -21,16 +36,17 @@ jobs:
       run: |
         npm install
         npm run decode -- [-i input.js] [-o output.js]
+
     - name: Configure Git author
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "action"
+
     - name: Save decoded output to repository
       run: |
         git status
         ls
         git add output.js
         git add output.py
-        git commit -m "Add decoded output file"
+        git commit -m "Add decoded output file" || echo "No changes to commit"
         git push
-        
